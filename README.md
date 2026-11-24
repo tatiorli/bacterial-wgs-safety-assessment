@@ -23,7 +23,33 @@ The strain is a *Microbacterium arborescens* isolate (strain not disclosed). The
 | Why is it not a closed genome? Why were contigs removed? | Re-ran SPAdes to recover the contigs that the filter had removed (261 of them). Mapped the reads back with Bowtie2 and measured depth at the contig ends. Identified a very high-coverage 155 bp contig as an rRNA operon fragment by BLAST (`Blast_short_contig`). | `bowtie2_tests`, `bowtie2_tests_DSM20754`, `contig_ends`, `Blast_short_contig` |
 | Which species and strain is it? | TYGS: digital DNA-DNA hybridisation (dDDH) against type strains, with a whole-genome tree. | `TYGS_results` |
 
-The results are concluded and the analysis was carried through to the end of the requirements. The full write-up is in [`Bioinformatics_analysis_report_Microbacterium_arborescens.docx`](Bioinformatics_analysis_report_Microbacterium_arborescens.docx).
+The results are concluded and the analysis was carried through to the end of the requirements. The full write-up (all tables, figures and methods) is in [`Bioinformatics_analysis_report_Microbacterium_arborescens.docx`](Bioinformatics_analysis_report_Microbacterium_arborescens.docx).
+
+## Snapshots from the report
+
+**Assembly completeness: BUSCO.** The short-read assembly (9 contigs) is 95.7% complete.
+
+<img src="images/busco.png" width="520" alt="BUSCO assessment of the assembly">
+
+**Species identification: 16S rRNA.** Full-length 16S alignment of the assembly against the type strain, with the identity graph on top.
+
+<img src="images/16S_alignment.png" width="800" alt="16S rRNA alignment against the type strain">
+
+**Species identification: whole genome.** TYGS whole-genome phylogeny (GBDP) of the assembly and 14 type strains. The assembly clusters with *M. arborescens* DSM 20754.
+
+<img src="images/dDDH_tree.png" width="800" alt="TYGS whole-genome tree">
+
+**Why the assembly is not a closed genome.** Reads mapped to a reference genome (Geneious): coverage drops to zero across a repeat, where short reads cannot bridge the gap. This is why I describe the assembly as a draft and not as a chromosome-level genome.
+
+<img src="images/mapping_coverage.png" width="800" alt="Read mapping showing a coverage gap">
+
+**Gene of interest.** Alignment of the xylose isomerase protein of the sequenced strain with published proteins from closely related strains.
+
+<img src="images/xylose_isomerase_alignment.png" width="800" alt="Xylose isomerase protein alignment">
+
+**Genes and clusters of concern: antiSMASH 8.** Overview of the seven biosynthetic gene cluster regions found, checked one by one against MIBiG (known toxin and antibiotic clusters).
+
+<img src="images/antismash_overview.png" width="700" alt="antiSMASH overview of the detected regions">
 
 ## What I did in practice
 - Wrote the scripts for a Linux cluster (LSF `bsub`): job scripts, modules, conda environments.

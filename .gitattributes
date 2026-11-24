@@ -1,6 +1,9 @@
-*.html linguist-generated
-*.css linguist-generated
+# keep GitHub's language bar about my own code (bash, python)
+*.html linguist-vendored
+*.css linguist-vendored
 *.js linguist-vendored
-antismash_out/** linguist-generated
-TYGS_results/** linguist-generated
-*.sh linguist-detectable
+*.svg linguist-vendored
+antismash_out/** linguist-vendored
+TYGS_results/** linguist-vendored
+*.sh linguist-language=Shell
+*.py linguist-language=Python

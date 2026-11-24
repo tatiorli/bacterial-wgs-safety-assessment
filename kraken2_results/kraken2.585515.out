@@ -1,0 +1,95 @@
+Downloading database: https://genome-idx.s3.amazonaws.com/kraken/k2_standard_08gb_20240904.tar.gz
+
+------------------------------------------------------------
+Sender: LSF System <DoNotReply>
+Subject: Job 585515: <kraken2> in cluster <server> Exited
+
+Job <kraken2> was submitted from host <login4> by user <tatianas> in cluster <server> at Tue Nov 10 14:53:14 2026
+Job was executed on host(s) <8*cn132>, in queue <short>, as user <tatianas> in cluster <server> at Tue Nov 10 14:53:15 2026
+<tatianas> was used as the home directory.
+<tatianas/microbacterium_analysis> was used as the working directory.
+Started at Tue Nov 10 14:53:15 2026
+Terminated at Tue Nov 10 16:05:22 2026
+Results reported at Tue Nov 10 16:05:22 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# Kraken2 read-contamination screen of the sequencing reads (EFSA WGS statement 2024, section 2.2.2).
+# Submit from the microbacterium_analysis folder:   mkdir -p kraken2_results && bsub < run_kraken2.sh
+#
+#BSUB -J kraken2
+#BSUB -q short
+#BSUB -n 8
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=16384]"
+#BSUB -M 16384
+#BSUB -o kraken2_results/kraken2.%J.out
+#BSUB -e kraken2_results/kraken2.%J.err
+
+set -euo pipefail
+cd "$LS_SUBCWD" 2>/dev/null || cd "$(dirname "$0")"
+
+OUT=kraken2_results
+DBDIR=$PWD/kraken2_db_standard8
+# Pre-built Kraken2 Standard-8 index (8 GB cap; RefSeq archaea, bacteria, viral, plasmid, human, UniVec_Core).
+# Check https://benlangmead.github.io/aws-indexes/k2 for the newest "Standard-8" file and edit the URL if needed.
+DBURL=https://genome-idx.s3.amazonaws.com/kraken/k2_standard_08gb_20240904.tar.gz
+R1=reads_R1.fastq.gz
+R2=reads_R2.fastq.gz
+THREADS=8
+CONF=0.0     # Kraken2 default, kept explicit
+
+mkdir -p "$OUT"
+module load Kraken2/2.1.2-gompi-2022a
+
+# ---- database (downloaded once) ----
+if [ ! -s "$DBDIR/hash.k2d" ]; then
+  mkdir -p "$DBDIR"
+  echo "Downloading database: $DBURL"
+  wget -q -O "$DBDIR/db.tar.gz" "$DBURL"
+  tar -xzf "$DBDIR/db.tar.gz" -C "$DBDIR"
+  rm -f "$DBDIR/db.tar.gz"
+  date +%Y-%m-%d > "$DBDIR/DOWNLOAD_DATE.txt"
+fi
+[ -s "$DBDIR/hash.k2d" ] || { echo "ERROR: database not found in $DBDIR"; exit 1; }
+
+# ---- run ----
+kraken2 --db "$DBDIR" --threads $THREADS --paired --gzip-compressed \
+        --confidence $CONF --use-names \
+        --report "$OUT/kraken2_report.txt" \
+        --output "$OUT/kraken2_reads_classification.txt" \
+        "$R1" "$R2" 2> "$OUT/kraken2_stderr.txt"
+
+# ---- summary ----
+REP="$OUT/kraken2_report.txt"
+TOTAL=$(awk '$4=="U"||($4=="R" && $6=="root"){s+=$2} END{print s}' "$REP")
+
+(... more ...)
+------------------------------------------------------------
+
+Exited with exit code 141.
+
+Resource usage summary:
+
+    CPU time :                                   223.00 sec.
+    Max Memory :                                 8073 MB
+    Average Memory :                             64.18 MB
+    Total Requested Memory :                     131072.00 MB
+    Delta Memory :                               122999.00 MB
+    Max Swap :                                   -
+    Max Processes :                              7
+    Max Threads :                                15
+    Run time :                                   4329 sec.
+    Turnaround time :                            4328 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <kraken2_results/kraken2.585515.err> for stderr output of this job.
+

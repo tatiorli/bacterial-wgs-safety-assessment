@@ -1,0 +1,97 @@
+arr reference sequences: 2
+Query: 0 aa
+
+------------------------------------------------------------
+Sender: LSF System <DoNotReply>
+Subject: Job 646314: <blast_arr> in cluster <server> Exited
+
+Job <blast_arr> was submitted from host <login4> by user <tatianas> in cluster <server> at Wed Nov 11 10:08:38 2026
+Job was executed on host(s) <1*cn106>, in queue <short>, as user <tatianas> in cluster <server> at Wed Nov 11 10:08:43 2026
+                            <1*cn056>
+<tatianas> was used as the home directory.
+<tatianas/microbacterium_analysis> was used as the working directory.
+Started at Wed Nov 11 10:08:43 2026
+Terminated at Wed Nov 11 10:08:53 2026
+Results reported at Wed Nov 11 10:08:53 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# Is the arr-like gene (Bakta KFAPLB_04590, contig_1:968318-968725) a real arr gene? ABRicate matched only 129 bp (29.9% coverage, 80.6% identity).
+# Compares the full Bakta protein with all arr reference sequences of the ABRicate CARD and NCBI databases (tblastn),
+# and lists the neighbouring genes (is it next to a mobile element?).
+# Submit from the microbacterium_analysis folder:   mkdir -p arr_blast && bsub < blast_arr.sh
+#
+#BSUB -J blast_arr
+#BSUB -q short
+#BSUB -n 2
+#BSUB -R "rusage[mem=1024]"
+#BSUB -M 1024
+#BSUB -W 00:30
+#BSUB -o arr_blast/blast_arr.%J.out
+#BSUB -e arr_blast/blast_arr.%J.err
+
+set -euo pipefail
+cd "$LS_SUBCWD" 2>/dev/null || cd "$(dirname "$0")"
+OUT=arr_blast
+GB=Assembly_annotated_Microbacterium_arborescens_spp.gb
+LT=KFAPLB_04590
+mkdir -p "$OUT"
+source "$(conda info --base)/etc/profile.d/conda.sh"
+export PYTHONNOUSERSITE=1
+
+# 1) arr reference sequences from the ABRicate databases (same version as the screening, 14 Jan 2025)
+conda activate abricate
+ABRDB=$(dirname "$(dirname "$(readlink -f "$(which abricate)")")")/db
+[ -d "$ABRDB/card" ] || ABRDB=$CONDA_PREFIX/db
+for db in card ncbi; do
+  awk -v db=$db 'BEGIN{RS=">";ORS=""} NR>1{h=$0; sub(/\n.*/,"",h); if(h ~ /arr|rifampin ADP|rifampicin ADP/ && h !~ /arrB|array/i) print ">"db"~"$0}' "$ABRDB/$db/sequences"
+done > $OUT/arr_references.fasta
+echo "arr reference sequences: $(grep -c '>' $OUT/arr_references.fasta)"
+grep '>' $OUT/arr_references.fasta | cut -c1-110 > $OUT/arr_references_list.txt
+
+# 2) Bakta protein sequence of the gene
+awk -v lt=$LT '
+  /\/locus_tag=/ {cur=($0 ~ "\""lt"\"")}
+  cur && /\/translation=/ {intr=1; s=$0; sub(/.*\/translation="/,"",s); seq=s; if (s ~ /"/){intr=0; gsub(/"/,"",seq)} next}
+  intr {s=$0; gsub(/^ +/,"",s); seq=seq s; if (s ~ /"/){intr=0; gsub(/"/,"",seq)}}
+  END{print ">"lt"_Bakta_NAD(+)--rifampin_ADP-ribosyltransferase"; print seq}' "$GB" > $OUT/query_$LT.faa
+echo "Query: $(tail -n +2 $OUT/query_$LT.faa | tr -d '\n' | wc -c) aa"
+
+# 3) tblastn of the full protein against the arr reference genes
+conda activate blast
+makeblastdb -in $OUT/arr_references.fasta -dbtype nucl -out $OUT/arr_refdb > /dev/null
+tblastn -query $OUT/query_$LT.faa -db $OUT/arr_refdb -evalue 1e-3 -max_hsps 1 \
+  -outfmt "6 qseqid sseqid pident length qlen slen qstart qend sstart send evalue bitscore" > $OUT/tblastn_arr_raw.tsv
+{
+  echo -e "query\tsubject\tprotein_identity_%\taln_len_aa\tquery_len_aa\tsubject_len_nt\tquery_coverage_%\tsubject_coverage_%\tevalue\tbitscore"
+  awk -F'\t' 'BEGIN{OFS="\t"} {qc=100*($8-$7+1)/$5; sc=100*(($10>$9?$10-$9:$9-$10)+1)/$6; printf "%s\t%s\t%.1f\t%d\t%d\t%d\t%.0f\t%.0f\t%s\t%s\n",$1,$2,$3,$4,$5,$6,qc,sc,$11,$12}' $OUT/tblastn_arr_raw.tsv | sort -t$'\t' -k3,3nr
+
+(... more ...)
+------------------------------------------------------------
+
+Exited with exit code 3.
+
+Resource usage summary:
+
+    CPU time :                                   3.83 sec.
+    Max Memory :                                 24 MB
+    Average Memory :                             20.75 MB
+    Total Requested Memory :                     2048.00 MB
+    Delta Memory :                               2024.00 MB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                7
+    Run time :                                   12 sec.
+    Turnaround time :                            15 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <arr_blast/blast_arr.646314.err> for stderr output of this job.
+

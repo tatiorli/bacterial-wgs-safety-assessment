@@ -1,0 +1,50 @@
+125
+
+------------------------------------------------------------
+Sender: LSF System <DoNotReply>
+Subject: Job 645030: <bt2_index> in cluster <server> Done
+
+Job <bt2_index> was submitted from host <login4> by user <tatianas> in cluster <server> at Wed Nov 11 10:03:31 2026
+Job was executed on host(s) <2*cn106>, in queue <short>, as user <tatianas> in cluster <server> at Wed Nov 11 10:03:32 2026
+<tatianas> was used as the home directory.
+<tatianas/microbacterium_analysis> was used as the working directory.
+Started at Wed Nov 11 10:03:32 2026
+Terminated at Wed Nov 11 10:03:42 2026
+Results reported at Wed Nov 11 10:03:42 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+set -euo pipefail
+cd "tatianas/microbacterium_analysis"
+module purge
+module load Bowtie2/2.5.1-GCC-12.3.0
+bowtie2-build --threads 2 GCA_003339645.1_ASM333964v1_genomic.fna bowtie2_tests_DSM20754/DSM20754_index/DSM20754 > bowtie2_tests_DSM20754/bowtie2_build.log 2>&1
+grep -c '>' GCA_003339645.1_ASM333964v1_genomic.fna
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   6.97 sec.
+    Max Memory :                                 37 MB
+    Average Memory :                             30.50 MB
+    Total Requested Memory :                     2048.00 MB
+    Delta Memory :                               2011.00 MB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                8
+    Run time :                                   11 sec.
+    Turnaround time :                            11 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <bowtie2_tests_DSM20754/index.645030.err> for stderr output of this job.
+

@@ -1,0 +1,223 @@
+ClusterBlast scores for NODE_1_length_1475171_cov_354.830449
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg1_1332	1406214	1407132	-		
+ctg1_1333	1407140	1409075	-		
+ctg1_1334	1409101	1410364	-		
+ctg1_1335	1410405	1410660	-		
+ctg1_1336	1410739	1411636	-		
+ctg1_1337	1411628	1412498	-		
+ctg1_1338	1412494	1415782	-		
+ctg1_1339	1415781	1416930	-		
+ctg1_1340	1416926	1417451	-		
+ctg1_1341	1417447	1418758	-		
+ctg1_1342	1418754	1419720	-		
+ctg1_1343	1419716	1420247	-		
+ctg1_1344	1420391	1421396	+		
+ctg1_1345	1421392	1422361	+		
+ctg1_1346	1422357	1423503	+		
+ctg1_1347	1423492	1424572	+		
+ctg1_1348	1424568	1425615	+		
+ctg1_1349	1425611	1426766	+		
+ctg1_1350	1426910	1429817	-		
+ctg1_1351	1429858	1430980	-		
+ctg1_1352	1431105	1432527	+		
+ctg1_1353	1432655	1433507	+		
+ctg1_1354	1433316	1435071	-		
+ctg1_1355	1435067	1435976	-		
+ctg1_1356	1436041	1437316	+		
+ctg1_1357	1437341	1440620	-		
+ctg1_1358	1440616	1443688	-		
+ctg1_1359	1443828	1444053	+		
+ctg1_1360	1444055	1444346	+		
+ctg1_1361	1444377	1445091	-		
+ctg1_1362	1445224	1446673	+		
+
+
+Significant hits: 
+1. BGC0001083.5	merochlorin A/merochlorin B/deschloro-merochlorin A/deschloro-merochlorin B/isochloro-merochlorin B/dichloro-merochlorin B/merochlorin D/merochlorin C
+2. BGC0000934.4	5-acetyl-5,10-dihydrophenazine-1-carboxylic acid/5-(2-hydroxyacetyl)-5,10-dihydrophenazine-1-carboxylic acid/endophenazine A1/endophenazine F/endophenazine G
+3. BGC0000679.5	diazepinomicin
+4. BGC0001080.5	endophenazine A/endophenazine B
+5. BGC0002561.3	phenazine SA/phenazine SB/phenazine SC
+6. BGC0001848.4	diazaquinomycin H/diazaquinomycin J
+7. BGC0000286.3	viguiepinol
+8. BGC0001079.5	napyradiomycin A80915C/napyradiomycin 2/napyradiomycin 3/napyradiomycin 4
+9. BGC0001078.5	furaquinocin B
+10. BGC0000203.3	BE-7585A
+
+
+Details:
+
+>>
+1. BGC0001083.5
+Source: merochlorin A/merochlorin B/deschloro-merochlorin A/deschloro-merochlorin B/isochloro-merochlorin B/dichloro-merochlorin B/merochlorin D/merochlorin C
+Type: PKS:Type III+terpene:Sesquiterpene
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1751.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_1345	AGH68893.1	55	292	102.17391304347827	1.74e-97
+ctg1_1346	AGH68892.1	47	275	99.73753280839895	1.69e-89
+ctg1_1347	AGH68891.1	60	383	96.93593314763231	1.59e-132
+ctg1_1348	AGH68890.1	65	422	96.55172413793103	4.8e-148
+ctg1_1349	AGH68889.1	52	379	100.52083333333333	6.45e-130
+
+
+
+>>
+2. BGC0000934.4
+Source: 5-acetyl-5,10-dihydrophenazine-1-carboxylic acid/5-(2-hydroxyacetyl)-5,10-dihydrophenazine-1-carboxylic acid/endophenazine A1/endophenazine F/endophenazine G
+Type: other:phenazine
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1726.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_1345	AHW81462.1	56	295	101.24223602484473	9.5e-99
+ctg1_1346	AHW81463.1	49	263	91.33858267716536	2.98e-84
+ctg1_1347	AHW81464.1	58	369	96.37883008356546	5.62e-127
+ctg1_1348	AHW81465.1	64	417	96.55172413793103	4.37e-146
+ctg1_1349	AHW81466.1	53	382	100.26041666666667	2.8e-131
+
+
+
+>>
+3. BGC0000679.5
+Source: diazepinomicin
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1476.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_1345	MCBG_00169	56	292	100.0	1.23e-97
+ctg1_1347	MCBG_00171	59	374	96.65738161559888	8.54e-129
+ctg1_1348	MCBG_00172	64	422	100.28735632183907	2.22e-148
+ctg1_1349	MCBG_00173	54	388	99.47916666666666	1.06e-133
+
+
+
+>>
+4. BGC0001080.5
+Source: endophenazine A/endophenazine B
+Type: other:phenazine
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1470.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_1345	CAX48657.1	55	280	101.24223602484473	6.92e-93
+ctg1_1347	CAX48659.1	59	382	98.05013927576601	4.37e-132
+ctg1_1348	CAX48660.1	65	426	98.27586206896551	1.45e-149
+ctg1_1349	CAX48661.1	52	382	100.0	2.8e-131
+
+
+
+>>
+5. BGC0002561.3
+Source: phenazine SA/phenazine SB/phenazine SC
+Type: other:other
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1460.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_1345	QDJ94218.1	54	279	102.17391304347827	1.79e-92
+ctg1_1347	QDJ94220.1	56	376	96.37883008356546	1.16e-129
+ctg1_1348	QDJ94221.1	63	427	97.98850574712644	3.46e-150
+ctg1_1349	QDJ94222.1	52	378	99.47916666666666	1.78e-129
+
+
+
+>>
+6. BGC0001848.4
+Source: diazaquinomycin H/diazaquinomycin J
+Type: other:other
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1443.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_1345	MicB006_2919	55	281	99.68944099378882	2.08e-93
+ctg1_1347	MicB006_2917	59	371	96.65738161559888	9.82e-128
+ctg1_1348	MicB006_2916	65	405	93.67816091954023	1.04e-141
+ctg1_1349	MicB006_2915	53	386	99.47916666666666	6.04e-133
+
+
+
+>>
+7. BGC0000286.3
+Source: viguiepinol
+Type: PKS
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1441.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_1345	BAD86801.1	55	278	95.65217391304348	5.39e-92
+ctg1_1347	BAD86803.1	56	361	97.7715877437326	9.46e-124
+ctg1_1348	BAD86804.1	64	420	96.55172413793103	2.76e-147
+ctg1_1349	BAD86805.1	54	382	99.21875	3.97e-131
+
+
+
+>>
+8. BGC0001079.5
+Source: napyradiomycin A80915C/napyradiomycin 2/napyradiomycin 3/napyradiomycin 4
+Type: PKS:Type III+terpene:Monoterpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1435.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_1345	ABS50447.1	54	280	102.79503105590062	3.2e-92
+ctg1_1347	ABS50445.1	56	369	96.65738161559888	7.76e-127
+ctg1_1348	ABS50444.1	63	411	96.55172413793103	6.04e-144
+ctg1_1349	ABS50443.1	52	375	99.47916666666666	1.39e-128
+
+
+
+>>
+9. BGC0001078.5
+Source: furaquinocin B
+Type: terpene+PKS
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1419.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_1345	BAE78978.1	52	230	92.85714285714286	7.36e-74
+ctg1_1347	BAE78980.1	60	387	98.05013927576601	3.29e-134
+ctg1_1348	BAE78981.1	65	423	96.55172413793103	1.14e-148
+ctg1_1349	BAE78982.1	53	379	100.26041666666667	4.55e-130
+
+
+
+>>
+10. BGC0000203.3
+Source: BE-7585A
+Type: PKS
+Number of proteins with BLAST hits to this cluster: 6
+Cumulative BLAST score: 2619.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_1332	ADI71471.1	46	229	100.65573770491802	8.09e-74
+ctg1_1334	ADI71438.1	66	499	94.28571428571428	1.11e-176
+ctg1_1335	ADI71436.1	65	89	82.14285714285714	7.03e-25
+ctg1_1336	ADI71435.1	58	197	59.06040268456376	1.73e-62
+ctg1_1337	ADI71433.1	49	209	91.34948096885813	2.89e-66
+ctg1_1338	ADI71432.1	66	1396	100.36529680365295	0.0
+

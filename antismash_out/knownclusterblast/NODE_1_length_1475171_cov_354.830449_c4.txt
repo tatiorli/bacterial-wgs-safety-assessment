@@ -1,0 +1,59 @@
+ClusterBlast scores for NODE_1_length_1475171_cov_354.830449
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg1_751	812891	813884	+		
+ctg1_752	813880	814258	+		
+ctg1_753	814254	814734	+		
+ctg1_754	814785	815799	+		
+ctg1_755	815809	816166	-		
+ctg1_756	816183	816915	-		
+ctg1_757	817012	817258	+		
+ctg1_758	817247	817880	+		
+ctg1_759	817964	819365	-		
+ctg1_760	819374	819902	-		
+ctg1_761	820035	820530	+		
+ctg1_762	820526	821207	+		
+ctg1_763	821307	821853	+		
+ctg1_764	821927	822749	-		
+ctg1_765	822839	826247	+		
+ctg1_766	826276	828109	+		
+ctg1_767	828110	828602	+		
+ctg1_768	828668	830504	-		
+ctg1_769	830647	831580	+		
+ctg1_770	831598	832279	+		
+ctg1_771	832325	833660	+		
+ctg1_772	833796	834717	+		
+ctg1_773	834819	836769	-		
+ctg1_774	836860	838084	-		
+ctg1_775	838222	838573	+		
+ctg1_776	838605	839679	-		
+ctg1_777	839747	840119	+		
+ctg1_778	840271	840703	+		
+ctg1_779	840802	841762	+		
+ctg1_780	841758	842379	+		
+ctg1_781	842384	844178	+		
+ctg1_782	844206	845619	+		
+ctg1_783	845615	846725	+		
+ctg1_784	846721	848269	+		
+ctg1_785	848219	849503	+		
+
+
+Significant hits: 
+1. BGC0001666.3	microansamycin A/microansamycin B/microansamycin C/microansamycin D/microansamycin E/microansamycin F/microansamycin G/microansamycin H/microansamycin I
+
+
+Details:
+
+>>
+1. BGC0001666.3
+Source: microansamycin A/microansamycin B/microansamycin C/microansamycin D/microansamycin E/microansamycin F/microansamycin G/microansamycin H/microansamycin I
+Type: PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 625.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_770	ATY46607.1	47	182	87.16814159292035	3.51e-57
+ctg1_771	ATY46605.1	54	443	96.3963963963964	1.35e-153
+

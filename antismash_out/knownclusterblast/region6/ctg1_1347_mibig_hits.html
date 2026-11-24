@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>BAE78980.1</td>
+              <td>Type_II_isopentenyl_diphosphate_isomerase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001078.5">BGC0001078.5</a></td>
+              <td>terpene+PKS</td>
+              <td>60.0</td>
+              <td>98.1</td>
+              <td>387.0</td>
+              <td>3.29e-134</td>
+          </tr>
+    
+          <tr>
+              <td>AGH68891.1</td>
+              <td>isopentenyldiphosphate_isomerase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001083.5">BGC0001083.5</a></td>
+              <td>PKS:Type III+terpene:Sesquiterpene</td>
+              <td>60.0</td>
+              <td>96.9</td>
+              <td>383.0</td>
+              <td>1.59e-132</td>
+          </tr>
+    
+          <tr>
+              <td>CAX48659.1</td>
+              <td>putative_type_II_isopentenyl_diphosphate_delta_isomerase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001080.5">BGC0001080.5</a></td>
+              <td>other:phenazine</td>
+              <td>59.0</td>
+              <td>98.1</td>
+              <td>382.0</td>
+              <td>4.37e-132</td>
+          </tr>
+    
+          <tr>
+              <td>QDJ94220.1</td>
+              <td>SpzK</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002561.3">BGC0002561.3</a></td>
+              <td>other:other</td>
+              <td>56.0</td>
+              <td>96.4</td>
+              <td>376.0</td>
+              <td>1.16e-129</td>
+          </tr>
+    
+          <tr>
+              <td>EWM63038.1</td>
+              <td>isopentenyl-diphosphate_delta-isomerase,_type_2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000679.5">BGC0000679.5</a></td>
+              <td>terpene</td>
+              <td>59.0</td>
+              <td>96.7</td>
+              <td>374.0</td>
+              <td>8.54e-129</td>
+          </tr>
+    
+          <tr>
+              <td>AXO35198.1</td>
+              <td>isopentenyl-diphosphate_delta-isomerase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001848.4">BGC0001848.4</a></td>
+              <td>other:other</td>
+              <td>59.0</td>
+              <td>96.7</td>
+              <td>371.0</td>
+              <td>9.82e-128</td>
+          </tr>
+    
+          <tr>
+              <td>AHW81464.1</td>
+              <td>EpaE</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000934.4">BGC0000934.4</a></td>
+              <td>other:phenazine</td>
+              <td>58.0</td>
+              <td>96.4</td>
+              <td>369.0</td>
+              <td>5.62e-127</td>
+          </tr>
+    
+          <tr>
+              <td>ABS50445.1</td>
+              <td>NapT3</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001079.5">BGC0001079.5</a></td>
+              <td>PKS:Type III+terpene:Monoterpene</td>
+              <td>56.0</td>
+              <td>96.7</td>
+              <td>369.0</td>
+              <td>7.76e-127</td>
+          </tr>
+    
+          <tr>
+              <td>BAD86803.1</td>
+              <td>isopentenyl_diphosphate_isomerase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000286.3">BGC0000286.3</a></td>
+              <td>PKS</td>
+              <td>56.0</td>
+              <td>97.8</td>
+              <td>361.0</td>
+              <td>9.46e-124</td>
+          </tr>
+    
+          <tr>
+              <td>AAZ73146.1</td>
+              <td>isopentenyl_pyrophosphate_isomerase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000642.3">BGC0000642.3</a></td>
+              <td>terpene</td>
+              <td>33.0</td>
+              <td>93.0</td>
+              <td>149.0</td>
+              <td>8.78e-42</td>
+          </tr>
+    
+          <tr>
+              <td>BAE47464.1</td>
+              <td>IPP_isomerase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000635.3">BGC0000635.3</a></td>
+              <td>terpene</td>
+              <td>34.0</td>
+              <td>98.6</td>
+              <td>147.0</td>
+              <td>9.28e-41</td>
+          </tr>
+    
+          <tr>
+              <td>ACM68685.1</td>
+              <td>AerK</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000298.5">BGC0000298.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>83.3</td>
+              <td>146.0</td>
+              <td>1.37e-40</td>
+          </tr>
+    
+          <tr>
+              <td>AAZ73134.1</td>
+              <td>isopentenyl_pyrophosphate_isomerase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000640.3">BGC0000640.3</a></td>
+              <td>terpene</td>
+              <td>34.0</td>
+              <td>93.9</td>
+              <td>146.0</td>
+              <td>1.43e-40</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

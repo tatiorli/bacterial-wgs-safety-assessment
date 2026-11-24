@@ -1,0 +1,109 @@
+tatianas/.conda/envs/abricate/bin/abricate
+Hits per database (rows in the raw files, excluding header), identity >= 80, coverage >= 1%
+abricate_argannot_assembly.txt: total=0   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=0
+abricate_card_assembly.txt: total=2   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=2
+abricate_ncbi_assembly.txt: total=1   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=1
+abricate_resfinder_assembly.txt: total=0   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=0
+abricate_vfdb_assembly.txt: total=0   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=0
+
+Fragments (identity >=80%, coverage <70%), grouped by gene; 2 or more fragments of one gene must be checked for the full gene:
+abricate_card_assembly.txt	arr-1	NODE_1_length_1475171_cov_354.830449	968402-968530	cov=29.86	id=80.62	arr-1 is a chromosome-encoded ribosyltransferase found in Mycolicibacterium smegmatis	AF001493:0-432
+abricate_ncbi_assembly.txt	arr-Ms	NODE_1_length_1475171_cov_354.830449	968402-968530	cov=29.86	id=80.62	NAD(+)--rifampin ADP-ribosyltransferase	NG_047477.1
+abricate_card_assembly.txt	novA	NODE_2_length_676389_cov_354.803251	96470-96583	cov=6.01	id=82.05	A type III ABC transporter identified on the novobiocin biosynthetic gene cluster involved in the transport and resistance of novobiocin.	AF170880:0-1848
+DONE
+
+------------------------------------------------------------
+Sender: LSF System <DoNotReply>
+Subject: Job 634654: <abricate_lowcov> in cluster <server> Done
+
+Job <abricate_lowcov> was submitted from host <login4> by user <tatianas> in cluster <server> at Wed Nov 11 09:20:13 2026
+Job was executed on host(s) <1*cn114>, in queue <short>, as user <tatianas> in cluster <server> at Wed Nov 11 09:20:14 2026
+                            <1*cn120>
+                            <2*cn779>
+<tatianas> was used as the home directory.
+<tatianas/microbacterium_analysis> was used as the working directory.
+Started at Wed Nov 11 09:20:14 2026
+Terminated at Wed Nov 11 09:21:27 2026
+Results reported at Wed Nov 11 09:21:27 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# ABRicate rerun at the lowest coverage threshold (EFSA WGS statement 2024, section 2.5.3):
+# 4 AMR databases + VFDB, --minid 80 --mincov 1 so that fragments (>=80% identity, <70% coverage) are also reported.
+# Submit from the microbacterium_analysis folder:   mkdir -p abricate_lowcov && bsub < run_abricate_lowcov.sh
+#
+#BSUB -J abricate_lowcov
+#BSUB -q short
+#BSUB -n 4
+#BSUB -R "rusage[mem=4096]"
+#BSUB -M 4096
+#BSUB -o abricate_lowcov/abricate_lowcov.%J.out
+#BSUB -e abricate_lowcov/abricate_lowcov.%J.err
+
+set -uo pipefail
+cd "$LS_SUBCWD" 2>/dev/null || cd "$(dirname "$0")"
+
+OUT=abricate_lowcov
+ASM=Microbacterium_arborescens_spp._assembled_genome.fasta
+# Optional: unfiltered SPAdes contigs (to also screen the contigs removed by the post-assembly filter); leave empty to skip.
+SPADES_ALL=
+MINID=80
+MINCOV=1
+DBS="ncbi card argannot resfinder vfdb"
+
+mkdir -p "$OUT"
+# the "abricate" conda environment must be active when you submit (bsub keeps your environment)
+which abricate || { echo "ERROR: abricate not found, run 'conda activate abricate' before bsub"; exit 1; }
+
+run_set () {   # $1 = fasta, $2 = label
+  for db in $DBS; do
+    abricate --db $db --minid $MINID --mincov $MINCOV --threads 4 "$1" > "$OUT/abricate_${db}_$2.txt"
+  done
+}
+run_set "$ASM" assembly
+if [ -n "$SPADES_ALL" ] && [ -s "$SPADES_ALL" ]; then run_set "$SPADES_ALL" all_spades_contigs; fi
+
+{
+  echo "ABRicate low-coverage rerun"
+  echo "Run date : $(date +%Y-%m-%d)"
+  echo "Version  : $(abricate --version)"
+  echo "Command  : abricate --db <db> --minid $MINID --mincov $MINCOV <fasta>"
+  echo "Databases:"; abricate --list | awk 'NR==1 || /ncbi|card|argannot|resfinder|vfdb/'
+} > "$OUT/abricate_run_info.txt"
+
+# ---- summary: hits meeting 80/70, and fragments below 70% coverage ----
+SUM="$OUT/abricate_lowcov_summary.txt"
+{
+  echo "Hits per database (rows in the raw files, excluding header), identity >= $MINID, coverage >= $MINCOV%"
+  for f in "$OUT"/abricate_*_assembly.txt; do
+    n=$(tail -n +2 "$f" | wc -l)
+
+(... more ...)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   45.81 sec.
+    Max Memory :                                 69 MB
+    Average Memory :                             39.46 MB
+    Total Requested Memory :                     16384.00 MB
+    Delta Memory :                               16315.00 MB
+    Max Swap :                                   -
+    Max Processes :                              9
+    Max Threads :                                17
+    Run time :                                   72 sec.
+    Turnaround time :                            74 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <abricate_lowcov/abricate_lowcov.634654.err> for stderr output of this job.
+

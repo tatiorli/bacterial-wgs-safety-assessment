@@ -1,0 +1,59 @@
+Test                           Overall rate   Pairs aligned conc. 1x Pairs aligned conc. >1x
+A_geneious_like                17.59%         9.22%                  0.50%                 
+B_end_to_end_very_sensitive    57.74%         46.31%                 0.59%                 
+C_local_very_sensitive         78.49%         74.33%                 2.32%                 
+
+------------------------------------------------------------
+Sender: LSF System <DoNotReply>
+Subject: Job 634882: <bt2_collect> in cluster <server> Done
+
+Job <bt2_collect> was submitted from host <login4> by user <tatianas> in cluster <server> at Wed Nov 11 09:21:45 2026
+Job was executed on host(s) <cn460>, in queue <short>, as user <tatianas> in cluster <server> at Wed Nov 11 09:31:45 2026
+<tatianas> was used as the home directory.
+<tatianas/microbacterium_analysis> was used as the working directory.
+Started at Wed Nov 11 09:31:45 2026
+Terminated at Wed Nov 11 09:31:55 2026
+Results reported at Wed Nov 11 09:31:55 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+cd "tatianas/microbacterium_analysis/bowtie2_tests"
+{
+  printf "%-30s %-14s %-22s %-22s\n" "Test" "Overall rate" "Pairs aligned conc. 1x" "Pairs aligned conc. >1x"
+  for f in A_*_report.txt B_*_report.txt C_*_report.txt; do
+    n=${f%%_bowtie2_report.txt}
+    ov=$(grep "overall alignment rate" $f | awk '{print $1}')
+    c1=$(grep "aligned concordantly exactly 1 time" $f | sed 's/.*(\(.*\)).*/\1/')
+    c2=$(grep "aligned concordantly >1 times" $f | sed 's/.*(\(.*\)).*/\1/')
+    printf "%-30s %-14s %-22s %-22s\n" "$n" "$ov" "$c1" "$c2"
+  done
+} > comparison.txt
+cat comparison.txt
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   5.60 sec.
+    Max Memory :                                 19 MB
+    Average Memory :                             16.50 MB
+    Total Requested Memory :                     1024.00 MB
+    Delta Memory :                               1005.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   12 sec.
+    Turnaround time :                            610 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <bowtie2_tests/collect.634882.err> for stderr output of this job.
+

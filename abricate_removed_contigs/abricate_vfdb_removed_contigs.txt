@@ -1,0 +1,2 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+abricate_removed_contigs/removed_contigs.fasta	NODE_176_length_248_cov_0.789474	1	248	+	espX1	293-540/1422	...===.........	0/0	17.44	93.95	vfdb	NP_285716	(espX1) Type III secretion system effector EspX1 [LEE encoded T3SS (SS020)] [Escherichia coli O157:H7 str. EDL933]	

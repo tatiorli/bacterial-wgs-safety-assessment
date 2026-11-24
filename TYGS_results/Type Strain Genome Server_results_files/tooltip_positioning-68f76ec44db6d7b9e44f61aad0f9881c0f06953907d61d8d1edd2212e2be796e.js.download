@@ -1,0 +1,48 @@
+(function () {
+  const tooltipSelector = ".tooltip-trigger[data-title]";
+  const placementClass = "tooltip-placement-left";
+
+  function positionTooltip(trigger) {
+    const rect = trigger.getBoundingClientRect();
+    const rootFontSize = parseFloat(
+      window.getComputedStyle(document.documentElement).fontSize
+    );
+    const gap = rootFontSize * 0.6;
+    const viewportInset = rootFontSize;
+    const desiredWidth = Math.min(
+      rootFontSize * 32,
+      window.innerWidth - viewportInset * 2
+    );
+    const leftSpace = Math.max(0, rect.left - gap - viewportInset);
+    const rightSpace = Math.max(
+      0,
+      window.innerWidth - rect.right - gap - viewportInset
+    );
+    const placeLeft = rightSpace < desiredWidth && leftSpace > rightSpace;
+    const availableWidth = placeLeft ? leftSpace : rightSpace;
+
+    trigger.classList.toggle(placementClass, placeLeft);
+    trigger.style.setProperty(
+      "--tooltip-available-width",
+      `${availableWidth}px`
+    );
+  }
+
+  function positionFromEvent(event) {
+    if (!(event.target instanceof Element)) return;
+
+    const trigger = event.target.closest(tooltipSelector);
+    if (trigger) positionTooltip(trigger);
+  }
+
+  function positionAllTooltips() {
+    document.querySelectorAll(tooltipSelector).forEach(positionTooltip);
+  }
+
+  document.addEventListener("pointerover", positionFromEvent);
+  document.addEventListener("focusin", positionFromEvent);
+  document.addEventListener("DOMContentLoaded", positionAllTooltips);
+  document.addEventListener("turbolinks:load", positionAllTooltips);
+  window.addEventListener("resize", positionAllTooltips);
+  window.addEventListener("scroll", positionAllTooltips, true);
+})();

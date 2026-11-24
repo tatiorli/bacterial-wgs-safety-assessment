@@ -1,0 +1,21 @@
+Test      : C_local_very_sensitive
+Settings  : local alignment (soft-clipping), very sensitive-local, max insert 800
+Command   : bowtie2 -x SSF12 -1 reads_R1.fastq.gz -2 reads_R2.fastq.gz -p 8 --local --very-sensitive-local --maxins 800
+Bowtie2   : /apps/easybd/easybuild/amd/software/Bowtie2/2.5.1-GCC-12.3.0/bin/bowtie2-align-s version 2.5.1
+Run date  : 2026-11-11
+----------
+8136166 reads; of these:
+  8136166 (100.00%) were paired; of these:
+    1899354 (23.34%) aligned concordantly 0 times
+    6047719 (74.33%) aligned concordantly exactly 1 time
+    189093 (2.32%) aligned concordantly >1 times
+    ----
+    1899354 pairs aligned concordantly 0 times; of these:
+      43432 (2.29%) aligned discordantly 1 time
+    ----
+    1855922 pairs aligned 0 times concordantly or discordantly; of these:
+      3711844 mates make up the pairs; of these:
+        3500646 (94.31%) aligned 0 times
+        197043 (5.31%) aligned exactly 1 time
+        14155 (0.38%) aligned >1 times
+78.49% overall alignment rate

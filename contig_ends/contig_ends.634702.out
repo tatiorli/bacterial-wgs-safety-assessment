@@ -1,0 +1,160 @@
+Contig links (pairs, contigA, contigB):
+20745	NODE_1_length_1475171_cov_354.830449	NODE_2_length_676389_cov_354.803251
+15144	NODE_1_length_1475171_cov_354.830449	NODE_3_length_491278_cov_352.009914
+8663	NODE_1_length_1475171_cov_354.830449	NODE_4_length_275063_cov_365.955049
+6872	NODE_2_length_676389_cov_354.803251	NODE_3_length_491278_cov_352.009914
+6514	NODE_1_length_1475171_cov_354.830449	NODE_5_length_178176_cov_341.842385
+4688	NODE_1_length_1475171_cov_354.830449	NODE_6_length_134275_cov_361.180815
+4066	NODE_2_length_676389_cov_354.803251	NODE_4_length_275063_cov_365.955049
+3960	NODE_2_length_676389_cov_354.803251	NODE_5_length_178176_cov_341.842385
+2907	NODE_3_length_491278_cov_352.009914	NODE_4_length_275063_cov_365.955049
+2289	NODE_5_length_178176_cov_341.842385	NODE_9_length_5256_cov_1097.375555
+1767	NODE_2_length_676389_cov_354.803251	NODE_6_length_134275_cov_361.180815
+1744	NODE_3_length_491278_cov_352.009914	NODE_5_length_178176_cov_341.842385
+1488	NODE_2_length_676389_cov_354.803251	NODE_9_length_5256_cov_1097.375555
+1410	NODE_3_length_491278_cov_352.009914	NODE_6_length_134275_cov_361.180815
+1275	NODE_4_length_275063_cov_365.955049	NODE_6_length_134275_cov_361.180815
+1110	NODE_3_length_491278_cov_352.009914	NODE_9_length_5256_cov_1097.375555
+1108	NODE_4_length_275063_cov_365.955049	NODE_5_length_178176_cov_341.842385
+914	NODE_4_length_275063_cov_365.955049	NODE_7_length_24482_cov_367.297439
+813	NODE_1_length_1475171_cov_354.830449	NODE_7_length_24482_cov_367.297439
+625	NODE_3_length_491278_cov_352.009914	NODE_7_length_24482_cov_367.297439
+497	NODE_5_length_178176_cov_341.842385	NODE_6_length_134275_cov_361.180815
+374	NODE_1_length_1475171_cov_354.830449	NODE_9_length_5256_cov_1097.375555
+366	NODE_2_length_676389_cov_354.803251	NODE_7_length_24482_cov_367.297439
+97	NODE_5_length_178176_cov_341.842385	NODE_7_length_24482_cov_367.297439
+76	NODE_7_length_24482_cov_367.297439	NODE_8_length_18736_cov_24.231792
+66	NODE_4_length_275063_cov_365.955049	NODE_8_length_18736_cov_24.231792
+58	NODE_6_length_134275_cov_361.180815	NODE_7_length_24482_cov_367.297439
+54	NODE_4_length_275063_cov_365.955049	NODE_9_length_5256_cov_1097.375555
+34	NODE_1_length_1475171_cov_354.830449	NODE_8_length_18736_cov_24.231792
+22	NODE_6_length_134275_cov_361.180815	NODE_9_length_5256_cov_1097.375555
+18	NODE_2_length_676389_cov_354.803251	NODE_8_length_18736_cov_24.231792
+14	NODE_3_length_491278_cov_352.009914	NODE_8_length_18736_cov_24.231792
+10	NODE_7_length_24482_cov_367.297439	NODE_9_length_5256_cov_1097.375555
+4	NODE_6_length_134275_cov_361.180815	NODE_8_length_18736_cov_24.231792
+2	NODE_5_length_178176_cov_341.842385	NODE_8_length_18736_cov_24.231792
+
+Depth at contig ends:
+contig                                length   mean_depth  mean_depth_first500  mean_depth_last500
+NODE_1_length_1475171_cov_354.830449  1475171  743         837                  818
+NODE_2_length_676389_cov_354.803251   676389   743         699                  939
+NODE_3_length_491278_cov_352.009914   491278   738         583                  806
+NODE_4_length_275063_cov_365.955049   275063   767         747                  623
+NODE_5_length_178176_cov_341.842385   178176   716         739                  1421
+NODE_6_length_134275_cov_361.180815   134275   756         578                  683
+NODE_7_length_24482_cov_367.297439    24482    768         803                  776
+NODE_8_length_18736_cov_24.231792     18736    50          39                   54
+NODE_9_length_5256_cov_1097.375555    5256     2227        1977                 2353
+
+Mapping report:
+8136166 reads; of these:
+  8136166 (100.00%) were paired; of these:
+    408957 (5.03%) aligned concordantly 0 times
+    7687991 (94.49%) aligned concordantly exactly 1 time
+    39218 (0.48%) aligned concordantly >1 times
+    ----
+    408957 pairs aligned concordantly 0 times; of these:
+      358720 (87.72%) aligned discordantly 1 time
+    ----
+    50237 pairs aligned 0 times concordantly or discordantly; of these:
+      100474 mates make up the pairs; of these:
+        50652 (50.41%) aligned 0 times
+        47076 (46.85%) aligned exactly 1 time
+        2746 (2.73%) aligned >1 times
+99.69% overall alignment rate
+DONE
+
+------------------------------------------------------------
+Sender: LSF System <DoNotReply>
+Subject: Job 634702: <contig_ends> in cluster <server> Done
+
+Job <contig_ends> was submitted from host <login4> by user <tatianas> in cluster <server> at Wed Nov 11 09:20:20 2026
+Job was executed on host(s) <8*cn788>, in queue <short>, as user <tatianas> in cluster <server> at Wed Nov 11 09:20:21 2026
+<tatianas> was used as the home directory.
+<tatianas/microbacterium_analysis> was used as the working directory.
+Started at Wed Nov 11 09:20:21 2026
+Terminated at Wed Nov 11 09:29:18 2026
+Results reported at Wed Nov 11 09:29:18 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# Do the reads still link or extend the contig ends?  (evidence for "cannot be closed with these reads")
+# Maps the reads back to the assembly, then reports for every contig end: read-pairs bridging to other contigs,
+# soft-clipped/unpaired reads, and depth in the last 500 bp. Also exports files to look at in IGV and Bandage.
+# Submit from the microbacterium_analysis folder:   mkdir -p contig_ends && bsub < check_contig_ends.sh
+#
+#BSUB -J contig_ends
+#BSUB -q short
+#BSUB -n 8
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=8192]"
+#BSUB -M 8192
+#BSUB -o contig_ends/contig_ends.%J.out
+#BSUB -e contig_ends/contig_ends.%J.err
+
+set -euo pipefail
+cd "$LS_SUBCWD" 2>/dev/null || cd "$(dirname "$0")"
+OUT=contig_ends
+ASM=Microbacterium_arborescens_spp._assembled_genome.fasta
+R1=reads_R1.fastq.gz; R2=reads_R2.fastq.gz
+
+module load Bowtie2/2.5.1-GCC-12.3.0
+bowtie2-build --threads 8 "$ASM" $OUT/asm > $OUT/build.log 2>&1
+bowtie2 -x $OUT/asm -1 $R1 -2 $R2 -p 8 --end-to-end --very-sensitive -S $OUT/asm.sam 2> $OUT/mapping_report.txt
+
+module purge
+module load SAMtools/1.21-GCC-13.2.0
+samtools faidx "$ASM"
+samtools sort -@ 8 -o $OUT/asm.sorted.bam $OUT/asm.sam && samtools index $OUT/asm.sorted.bam && rm $OUT/asm.sam
+
+# 1) pairs whose mates map on different contigs (links between contigs), MAPQ>=20
+samtools view -q 20 -F 0x904 $OUT/asm.sorted.bam | awk '$7!="=" && $7!="*"{k=($3<$7)?$3"\t"$7:$7"\t"$3; n[k]++} END{for(k in n) print n[k]"\t"k}' \
+  | sort -k1,1nr > $OUT/links_between_contigs.tsv
+
+# 2) per contig end: depth in last 500 bp and number of pairs linking out of the contig from that end
+samtools depth -a $OUT/asm.sorted.bam > $OUT/depth.tsv
+{
+ printf "contig\tlength\tmean_depth\tmean_depth_first500\tmean_depth_last500\n"
+ while read c l rest; do
+   awk -v c=$c -v l=$l 'BEGIN{OFS="\t"} $1==c{t+=$3;n++; if($2<=500){a+=$3;na++} if($2>l-500){b+=$3;nb++}} END{printf "%s\t%d\t%.0f\t%.0f\t%.0f\n",c,l,t/n,a/na,b/nb}' $OUT/depth.tsv
+ done < "$ASM.fai"
+} > $OUT/depth_at_contig_ends.tsv
+
+# 3) reads with large soft-clips (unmatched sequence) at contig ends, i.e. where the assembly stops but reads continue
+samtools view $OUT/asm.sorted.bam | awk '$6 ~ /^[0-9]+S/ || $6 ~ /[0-9]+S$/{print $3}' | sort | uniq -c | sort -k1,1nr > $OUT/softclipped_reads_per_contig.txt
+
+{
+ echo "Contig links (pairs, contigA, contigB):"; cat $OUT/links_between_contigs.tsv; echo
+ echo "Depth at contig ends:"; column -t $OUT/depth_at_contig_ends.tsv; echo
+ echo "Mapping report:"; cat $OUT/mapping_report.txt
+
+(... more ...)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   3486.97 sec.
+    Max Memory :                                 6402 MB
+    Average Memory :                             458.69 MB
+    Total Requested Memory :                     65536.00 MB
+    Delta Memory :                               59134.00 MB
+    Max Swap :                                   -
+    Max Processes :                              9
+    Max Threads :                                17
+    Run time :                                   538 sec.
+    Turnaround time :                            538 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <contig_ends/contig_ends.634702.err> for stderr output of this job.
+

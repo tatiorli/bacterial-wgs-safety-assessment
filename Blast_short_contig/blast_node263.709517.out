@@ -1,0 +1,110 @@
+Start: Thu Nov 12 13:23:37 IST 2026
+blastn: 2.15.0+
+ Package: blast 2.15.0, build Jan 23 2024 09:26:37
+Hits: 100
+Top 15 hits (identity, aln length, query range, e-value, organism | description):
+99.355%	155	1-155	5.93e-71	Microbacterium imperiale | Microbacterium imperiale JCM 1378 DNA, complete genome
+99.355%	155	1-155	5.93e-71	Microbacterium paludicola | Microbacterium paludicola strain CC3 chromosome, complete genome
+99.355%	155	1-155	5.93e-71	Microbacterium sp. SGAir0570 | Microbacterium sp. SGAir0570 chromosome, complete genome
+99.355%	155	1-155	5.93e-71	Microbacterium arborescens | Microbacterium arborescens strain SSF12 chromosome, complete genome
+97.436%	156	1-155	5.98e-66	Microbacterium sp. BDGP8 | Microbacterium sp. BDGP8 chromosome, complete genome
+97.436%	156	1-155	5.98e-66	Microbacterium plantarum | Microbacterium plantarum strain CoE-159-22 chromosome, complete genome
+97.436%	156	1-155	5.98e-66	Microbacterium pratiae | Microbacterium sp. 2P06AB chromosome
+96.795%	156	1-155	2.78e-64	Microbacterium oleivorans | Microbacterium oleivorans strain I46 chromosome, complete genome
+96.774%	155	1-155	1.00e-63	Microbacterium oleivorans | Microbacterium oleivorans strain A9 chromosome, complete genome
+96.774%	155	1-155	1.00e-63	Microbacterium phoenicis | Microbacterium sp. 1P06AB chromosome
+96.774%	155	1-155	1.00e-63	Microbacterium sp. LKL04 | Microbacterium sp. LKL04 genome assembly, chromosome: I
+96.774%	155	1-155	1.00e-63	Microbacterium sp. MM2322 | Microbacterium sp. MM2322 isolate Microbacterium MM2322 assembly genome assembly, chromoso
+98.611%	144	1-144	3.60e-63	Candidatus Microbacterium phytovorans | MAG: Candidatus Microbacterium phytovorans isolate MAG_4610 chromosome, complete genome
+95.484%	155	1-155	6.02e-61	Microbacterium terricola | Microbacterium terricola KV-448 DNA, complete genome
+95.484%	155	1-155	6.02e-61	Microbacterium terricola | Microbacterium terricola strain JCM 14903 chromosome, complete genome
+Done: Thu Nov 12 16:54:45 IST 2026
+
+------------------------------------------------------------
+Sender: LSF System <DoNotReply>
+Subject: Job 709517: <blast_node263> in cluster <server> Done
+
+Job <blast_node263> was submitted from host <login4> by user <tatianas> in cluster <server> at Thu Nov 12 13:23:20 2026
+Job was executed on host(s) <1*cn844>, in queue <short>, as user <tatianas> in cluster <server> at Thu Nov 12 13:23:23 2026
+                            <1*cn402>
+                            <2*cn760>
+<tatianas> was used as the home directory.
+<tatianas/microbacterium_analysis> was used as the working directory.
+Started at Thu Nov 12 13:23:23 2026
+Terminated at Thu Nov 12 16:54:46 2026
+Results reported at Thu Nov 12 16:54:46 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# blastn of the 155 bp removed contig NODE_263 (535x coverage, at the rRNA operon junction) against the NCBI nt database.
+# Same setup as your working BLAST jobs (Safe_pipeline/verification/blast_agreement/submit_blast_jobs.sh):
+#   module BLAST+/2.15.0-gompi-2023a, db /shareDB/blastdb/nt/latest/nt, taxdb.btd/.bti found through BLASTDB (copied into this folder),
+#   -use_index false, -max_hsps 1, outfmt 6 std + staxid sskingdoms sscinames sblastnames (+ stitle = description / gene name).
+# Submit from the microbacterium_analysis folder:   bsub < Blast_short_contig/run_blast_node263.sh
+#
+#BSUB -J blast_node263
+#BSUB -q short
+#BSUB -n 4
+#BSUB -R "rusage[mem=16000]"
+#BSUB -o Blast_short_contig/blast_node263.%J.out
+#BSUB -e Blast_short_contig/blast_node263.%J.err
+
+set -uo pipefail
+cd "$LS_SUBCWD" 2>/dev/null || cd "$(dirname "$0")/.."
+module purge 2>/dev/null || true
+module load BLAST+/2.15.0-gompi-2023a
+
+OUT=Blast_short_contig
+QUERY=$OUT/NODE_263_removed_contig.fasta
+DB=/shareDB/blastdb/nt/latest/nt
+export BLASTDB="$PWD/$OUT${BLASTDB:+:$BLASTDB}"     # folder with taxdb.btd and taxdb.bti
+[ -s $OUT/taxdb.btd ] && [ -s $OUT/taxdb.bti ] || { echo "ERROR: taxdb.btd/.bti missing in $OUT"; exit 1; }
+
+echo "Start: $(date)"
+blastn -version | head -2
+# one search, saved as an ASN.1 archive, then written in the formats we need
+blastn -query $QUERY -db $DB -use_index false -evalue 1e-5 -max_target_seqs 100 -max_hsps 1 -num_threads 4 \
+       -outfmt 11 -out $OUT/NODE_263_blastn_nt.asn || { echo "ERROR: blastn failed"; exit 1; }
+
+# 1) tabular, with species names (sscinames) and the hit description / gene name (stitle)
+{
+  echo -e "qseqid\tsseqid\tpident\tlength\tmismatch\tgapopen\tqstart\tqend\tsstart\tsend\tevalue\tbitscore\tstaxid\tsskingdoms\tsscinames\tsblastnames\tstitle"
+  blast_formatter -archive $OUT/NODE_263_blastn_nt.asn \
+    -outfmt "6 std staxid sskingdoms sscinames sblastnames stitle"
+} > $OUT/NODE_263_blastn_nt.tsv
+# 2) readable alignments (top 20)
+blast_formatter -archive $OUT/NODE_263_blastn_nt.asn -outfmt 0 -num_alignments 20 > $OUT/NODE_263_blastn_nt_alignments.txt
+
+echo "Hits: $(tail -n +2 $OUT/NODE_263_blastn_nt.tsv | wc -l)"
+echo "Top 15 hits (identity, aln length, query range, e-value, organism | description):"
+tail -n +2 $OUT/NODE_263_blastn_nt.tsv | sort -t$'\t' -k12,12nr | head -15 | awk -F'\t' '{printf "%s%%\t%s\t%s-%s\t%s\t%s | %s\n",$3,$4,$7,$8,$11,$15,substr($17,1,90)}'
+echo "Done: $(date)"
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1935.63 sec.
+    Max Memory :                                 1919 MB
+    Average Memory :                             1058.29 MB
+    Total Requested Memory :                     64000.00 MB
+    Delta Memory :                               62081.00 MB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                10
+    Run time :                                   12684 sec.
+    Turnaround time :                            12686 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <Blast_short_contig/blast_node263.709517.err> for stderr output of this job.
+

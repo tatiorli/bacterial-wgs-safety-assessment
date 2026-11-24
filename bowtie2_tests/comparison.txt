@@ -1,0 +1,4 @@
+Test                           Overall rate   Pairs aligned conc. 1x Pairs aligned conc. >1x
+A_geneious_like                17.59%         9.22%                  0.50%                 
+B_end_to_end_very_sensitive    57.74%         46.31%                 0.59%                 
+C_local_very_sensitive         78.49%         74.33%                 2.32%                 

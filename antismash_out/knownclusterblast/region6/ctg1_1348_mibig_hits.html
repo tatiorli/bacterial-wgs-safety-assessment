@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QDJ94221.1</td>
+              <td>SpzL</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002561.3">BGC0002561.3</a></td>
+              <td>other:other</td>
+              <td>63.0</td>
+              <td>98.0</td>
+              <td>427.0</td>
+              <td>3.46e-150</td>
+          </tr>
+    
+          <tr>
+              <td>CAX48660.1</td>
+              <td>putative_3-hydroxy-3-methylglutaryl-CoA_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001080.5">BGC0001080.5</a></td>
+              <td>other:phenazine</td>
+              <td>65.0</td>
+              <td>98.3</td>
+              <td>426.0</td>
+              <td>1.45e-149</td>
+          </tr>
+    
+          <tr>
+              <td>BAE78981.1</td>
+              <td>3-hydroxy-3-methylglutaryl-CoA_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001078.5">BGC0001078.5</a></td>
+              <td>terpene+PKS</td>
+              <td>65.0</td>
+              <td>96.6</td>
+              <td>423.0</td>
+              <td>1.14e-148</td>
+          </tr>
+    
+          <tr>
+              <td>EWM63039.1</td>
+              <td>hydroxymethylglutaryl-coenzyme_A_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000679.5">BGC0000679.5</a></td>
+              <td>terpene</td>
+              <td>64.0</td>
+              <td>100.3</td>
+              <td>422.0</td>
+              <td>2.22e-148</td>
+          </tr>
+    
+          <tr>
+              <td>AGH68890.1</td>
+              <td>HMG-CoA_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001083.5">BGC0001083.5</a></td>
+              <td>PKS:Type III+terpene:Sesquiterpene</td>
+              <td>65.0</td>
+              <td>96.6</td>
+              <td>422.0</td>
+              <td>4.8e-148</td>
+          </tr>
+    
+          <tr>
+              <td>BAD86804.1</td>
+              <td>3-hydroxy-3-methylglutaryl-CoA_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000286.3">BGC0000286.3</a></td>
+              <td>PKS</td>
+              <td>64.0</td>
+              <td>96.6</td>
+              <td>420.0</td>
+              <td>2.76e-147</td>
+          </tr>
+    
+          <tr>
+              <td>AHW81465.1</td>
+              <td>EpaF</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000934.4">BGC0000934.4</a></td>
+              <td>other:phenazine</td>
+              <td>64.0</td>
+              <td>96.6</td>
+              <td>417.0</td>
+              <td>4.37e-146</td>
+          </tr>
+    
+          <tr>
+              <td>ABS50444.1</td>
+              <td>NapT2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001079.5">BGC0001079.5</a></td>
+              <td>PKS:Type III+terpene:Monoterpene</td>
+              <td>63.0</td>
+              <td>96.6</td>
+              <td>411.0</td>
+              <td>6.04e-144</td>
+          </tr>
+    
+          <tr>
+              <td>AXO35197.1</td>
+              <td>hydroxymethylglutaryl-CoA_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001848.4">BGC0001848.4</a></td>
+              <td>other:other</td>
+              <td>65.0</td>
+              <td>93.7</td>
+              <td>405.0</td>
+              <td>1.04e-141</td>
+          </tr>
+    
+          <tr>
+              <td>ABA02245.1</td>
+              <td>HMG-CoA_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000098.3">BGC0000098.3</a></td>
+              <td>PKS</td>
+              <td>39.0</td>
+              <td>97.7</td>
+              <td>192.0</td>
+              <td>1.88e-54</td>
+          </tr>
+    
+          <tr>
+              <td>AAD34556.1</td>
+              <td>hydroxymethylglutaryl-coenzyme_A_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000088.4">BGC0000088.4</a></td>
+              <td>PKS</td>
+              <td>38.0</td>
+              <td>97.7</td>
+              <td>191.0</td>
+              <td>9.04e-54</td>
+          </tr>
+    
+          <tr>
+              <td>BAC20567.1</td>
+              <td>HMG-CoA_reductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000039.3">BGC0000039.3</a></td>
+              <td>PKS</td>
+              <td>37.0</td>
+              <td>98.9</td>
+              <td>186.0</td>
+              <td>2.89e-52</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

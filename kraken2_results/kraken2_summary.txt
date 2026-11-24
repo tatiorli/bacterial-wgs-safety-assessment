@@ -1,0 +1,25 @@
+Kraken2 read-contamination screen
+Run date            : 2026-11-10
+Kraken2 version     : Kraken version 2.1.2
+Database            : https://genome-idx.s3.amazonaws.com/kraken/k2_standard_08gb_20240904.tar.gz
+Database downloaded : 2026-11-10
+Command             : kraken2 --db <Standard-8> --threads 8 --paired --gzip-compressed --confidence 0.0 --use-names reads_R1.fastq.gz reads_R2.fastq.gz
+Read pairs analysed : 8136166
+Unclassified pairs  : 449894 (5.53%)
+
+Top 15 species (percent of read pairs | pairs in clade | species):
+ 16.26%	1322944	Microbacterium paludicola
+ 15.08%	1227204	Microbacterium sp. SGAir0570
+  0.54%	43916	Microbacterium arborescens
+  0.44%	35731	Microbacterium sp. AISO3
+  0.23%	19063	Microbacterium sp. BDGP8
+  0.19%	15392	Microbacterium plantarum
+  0.18%	14850	Microbacterium oleivorans
+  0.03%	2760	Homo sapiens
+  0.02%	1769	Microbacterium sp. LKL04
+  0.02%	1763	Microbacterium sp. No. 7
+  0.02%	1706	Microbacterium sp. zg-Y1090
+  0.02%	1594	Microbacterium sp. 10M-3C3
+  0.02%	1404	Microbacterium wangchenii
+  0.02%	1341	Microbacterium testaceum
+  0.02%	1330	Microbacterium sp. zg-Y818

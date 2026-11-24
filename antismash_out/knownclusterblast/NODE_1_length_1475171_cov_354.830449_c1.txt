@@ -1,0 +1,115 @@
+ClusterBlast scores for NODE_1_length_1475171_cov_354.830449
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg1_4	3094	3814	-		
+ctg1_5	4144	6013	+		
+ctg1_6	6015	6642	+		
+ctg1_7	6653	7658	+		
+ctg1_8	7750	8200	+		
+ctg1_9	8372	9257	+		
+ctg1_10	9342	9936	-		
+ctg1_11	10127	11342	+		
+ctg1_12	11344	12451	+		
+ctg1_13	12380	12629	-		
+ctg1_14	12712	13756	+		
+ctg1_15	13752	14790	+		
+ctg1_16	14854	17083	+		
+ctg1_17	17252	17483	-		
+ctg1_18	17796	19494	+		
+ctg1_19	19553	20378	+		
+ctg1_20	20386	21544	-		
+ctg1_21	21536	22235	-		
+ctg1_22	22225	23443	-		
+ctg1_23	23546	24128	-		
+ctg1_24	24262	24652	+		
+ctg1_25	24704	25793	-		
+ctg1_26	25789	26686	-		
+ctg1_27	26805	28170	-		
+ctg1_28	28193	28958	-		
+ctg1_29	28954	29863	-		
+ctg1_30	29982	31026	-		
+ctg1_31	31107	32919	+		
+ctg1_32	33085	34327	+		
+ctg1_33	34331	35030	-		
+ctg1_34	35026	36313	-		
+ctg1_35	36385	37225	-		
+ctg1_36	37288	37783	+		
+ctg1_37	37824	38403	+		
+ctg1_38	38516	39410	+		
+ctg1_39	39422	39608	+		
+ctg1_40	39613	40012	-		
+ctg1_41	40088	40499	+		
+ctg1_42	40524	40710	-		
+ctg1_43	40709	40826	-		
+ctg1_44	40822	41632	-		
+ctg1_45	41674	42637	+		
+ctg1_46	42643	43282	-		
+
+
+Significant hits: 
+1. BGC0000699.5	hygromycin A
+2. BGC0000074.5	herbimycin A
+3. BGC0000973.5	collismycin A
+4. BGC0001590.5	formicamycin A/formicamycin B/formicamycin C/formicamycin D/formicamycin E/formicamycin F/formicamycin G/formicamycin H/formicamycin I/formicamycin J/formicamycin K/formicamycin L/formicamycin M/fasamycin C/fasamycin D/fasamycin E
+
+
+Details:
+
+>>
+1. BGC0000699.5
+Source: hygromycin A
+Type: saccharide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 501.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_28	CAF31834.1	52	223	96.06299212598425	2.38e-72
+ctg1_29	CAF31833.1	52	278	96.35761589403974	2.5e-92
+
+
+
+>>
+2. BGC0000074.5
+Source: herbimycin A
+Type: PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 444.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_28	AAY28215.1	46	202	98.81889763779527	1.46e-64
+ctg1_29	AAY28216.1	49	242	96.02649006622516	3.74e-78
+
+
+
+>>
+3. BGC0000973.5
+Source: collismycin A
+Type: NRPS:Type I+PKS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 422.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_28	CCC55907.1	50	193	88.9763779527559	4.98e-61
+ctg1_29	CCC55906.1	46	229	98.01324503311258	2.59e-73
+
+
+
+>>
+4. BGC0001590.5
+Source: formicamycin A/formicamycin B/formicamycin C/formicamycin D/formicamycin E/formicamycin F/formicamycin G/formicamycin H/formicamycin I/formicamycin J/formicamycin K/formicamycin L/formicamycin M/fasamycin C/fasamycin D/fasamycin E
+Type: PKS:Type II aromatic
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 439.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_33	forBB	50	188	95.25862068965517	6.14e-60
+ctg1_35	forO	49	251	96.05734767025089	2.46e-83
+

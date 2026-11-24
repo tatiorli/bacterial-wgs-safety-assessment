@@ -1,0 +1,11 @@
+ABRicate low-coverage rerun
+Run date : 2026-11-11
+Version  : abricate 1.0.1
+Command  : abricate --db <db> --minid 80 --mincov 1 <fasta>
+Databases:
+DATABASE	SEQUENCES	DBTYPE	DATE
+resfinder	3077	nucl	2025-Jan-14
+card	2631	nucl	2025-Jan-14
+argannot	2223	nucl	2025-Jan-14
+vfdb	2597	nucl	2025-Jan-14
+ncbi	5386	nucl	2025-Jan-14

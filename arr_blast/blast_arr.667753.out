@@ -1,0 +1,154 @@
+arr reference sequences: 20
+>card~card~~~arr-1~~~AF001493:0-432~~~rifamycin arr-1 is a chromosome-encoded ribosyltransferase found in Mycolicibacter
+>card~card~~~arr-2~~~AF078527:4387-4840~~~rifamycin arr-2 is an integron-encoded ribosyltransferase found in Pseudomonas
+>card~card~~~arr-3~~~EU675686:1956-2409~~~rifamycin arr-3 is a plasmid-encoded ribosyltransferase found in Vibrio fluvia
+>card~card~~~arr-4~~~EF660562:1671-2124~~~rifamycin arr-4 is an integron-encoded ribosyltransferase found in Pseudomonas
+>card~card~~~arr-5~~~EF660563:392-845~~~rifamycin arr-5 is an integron-encoded ribosyltransferase found in Pseudomonas a
+>card~card~~~arr-7~~~FN397623:1188-1641~~~rifamycin arr-7 is an integron-encoded ribosyltransferase found in Pseudomonas
+>card~card~~~arr-8~~~KC199968:0-453~~~rifamycin arr-8 is an integron-encoded ribosyltransferase found in Klebsiella oxyt
+>ncbi~ncbi~~~arr~~~NG_047478.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase
+>ncbi~ncbi~~~arr-2~~~NG_048580.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-2
+>ncbi~ncbi~~~arr-269927220~~~NG_047480.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase
+>ncbi~ncbi~~~arr-3~~~NG_052173.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-3
+>ncbi~ncbi~~~arr-3~~~NG_052327.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-3
+>ncbi~ncbi~~~arr-3~~~NG_048581.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-3
+>ncbi~ncbi~~~arr-4~~~NG_048582.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-4
+>ncbi~ncbi~~~arr-5~~~NG_048583.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-5
+>ncbi~ncbi~~~arr-6~~~NG_047479.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-6
+>ncbi~ncbi~~~arr-6~~~NG_048584.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-6
+>ncbi~ncbi~~~arr-7~~~NG_048585.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-7
+>ncbi~ncbi~~~arr-8~~~NG_048586.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-8
+>ncbi~ncbi~~~arr-Ms~~~NG_047477.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase
+Query: 408 bp
+query                                               subject                                              protein_identity_%  aln_len_aa  query_len_nt  subject_len_nt  query_coverage_%  subject_coverage_%  evalue    bitsc
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  card~card~~~arr-4~~~EF660562:1671-2124~~~rifamycin   58.0                69          408           453             51                46                  1.20e-42  105
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  ncbi~ncbi~~~arr-4~~~NG_048582.1~~~RIFAMYCIN          58.0                69          408           453             51                46                  1.20e-42  105
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  card~card~~~arr-5~~~EF660563:392-845~~~rifamycin     54.3                70          408           453             51                46                  2.52e-40  104
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  ncbi~ncbi~~~arr-5~~~NG_048583.1~~~RIFAMYCIN          54.3                70          408           453             51                46                  2.52e-40  104
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  ncbi~ncbi~~~arr-269927220~~~NG_047480.1~~~RIFAMYCIN  52.8                127         408           414             93                92                  4.75e-42  156
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  card~card~~~arr-7~~~FN397623:1188-1641~~~rifamycin   52.2                69          408           453             51                46                  2.27e-39  93.2
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  ncbi~ncbi~~~arr-7~~~NG_048585.1~~~RIFAMYCIN          52.2                69          408           453             51                46                  2.27e-39  93.2
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  card~card~~~arr-1~~~AF001493:0-432~~~rifamycin       49.6                127         408           432             93                88                  2.30e-41  154
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  ncbi~ncbi~~~arr-Ms~~~NG_047477.1~~~RIFAMYCIN         49.6                127         408           432             93                88                  2.30e-41  154
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  ncbi~ncbi~~~arr-6~~~NG_047479.1~~~RIFAMYCIN          47.7                86          408           453             63                57                  4.72e-40  105
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  ncbi~ncbi~~~arr-6~~~NG_048584.1~~~RIFAMYCIN          47.7                86          408           453             63                57                  4.72e-40  105
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  card~card~~~arr-8~~~KC199968:0-453~~~rifamycin       46.5                86          408           453             63                57                  7.15e-41  105
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  ncbi~ncbi~~~arr-8~~~NG_048586.1~~~RIFAMYCIN          46.5                86          408           453             63                57                  7.15e-41  105
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  card~card~~~arr-2~~~AF078527:4387-4840~~~rifamycin   44.2                86          408           453             63                57                  4.72e-40  100
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  ncbi~ncbi~~~arr-2~~~NG_048580.1~~~RIFAMYCIN          44.2                86          408           453             63                57                  4.72e-40  100
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  ncbi~ncbi~~~arr-3~~~NG_052327.1~~~RIFAMYCIN          44.2                86          408           453             63                57                  8.85e-40  100
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  ncbi~ncbi~~~arr~~~NG_047478.1~~~RIFAMYCIN            44.2                86          408           453             63                57                  3.11e-39  100
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  card~card~~~arr-3~~~EU675686:1956-2409~~~rifamycin   43.0                86          408           453             63                57                  1.21e-39  99.6
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  ncbi~ncbi~~~arr-3~~~NG_048581.1~~~RIFAMYCIN          43.0                86          408           453             63                57                  1.21e-39  99.6
+KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp  ncbi~ncbi~~~arr-3~~~NG_052173.1~~~RIFAMYCIN          41.9                86          408           453             63                57                  1.50e-38  95.9
+
+Neighbouring genes (* = arr-like gene):
+ contig_1	961357..962694	KFAPLB_04560	type I glutamate--ammonia ligase
+ contig_1	962699..965689	KFAPLB_04565	bifunctional [glutamine synthetase]
+ contig_1	965698..966600	KFAPLB_04570	DUF808 domain-containing protein
+ contig_1	complement(966604..966747)	KFAPLB_04575	GTP pyrophosphokinase
+ contig_1	966945..967643	KFAPLB_04580	AB hydrolase-1 domain-containing protein
+ contig_1	967640..968311	KFAPLB_04585	Putative acetyltransferase
+*contig_1	complement(968318..968725)	KFAPLB_04590	NAD( )--rifampin ADP-ribosyltransferase
+ contig_1	complement(968835..970259)	KFAPLB_04595	type I glutamate--ammonia ligase
+ contig_1	970393..970827	KFAPLB_04600	RDD domain-containing protein
+ contig_1	complement(970855..971565)	KFAPLB_04605	DUF4191 domain-containing protein
+ contig_1	971686..973005	KFAPLB_04610	Type VII secretion-associated protein
+ contig_1	complement(973024..974757)	KFAPLB_04615	2-oxoglutarate dehydrogenase, E2 component,
+ contig_1	complement(974822..976192)	KFAPLB_04620	dihydrolipoyl dehydrogenase
+DONE
+
+------------------------------------------------------------
+Sender: LSF System <DoNotReply>
+Subject: Job 667753: <blast_arr> in cluster <server> Done
+
+Job <blast_arr> was submitted from host <login4> by user <tatianas> in cluster <server> at Wed Nov 11 12:38:04 2026
+Job was executed on host(s) <1*cn782>, in queue <short>, as user <tatianas> in cluster <server> at Wed Nov 11 12:38:11 2026
+                            <1*hgn17>
+<tatianas> was used as the home directory.
+<tatianas/microbacterium_analysis> was used as the working directory.
+Started at Wed Nov 11 12:38:11 2026
+Terminated at Wed Nov 11 12:38:24 2026
+Results reported at Wed Nov 11 12:38:24 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# Is the arr-like gene (Bakta KFAPLB_04590, contig_1:968318-968725, minus strand) a real arr gene?
+# ABRicate matched only 129 bp (29.9% coverage, 80.6% identity).
+# Compares the gene (translated, tblastx) with all arr reference sequences of the ABRicate CARD and NCBI databases,
+# and lists the neighbouring genes (is it next to a mobile element?).
+# Submit from the microbacterium_analysis folder:   mkdir -p arr_blast && bsub < blast_arr.sh
+#
+#BSUB -J blast_arr
+#BSUB -q short
+#BSUB -n 2
+#BSUB -R "rusage[mem=1024]"
+#BSUB -M 1024
+#BSUB -W 00:30
+#BSUB -o arr_blast/blast_arr.%J.out
+#BSUB -e arr_blast/blast_arr.%J.err
+
+set -euo pipefail
+cd "$LS_SUBCWD" 2>/dev/null || cd "$(dirname "$0")"
+OUT=arr_blast
+GB=Assembly_annotated_Microbacterium_arborescens_spp.gb
+ASM=Microbacterium_arborescens_spp._assembled_genome.fasta
+mkdir -p "$OUT"
+source "$(conda info --base)/etc/profile.d/conda.sh"
+export PYTHONNOUSERSITE=1
+
+# 1) arr reference sequences from the ABRicate databases (same version as the screening, 14 Jan 2025)
+conda activate abricate
+ABRDB=$(dirname "$(dirname "$(readlink -f "$(which abricate)")")")/db
+[ -d "$ABRDB/card" ] || ABRDB=$CONDA_PREFIX/db
+for db in card ncbi; do
+  awk -v db=$db 'BEGIN{RS=">";ORS=""} NR>1{h=$0; sub(/\n.*/,"",h); l=tolower(h); if((l ~ /(^|[^a-z])arr[-_ 0-9a-z]*/ && l !~ /array|arrb|barr|carr|parr|tarr/) || l ~ /rifampin adp|rifampicin adp|rifamycin adp/) print ">"db"~"$0}' "$ABRDB/$db/sequences"
+done > $OUT/arr_references.fasta
+echo "arr reference sequences: $(grep -c '>' $OUT/arr_references.fasta)"
+grep '>' $OUT/arr_references.fasta | cut -c1-120 > $OUT/arr_references_list.txt
+cat $OUT/arr_references_list.txt
+
+# 2) the gene itself, cut from the assembly (NODE_1 968318-968725, minus strand -> reverse complement)
+awk '/^>/{p=($1 ~ /^>NODE_1_/); next} p{printf "%s",$0}' "$ASM" > $OUT/node1.seq
+{ echo ">KFAPLB_04590_arr-like_NODE_1:968318-968725_revcomp";
+  cut -c968318-968725 $OUT/node1.seq | rev | tr 'ACGTacgt' 'TGCAtgca' | fold -w 70; } > $OUT/query_KFAPLB_04590.fna
+rm $OUT/node1.seq
+echo "Query: $(grep -v '>' $OUT/query_KFAPLB_04590.fna | tr -d '\n' | wc -c) bp"
+
+# 3) tblastx (both sides translated = protein-level identity)
+conda activate blast
+makeblastdb -in $OUT/arr_references.fasta -dbtype nucl -out $OUT/arr_refdb > /dev/null
+tblastx -query $OUT/query_KFAPLB_04590.fna -db $OUT/arr_refdb -evalue 1e-3 -max_hsps 1 \
+  -outfmt "6 qseqid sseqid pident length qlen slen qstart qend sstart send evalue bitscore" > $OUT/tblastx_arr_raw.tsv
+{
+  echo -e "query\tsubject\tprotein_identity_%\taln_len_aa\tquery_len_nt\tsubject_len_nt\tquery_coverage_%\tsubject_coverage_%\tevalue\tbitscore"
+
+(... more ...)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   4.07 sec.
+    Max Memory :                                 12 MB
+    Average Memory :                             9.50 MB
+    Total Requested Memory :                     2048.00 MB
+    Delta Memory :                               2036.00 MB
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                6
+    Run time :                                   14 sec.
+    Turnaround time :                            20 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <arr_blast/blast_arr.667753.err> for stderr output of this job.
+

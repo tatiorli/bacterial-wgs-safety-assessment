@@ -1,0 +1,9 @@
+Hits per database on the removed contigs (identity >= 80, coverage >= 1%):
+abricate_argannot_removed_contigs.txt: total=0   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=0
+abricate_card_removed_contigs.txt: total=0   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=0
+abricate_ncbi_removed_contigs.txt: total=0   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=0
+abricate_resfinder_removed_contigs.txt: total=0   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=0
+abricate_vfdb_removed_contigs.txt: total=1   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=1
+
+All hits (database, gene, contig, position, coverage, identity, product, accession):
+abricate_vfdb_removed_contigs.txt	espX1	NODE_176_length_248_cov_0.789474	1-248	cov=17.44	id=93.95	(espX1) Type III secretion system effector EspX1 [LEE encoded T3SS (SS020)] [Escherichia coli O157:H7 str. EDL933]	NP_285716

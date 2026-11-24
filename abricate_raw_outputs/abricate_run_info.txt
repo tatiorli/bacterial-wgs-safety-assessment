@@ -1,0 +1,15 @@
+Run date: Wed Nov  4 15:15:07 IST 2026
+ABRicate version: abricate 1.0.1
+Input: Microbacterium_arborescens_spp._assembled_genome.fasta (9d7c15f08f185c35f41f5c8fa1f69cbf)
+Parameters: --minid 80 --mincov 70
+Databases:
+DATABASE	SEQUENCES	DBTYPE	DATE
+megares	6635	nucl	2025-Jan-14
+resfinder	3077	nucl	2025-Jan-14
+card	2631	nucl	2025-Jan-14
+argannot	2223	nucl	2025-Jan-14
+ecoh	597	nucl	2025-Jan-14
+vfdb	2597	nucl	2025-Jan-14
+plasmidfinder	460	nucl	2025-Jan-14
+ecoli_vf	2701	nucl	2025-Jan-14
+ncbi	5386	nucl	2025-Jan-14

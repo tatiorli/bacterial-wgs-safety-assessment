@@ -1,0 +1,43 @@
+(function () {
+    function initializeSuggestedExamples() {
+        var form = document.getElementById("navbar-search");
+        if (!form || form.dataset.suggestionsInitialized) return;
+
+        var searchInput = form.querySelector(".search-term");
+        var suggestions = form.querySelector(".suggested-example");
+        if (!searchInput || !suggestions) return;
+
+        function setSuggestionsVisible(visible) {
+            suggestions.hidden = !visible;
+            searchInput.setAttribute("aria-expanded", String(visible));
+        }
+
+        function updateSuggestions() {
+            setSuggestionsVisible(
+                document.activeElement === searchInput &&
+                searchInput.value.trim().length === 0
+            );
+        }
+
+        form.dataset.suggestionsInitialized = "true";
+        searchInput.addEventListener("focus", updateSuggestions);
+        searchInput.addEventListener("click", updateSuggestions);
+        searchInput.addEventListener("input", updateSuggestions);
+        searchInput.addEventListener("keydown", function (event) {
+            if (event.key === "Escape") {
+                setSuggestionsVisible(false);
+            }
+        });
+        form.addEventListener("focusout", function () {
+            window.setTimeout(function () {
+                if (!form.contains(document.activeElement)) {
+                    setSuggestionsVisible(false);
+                }
+            }, 0);
+        });
+        updateSuggestions();
+    }
+
+    document.addEventListener("DOMContentLoaded", initializeSuggestedExamples);
+    document.addEventListener("turbolinks:load", initializeSuggestedExamples);
+})();

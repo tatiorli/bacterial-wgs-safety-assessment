@@ -1,0 +1,6 @@
+*.html linguist-generated
+*.css linguist-generated
+*.js linguist-vendored
+antismash_out/** linguist-generated
+TYGS_results/** linguist-generated
+*.sh linguist-detectable

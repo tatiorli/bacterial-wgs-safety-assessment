@@ -1,0 +1,1387 @@
+ClusterBlast scores for NODE_1_length_1475171_cov_354.830449
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg1_969	1044561	1045773	+		
+ctg1_970	1045769	1046279	+		
+ctg1_971	1046275	1047352	+		
+ctg1_972	1047380	1047824	+		
+ctg1_973	1047877	1048438	+		
+ctg1_974	1048454	1048865	+		
+ctg1_975	1048911	1051839	+		
+ctg1_976	1051936	1053505	+		
+ctg1_977	1053535	1054411	-		
+ctg1_978	1054407	1054758	-		
+ctg1_979	1054706	1055054	-		
+ctg1_980	1055057	1056653	-		
+ctg1_981	1056649	1057525	-		
+ctg1_982	1057521	1058577	-		
+ctg1_983	1058671	1059139	+		
+ctg1_984	1059463	1059979	+		
+ctg1_985	1059975	1060794	+		
+ctg1_986	1060767	1061967	-		
+ctg1_987	1062067	1063543	+		
+ctg1_988	1063586	1064834	+		
+ctg1_989	1064833	1066282	+		
+ctg1_990	1066313	1067405	-		
+
+
+Significant hits: 
+1. NZ_CP027929	Microbacterium sp. SGAir0570 chromosome, complete genome
+2. NZ_QMBN01000001	Microbacterium sp. SMR1 scaffold1, whole genome shotgun sequence
+3. NZ_BSEO01000001	Microbacterium imperiale strain VKM Ac-1447 platanus_K_21_77_1, whole genome shotgun sequence
+4. NZ_CP058316	Microbacterium oleivorans strain I46 chromosome, complete genome
+5. NZ_CP063814	Microbacterium luteum strain A18JL200 chromosome, complete genome
+6. NZ_JQKT01000007	Microbacterium sp. UNCCL10 BR85DRAFT_scaffold00001.1_C, whole genome shotgun sequence
+7. NZ_RCDB01000002	Microbacterium telephonicum strain S2T63 Ga0215876_12, whole genome shotgun sequence
+8. NZ_FOZJ01000002	Microbacterium sp. cf046, whole genome shotgun sequence
+9. NZ_LMGL01000002	Microbacterium sp. Root166 contig_2, whole genome shotgun sequence
+10. NZ_CP107222	Microbacterium terricola strain JCM 14903 chromosome, complete genome
+11. NZ_CP049256	Microbacterium sp. 4R-513 chromosome, complete genome
+12. NZ_CP063813	Microbacterium atlanticum strain WY121 chromosome, complete genome
+13. NZ_LMHS01000004	Microbacterium sp. Root180 contig_4, whole genome shotgun sequence
+14. NZ_CP063812	Microbacterium cremeum strain NY27 chromosome, complete genome
+15. NZ_JAHXPD010000002	Microbacterium sp. EYE_384 Seq_2, whole genome shotgun sequence
+16. NZ_JAGTTN010000010	Microbacterium sp. BWT-G7 contig10, whole genome shotgun sequence
+17. NZ_CP031421	Microbacterium oleivorans strain A9 chromosome, complete genome
+18. NZ_BSEY01000003	Microbacterium thalassium strain VKM Ac-2084 platanus_K_default_3, whole genome shotgun sequence
+19. NZ_CP044231	Microbacterium caowuchunii strain ST-M6 chromosome, complete genome
+20. NZ_VYUY01000006	Microbacterium caowuchunii strain L-033 NODE_13_length_593234_cov_149.984085, whole genome shotgun sequence
+21. NZ_CP018762	Microbacterium aurum strain KACC 15219 chromosome, complete genome
+22. NZ_SNWG01000001	Microbacterium sp. BK668 Ga0307658_11, whole genome shotgun sequence
+23. NZ_CP049255	Microbacterium endophyticum strain DSM 27099 chromosome, complete genome
+24. NZ_CP038266	Microbacterium wangchenii strain dk512 chromosome, complete genome
+25. NZ_SPQW01000002	Microbacterium sp. dk485 Scaffold2, whole genome shotgun sequence
+26. NZ_CP044232	Microbacterium lushaniae strain L-031 chromosome, complete genome
+27. NZ_MAYO01000003	Microbacterium oleivorans strain Wellendorf Contig3, whole genome shotgun sequence
+28. NZ_KB911459	Microbacterium sp. 11MF H286DRAFT_scaffold00001.1, whole genome shotgun sequence
+29. NZ_LT627736	Microbacterium sp. LKL04 chromosome I
+30. NZ_JAKNUU010000002	Microbacterium invictum strain DSM 19600 NODE_2, whole genome shotgun sequence
+31. NZ_CP090347	Microbacterium binotii strain Au-Mic3 chromosome, complete genome
+32. NZ_CP034121	Microbacterium sp. RG1 chromosome, complete genome
+33. NZ_CP054038	Microbacterium hominis strain PA2F3 chromosome, complete genome
+34. NZ_CP025299	Microbacterium hominis strain SJTG1 chromosome, complete genome
+35. NZ_CP061344	Microbacterium hominis strain 01094 chromosome, complete genome
+36. NZ_CP070346	Microbacterium hominis strain PDNC016 chromosome, complete genome
+37. NZ_CP117996	Microbacterium sp. Clip185 chromosome, complete genome
+38. NZ_JAAOZB010000002	Microbacterium halimionae strain CECT 8593 Ga0372424_02, whole genome shotgun sequence
+39. NZ_CP034245	Microbacterium sp. 10M-3C3 chromosome, complete genome
+40. NZ_CP015810	Microbacterium chocolatum strain SIT 101 chromosome, complete genome
+41. NZ_CP119753	Microbacter sp. GSS18 chromosome, complete genome
+42. NZ_CP031423	Microbacterium lemovicicum strain Viu22 chromosome, complete genome
+43. NZ_BSER01000009	Microbacterium dextranolyticum strain VKM Ac-1940 platanus_K_25_97_9, whole genome shotgun sequence
+44. NZ_CP088261	Microbacterium sp. cx-55 chromosome, complete genome
+45. NZ_CP031015	Microbacterium sp. ABRD_28 chromosome, complete genome
+46. NZ_JACCCG010000004	Microbacterium sp. AK009 Ga0401616_04, whole genome shotgun sequence
+47. NZ_KE150458	Microbacterium sp. oral taxon 186 str. F0373 acKdS-supercont1.2, whole genome shotgun sequence
+48. NZ_BSEK01000005	Microbacterium laevaniformans strain VKM Ac-1138 platanus_K_21_77_5, whole genome shotgun sequence
+49. NZ_RBWZ01000013	Microbacterium sp. AG790 Ga0222384_108, whole genome shotgun sequence
+50. NZ_CP022162	Microbacterium sp. PM5 chromosome
+
+
+Details:
+
+>>
+1. NZ_CP027929
+Source: Microbacterium sp. SGAir0570 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 19
+Cumulative BLAST score: 12294.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_972	C1N74_RS06865	100	291	100.0	2.78e-101
+ctg1_973	C1N74_RS06870	100	372	100.0	7.14e-132
+ctg1_974	C1N74_RS06875	100	260	100.0	3.91e-89
+ctg1_975	C1N74_RS06880	99	1882	100.0	0.0
+ctg1_976	C1N74_RS06885	99	1073	100.0	0.0
+ctg1_977	C1N74_RS06890	100	573	100.0	4.23e-208
+ctg1_978	C1N74_RS06895	100	161	71.55172413793103	3.6e-51
+ctg1_979	C1N74_RS06900	100	228	100.0	5.33e-77
+ctg1_980	C1N74_RS06905	100	1045	100.0	0.0
+ctg1_981	C1N74_RS06910	100	556	100.0	2.16e-201
+ctg1_982	C1N74_RS06915	100	644	100.0	5.67e-234
+ctg1_983	C1N74_RS06920	99	294	100.0	6.16e-102
+ctg1_984	C1N74_RS06930	99	311	100.0	4.02e-108
+ctg1_985	C1N74_RS06935	100	536	100.0	5.95e-194
+ctg1_986	C1N74_RS06940	100	782	100.0	6.52e-287
+ctg1_987	C1N74_RS06945	99	845	100.40733197556008	9.25e-309
+ctg1_988	C1N74_RS06950	100	821	100.0	9.19e-302
+ctg1_989	C1N74_RS06955	95	909	100.0	0.0
+ctg1_990	C1N74_RS06960	100	711	100.0	4.36e-260
+
+
+
+>>
+2. NZ_QMBN01000001
+Source: Microbacterium sp. SMR1 scaffold1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 19
+Cumulative BLAST score: 11373.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_972	DO944_RS02330	94	273	100.0	4.09e-94
+ctg1_973	DO944_RS02335	100	370	100.0	2.91e-131
+ctg1_974	DO944_RS02340	100	260	100.0	3.91e-89
+ctg1_975	DO944_RS02345	84	1600	100.1025641025641	0.0
+ctg1_976	DO944_RS02350	97	1057	100.0	0.0
+ctg1_977	DO944_RS02355	94	545	100.0	1.14e-196
+ctg1_978	DO944_RS02360	91	176	85.34482758620689	9.44e-57
+ctg1_979	DO944_RS02365	84	189	100.0	9.53e-62
+ctg1_980	DO944_RS02370	92	967	100.0	0.0
+ctg1_981	DO944_RS02375	95	532	100.0	1.23e-191
+ctg1_982	DO944_RS02380	95	615	100.0	1.52e-222
+ctg1_983	DO944_RS02385	94	277	100.0	2.22e-95
+ctg1_984	DO944_RS02395	97	308	100.0	6.66e-107
+ctg1_985	DO944_RS02400	96	519	100.0	4.31e-187
+ctg1_986	DO944_RS02405	95	748	100.0	2.39e-273
+ctg1_987	DO944_RS02410	95	808	100.81466395112015	4e-294
+ctg1_988	DO944_RS02415	85	699	100.0	9.12e-254
+ctg1_989	DO944_RS02420	81	778	100.20746887966806	1.45e-282
+ctg1_990	DO944_RS02425	90	652	100.0	9.05e-237
+
+
+
+>>
+3. NZ_BSEO01000001
+Source: Microbacterium imperiale strain VKM Ac-1447 platanus_K_21_77_1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 19
+Cumulative BLAST score: 10153.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_972	PKE82_RS03220	87	255	99.31972789115646	8.51e-87
+ctg1_973	PKE82_RS03225	96	356	100.0	1.28e-125
+ctg1_974	PKE82_RS03230	98	252	98.52941176470588	6.23e-86
+ctg1_975	PKE82_RS03235	75	1429	99.38461538461539	0.0
+ctg1_976	PKE82_RS03240	94	1015	98.27586206896551	0.0
+ctg1_977	PKE82_RS03245	90	521	98.62542955326461	2.18e-187
+ctg1_978	PKE82_RS03250	78	155	85.34482758620689	2.36e-48
+ctg1_979	PKE82_RS03255	79	162	87.82608695652175	2.52e-51
+ctg1_980	PKE82_RS03260	85	885	97.92843691148776	0.0
+ctg1_981	PKE82_RS03265	88	480	100.0	3.31e-171
+ctg1_982	PKE82_RS03270	87	556	99.14529914529915	2.73e-199
+ctg1_983	PKE82_RS03275	80	222	90.96774193548387	8.93e-74
+ctg1_984	PKE82_RS03285	77	240	100.0	4.36e-80
+ctg1_985	PKE82_RS03290	77	416	100.0	2.92e-146
+ctg1_986	PKE82_RS03295	83	655	100.0	8.72e-237
+ctg1_987	PKE82_RS03300	81	648	101.22199592668024	6.08e-231
+ctg1_988	PKE82_RS03305	75	600	99.51807228915662	1.21e-214
+ctg1_989	PKE82_RS03310	72	696	100.20746887966806	3.65e-250
+ctg1_990	PKE82_RS03315	84	610	100.0	2.57e-220
+
+
+
+>>
+4. NZ_CP058316
+Source: Microbacterium oleivorans strain I46 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 18
+Cumulative BLAST score: 9979.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_972	HW566_RS15390	92	265	99.31972789115646	9.25e-91
+ctg1_973	HW566_RS15395	94	354	100.0	1.05e-124
+ctg1_974	HW566_RS15400	96	250	98.52941176470588	2.54e-85
+ctg1_975	HW566_RS15405	78	1465	99.6923076923077	0.0
+ctg1_976	HW566_RS15410	94	1006	97.70114942528735	0.0
+ctg1_977	HW566_RS15415	88	502	96.56357388316151	9.76e-180
+ctg1_978	HW566_RS15420	80	124	68.10344827586206	3.01e-36
+ctg1_979	HW566_RS15425	79	157	86.08695652173914	5.17e-49
+ctg1_980	HW566_RS15430	87	904	98.49340866290018	0.0
+ctg1_981	HW566_RS15435	91	483	97.59450171821305	4.19e-172
+ctg1_982	HW566_RS15440	86	548	100.0	4.53e-196
+ctg1_983	HW566_RS15445	85	231	89.6774193548387	3.97e-77
+ctg1_985	HW566_RS15455	79	422	99.63235294117648	7.53e-149
+ctg1_986	HW566_RS15460	86	680	100.0	1.56e-246
+ctg1_987	HW566_RS15465	86	702	100.0	2.91e-252
+ctg1_988	HW566_RS15470	74	591	99.51807228915662	7.69e-211
+ctg1_989	HW566_RS15475	71	682	100.20746887966806	1.55e-244
+ctg1_990	HW566_RS15480	84	613	100.0	3.02e-221
+
+
+
+>>
+5. NZ_CP063814
+Source: Microbacterium luteum strain A18JL200 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 5255.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	IM777_RS06465	79	459	98.96907216494846	9.44e-163
+ctg1_978	IM777_RS06470	71	133	81.89655172413794	9.86e-40
+ctg1_979	IM777_RS06475	55	115	100.8695652173913	1.23e-32
+ctg1_980	IM777_RS06480	76	759	96.7984934086629	9.22e-274
+ctg1_981	IM777_RS06485	71	382	98.62542955326461	2.94e-132
+ctg1_982	IM777_RS06490	54	315	98.86039886039886	5.09e-104
+ctg1_984	IM777_RS06500	61	173	96.49122807017544	1.28e-53
+ctg1_985	IM777_RS06505	68	351	96.32352941176471	8.36e-121
+ctg1_986	IM777_RS06510	71	578	99.24812030075188	3.44e-206
+ctg1_987	IM777_RS06515	63	409	86.9653767820774	5.28e-137
+ctg1_988	IM777_RS06520	64	491	99.75903614457832	3.59e-171
+ctg1_989	IM777_RS06525	64	598	99.1701244813278	1.17e-211
+ctg1_990	IM777_RS06530	74	492	93.93939393939394	8.83e-174
+
+
+
+>>
+6. NZ_JQKT01000007
+Source: Microbacterium sp. UNCCL10 BR85DRAFT_scaffold00001.1_C, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 5129.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	BR85_RS03535	79	469	99.65635738831615	1.19e-166
+ctg1_978	BR85_RS03540	66	121	81.89655172413794	5.92e-35
+ctg1_979	BR85_RS03545	68	140	95.65217391304348	1.89e-42
+ctg1_980	BR85_RS03550	75	764	97.36346516007532	1.08e-275
+ctg1_981	BR85_RS03555	72	372	95.53264604810997	1.22e-128
+ctg1_982	BR85_RS03560	60	371	100.56980056980056	3e-126
+ctg1_983	BR85_RS03570	61	167	88.38709677419355	8.07e-52
+ctg1_984	BR85_RS03580	69	194	88.88888888888889	1.19e-61
+ctg1_985	BR85_RS03585	74	381	95.95588235294117	1.31e-132
+ctg1_986	BR85_RS03590	77	609	99.74937343358395	1.62e-218
+ctg1_987	BR85_RS03595	60	446	96.74134419551935	3.29e-151
+ctg1_988	BR85_RS03600	63	483	98.79518072289156	2.01e-168
+ctg1_989	BR85_RS03605	67	612	98.7551867219917	3.45e-217
+
+
+
+>>
+7. NZ_RCDB01000002
+Source: Microbacterium telephonicum strain S2T63 Ga0215876_12, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 5040.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	C7474_RS06170	83	483	97.2508591065292	1.73e-172
+ctg1_978	C7474_RS06175	71	131	81.03448275862068	6.04e-39
+ctg1_979	C7474_RS06180	65	132	100.0	2.36e-39
+ctg1_980	C7474_RS15270	75	728	95.29190207156309	2.04e-261
+ctg1_981	C7474_RS15275	69	348	96.56357388316151	5.87e-119
+ctg1_982	C7474_RS06190	63	392	100.0	2.56e-134
+ctg1_983	C7474_RS06200	63	171	87.09677419354838	1.72e-53
+ctg1_984	C7474_RS06210	67	192	100.0	2.55e-61
+ctg1_985	C7474_RS06215	71	368	95.95588235294117	1.38e-127
+ctg1_986	C7474_RS06220	75	584	99.74937343358395	1.41e-208
+ctg1_987	C7474_RS06225	64	467	100.20366598778003	2.08e-159
+ctg1_988	C7474_RS06230	62	462	99.27710843373494	3.25e-160
+ctg1_989	C7474_RS06235	63	582	98.96265560165975	6.5e-205
+
+
+
+>>
+8. NZ_FOZJ01000002
+Source: Microbacterium sp. cf046, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 5032.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	BM349_RS11510	82	475	96.90721649484536	3.79e-169
+ctg1_978	BM349_RS11505	71	136	82.75862068965517	5.45e-41
+ctg1_979	BM349_RS11500	66	128	86.08695652173914	1.78e-37
+ctg1_980	BM349_RS11495	74	737	96.61016949152543	7.63e-265
+ctg1_981	BM349_RS11490	72	395	98.28178694158075	1.55e-137
+ctg1_982	BM349_RS11485	56	326	99.71509971509973	2.09e-108
+ctg1_983	BM349_RS11475	62	162	87.09677419354838	1.08e-49
+ctg1_984	BM349_RS11465	66	181	91.81286549707602	8.07e-57
+ctg1_985	BM349_RS11460	72	380	97.05882352941177	2.94e-132
+ctg1_986	BM349_RS11455	77	599	99.24812030075188	1.07e-214
+ctg1_987	BM349_RS11450	60	431	87.78004073319755	1e-144
+ctg1_988	BM349_RS11445	62	487	98.79518072289156	8.95e-170
+ctg1_989	BM349_RS11440	65	595	97.5103734439834	3.61e-210
+
+
+
+>>
+9. NZ_LMGL01000002
+Source: Microbacterium sp. Root166 contig_2, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 4995.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	ASD56_RS11605	80	482	99.65635738831615	5.53e-172
+ctg1_978	ASD56_RS11600	66	129	85.34482758620689	3.77e-38
+ctg1_979	ASD56_RS11595	67	132	86.08695652173914	4.9e-39
+ctg1_980	ASD56_RS11590	71	715	96.7984934086629	3.06e-256
+ctg1_981	ASD56_RS11585	72	372	96.56357388316151	3.49e-128
+ctg1_982	ASD56_RS11580	56	329	100.85470085470085	1.29e-109
+ctg1_983	ASD56_RS11570	57	141	80.64516129032258	7.18e-42
+ctg1_984	ASD56_RS11560	69	189	87.71929824561403	3.68e-60
+ctg1_985	ASD56_RS11555	68	366	95.95588235294117	1.21e-126
+ctg1_986	ASD56_RS11550	76	598	99.24812030075188	4.69e-214
+ctg1_987	ASD56_RS11545	62	444	88.39103869653768	1.3e-150
+ctg1_988	ASD56_RS11540	61	484	101.20481927710843	1.52e-168
+ctg1_989	ASD56_RS11535	66	614	99.5850622406639	7.18e-218
+
+
+
+>>
+10. NZ_CP107222
+Source: Microbacterium terricola strain JCM 14903 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 4995.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	OAU46_RS06295	78	446	96.21993127147766	2.16e-157
+ctg1_978	OAU46_RS06300	67	130	82.75862068965517	9.01e-39
+ctg1_979	OAU46_RS06305	55	113	89.56521739130436	9.73e-32
+ctg1_980	OAU46_RS06310	72	729	96.7984934086629	1.11e-261
+ctg1_981	OAU46_RS06315	73	366	95.87628865979381	5.39e-126
+ctg1_982	OAU46_RS06320	55	331	99.14529914529915	2.94e-110
+ctg1_983	OAU46_RS06330	62	166	89.03225806451613	2.3e-51
+ctg1_984	OAU46_RS06340	68	197	92.39766081871345	2.29e-63
+ctg1_985	OAU46_RS06345	72	374	97.42647058823529	1.06e-129
+ctg1_986	OAU46_RS06350	76	583	99.24812030075188	3.75e-208
+ctg1_987	OAU46_RS06355	65	476	92.05702647657841	1.16e-162
+ctg1_988	OAU46_RS06360	60	462	99.75903614457832	6.77e-160
+ctg1_989	OAU46_RS06365	68	622	97.71784232365145	3.47e-221
+
+
+
+>>
+11. NZ_CP049256
+Source: Microbacterium sp. 4R-513 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 4963.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	G5T42_RS13200	82	484	98.28178694158075	8.39e-173
+ctg1_978	G5T42_RS13205	69	129	81.03448275862068	3e-38
+ctg1_979	G5T42_RS13210	67	128	86.08695652173914	1.08e-37
+ctg1_980	G5T42_RS13215	72	738	99.62335216572504	2.34e-265
+ctg1_981	G5T42_RS13220	71	380	95.87628865979381	1.11e-131
+ctg1_982	G5T42_RS13225	57	342	100.56980056980056	9.84e-115
+ctg1_983	G5T42_RS13235	58	158	87.09677419354838	2.3e-48
+ctg1_984	G5T42_RS13245	65	172	91.81286549707602	3.44e-53
+ctg1_985	G5T42_RS13250	65	345	95.95588235294117	1.65e-118
+ctg1_986	G5T42_RS13255	74	578	99.24812030075188	3.57e-206
+ctg1_987	G5T42_RS13260	62	434	89.0020366598778	7.1e-146
+ctg1_988	G5T42_RS13265	60	473	100.2409638554217	4.09e-164
+ctg1_989	G5T42_RS13270	63	602	100.0	3.81e-213
+
+
+
+>>
+12. NZ_CP063813
+Source: Microbacterium atlanticum strain WY121 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 4959.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	IR212_RS06050	80	459	97.2508591065292	1.34e-162
+ctg1_978	IR212_RS06055	65	123	84.48275862068965	8.65e-36
+ctg1_979	IR212_RS06060	68	140	99.1304347826087	3.22e-42
+ctg1_980	IR212_RS06065	73	733	96.7984934086629	1.72e-263
+ctg1_981	IR212_RS06070	67	345	95.87628865979381	9.31e-118
+ctg1_982	IR212_RS06075	57	325	100.56980056980056	5.95e-108
+ctg1_983	IR212_RS06085	51	140	87.09677419354838	3.41e-41
+ctg1_984	IR212_RS06095	70	191	88.88888888888889	1.13e-60
+ctg1_985	IR212_RS06100	71	366	95.22058823529412	1.05e-126
+ctg1_986	IR212_RS06105	77	602	99.24812030075188	8.91e-216
+ctg1_987	IR212_RS06110	64	454	86.55804480651732	1.75e-154
+ctg1_988	IR212_RS06115	61	471	99.75903614457832	1.39e-163
+ctg1_989	IR212_RS06120	66	610	100.0	4.14e-216
+
+
+
+>>
+13. NZ_LMHS01000004
+Source: Microbacterium sp. Root180 contig_4, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 4958.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	ASD93_RS14875	82	483	98.28178694158075	2.32e-172
+ctg1_978	ASD93_RS14880	65	123	85.34482758620689	8.15e-36
+ctg1_979	ASD93_RS14885	69	137	86.08695652173914	2.13e-41
+ctg1_980	ASD93_RS14890	74	737	96.7984934086629	7.91e-265
+ctg1_981	ASD93_RS14895	71	376	95.87628865979381	6.23e-130
+ctg1_982	ASD93_RS14900	57	335	100.56980056980056	4.89e-112
+ctg1_983	ASD93_RS14910	57	150	87.09677419354838	3.74e-45
+ctg1_984	ASD93_RS14920	69	188	88.88888888888889	1.4e-59
+ctg1_985	ASD93_RS14925	66	330	95.95588235294117	1.17e-112
+ctg1_986	ASD93_RS14930	76	595	99.74937343358395	5.26e-213
+ctg1_987	ASD93_RS14935	61	446	90.63136456211812	9.12e-151
+ctg1_988	ASD93_RS14940	59	461	100.72289156626506	1.8e-159
+ctg1_989	ASD93_RS14945	65	597	96.88796680497926	5.84e-211
+
+
+
+>>
+14. NZ_CP063812
+Source: Microbacterium cremeum strain NY27 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 4890.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	IM778_RS06680	76	434	96.21993127147766	1.02e-152
+ctg1_978	IM778_RS06685	64	124	85.34482758620689	4.04e-36
+ctg1_979	IM778_RS06690	63	136	100.0	7.55e-41
+ctg1_980	IM778_RS06695	70	696	97.36346516007532	6.76e-249
+ctg1_981	IM778_RS06700	68	360	98.28178694158075	7.23e-124
+ctg1_982	IM778_RS06705	54	315	100.28490028490029	3.59e-104
+ctg1_983	IM778_RS06715	55	149	87.09677419354838	1.02e-44
+ctg1_984	IM778_RS06725	71	189	87.71929824561403	7.89e-60
+ctg1_985	IM778_RS06730	71	369	96.32352941176471	4.64e-128
+ctg1_986	IM778_RS06735	76	588	99.24812030075188	3.81e-210
+ctg1_987	IM778_RS06740	61	450	91.64969450101833	3.35e-152
+ctg1_988	IM778_RS06745	61	479	100.72289156626506	1.64e-166
+ctg1_989	IM778_RS06750	65	601	97.0954356846473	1.29e-212
+
+
+
+>>
+15. NZ_JAHXPD010000002
+Source: Microbacterium sp. EYE_384 Seq_2, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 4873.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	KZX28_RS10385	75	440	99.3127147766323	3.12e-155
+ctg1_978	KZX28_RS10380	66	119	81.03448275862068	4.99e-34
+ctg1_979	KZX28_RS10375	56	108	86.08695652173914	1.16e-29
+ctg1_980	KZX28_RS10370	69	686	97.74011299435028	5.62e-245
+ctg1_981	KZX28_RS10365	69	348	93.81443298969072	4.75e-119
+ctg1_982	KZX28_RS10360	59	366	100.56980056980056	2.9e-124
+ctg1_983	KZX28_RS10350	65	180	92.90322580645162	7.79e-57
+ctg1_984	KZX28_RS10340	67	192	92.39766081871345	2.1e-61
+ctg1_985	KZX28_RS10335	72	386	95.95588235294117	9.38e-135
+ctg1_986	KZX28_RS10330	71	562	100.0	4.66e-200
+ctg1_987	KZX28_RS10325	60	431	94.29735234215886	5.79e-146
+ctg1_988	KZX28_RS10320	61	475	98.55421686746988	4.54e-165
+ctg1_989	KZX28_RS10315	62	580	97.9253112033195	2.53e-204
+
+
+
+>>
+16. NZ_JAGTTN010000010
+Source: Microbacterium sp. BWT-G7 contig10, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 4858.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	KEC57_RS18530	80	461	98.62542955326461	2.32e-163
+ctg1_978	KEC57_RS18525	67	118	78.44827586206897	7.08e-34
+ctg1_979	KEC57_RS18520	61	126	100.0	7.01e-37
+ctg1_980	KEC57_RS18515	72	720	97.5517890772128	2.36e-258
+ctg1_981	KEC57_RS18510	70	360	95.1890034364261	9.28e-124
+ctg1_982	KEC57_RS18505	56	317	99.71509971509973	4.03e-105
+ctg1_983	KEC57_RS18495	55	142	85.16129032258064	4.42e-42
+ctg1_984	KEC57_RS18485	68	191	95.32163742690058	9.07e-61
+ctg1_985	KEC57_RS18480	74	389	96.32352941176471	5.89e-136
+ctg1_986	KEC57_RS18475	75	587	98.99749373433583	5.4e-210
+ctg1_987	KEC57_RS18470	61	397	80.44806517311609	4.21e-131
+ctg1_988	KEC57_RS18465	61	452	95.42168674698796	4.03e-156
+ctg1_989	KEC57_RS18460	65	598	97.0954356846473	1.55e-211
+
+
+
+>>
+17. NZ_CP031421
+Source: Microbacterium oleivorans strain A9 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 4843.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	BWL13_RS08275	77	444	96.21993127147766	9.03e-157
+ctg1_978	BWL13_RS08270	69	133	82.75862068965517	1.17e-39
+ctg1_979	BWL13_RS08265	59	112	92.17391304347827	2.4e-31
+ctg1_980	BWL13_RS08260	70	694	96.98681732580037	6.77e-248
+ctg1_981	BWL13_RS08255	69	348	93.81443298969072	7.73e-119
+ctg1_982	BWL13_RS08250	60	360	100.56980056980056	1.09e-121
+ctg1_983	BWL13_RS08240	63	176	94.19354838709677	1.94e-55
+ctg1_984	BWL13_RS08230	69	191	91.81286549707602	8.51e-61
+ctg1_985	BWL13_RS08225	72	372	95.95588235294117	2.92e-129
+ctg1_986	BWL13_RS08220	69	541	99.74937343358395	1.53e-191
+ctg1_987	BWL13_RS08215	61	441	95.9266802443992	1.05e-149
+ctg1_988	BWL13_RS08210	56	443	100.2409638554217	1.59e-152
+ctg1_989	BWL13_RS08205	62	588	97.9253112033195	1.75e-207
+
+
+
+>>
+18. NZ_BSEY01000003
+Source: Microbacterium thalassium strain VKM Ac-2084 platanus_K_default_3, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 5301.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	PKE87_RS04125	81	473	99.65635738831615	1.76e-168
+ctg1_978	PKE87_RS04120	70	133	85.34482758620689	1.28e-39
+ctg1_979	PKE87_RS04115	66	130	87.82608695652175	2.05e-38
+ctg1_980	PKE87_RS04110	75	750	97.36346516007532	3.76e-270
+ctg1_981	PKE87_RS04105	71	374	95.87628865979381	2.62e-129
+ctg1_982	PKE87_RS04100	58	336	98.00569800569801	1.66e-112
+ctg1_983	PKE87_RS04090	59	158	88.38709677419355	3.91e-48
+ctg1_985	PKE87_RS04080	71	368	95.95588235294117	2.02e-127
+ctg1_986	PKE87_RS04075	77	594	99.24812030075188	1.4e-212
+ctg1_987	PKE87_RS04070	60	430	90.4276985743381	2.07e-144
+ctg1_988	PKE87_RS04065	62	474	99.75903614457832	1.54e-164
+ctg1_989	PKE87_RS04060	65	603	97.5103734439834	2.33e-213
+ctg1_990	PKE87_RS04055	71	478	93.93939393939394	2.64e-168
+
+
+
+>>
+19. NZ_CP044231
+Source: Microbacterium caowuchunii strain ST-M6 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 5250.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	F6J84_RS05795	76	444	98.28178694158075	5.71e-157
+ctg1_978	F6J84_RS05800	77	139	85.34482758620689	2.92e-42
+ctg1_979	F6J84_RS05805	64	133	98.26086956521739	1.57e-39
+ctg1_980	F6J84_RS05810	73	735	96.98681732580037	6.11e-264
+ctg1_981	F6J84_RS05815	69	345	95.87628865979381	8.35e-118
+ctg1_982	F6J84_RS05820	55	321	99.14529914529915	2e-106
+ctg1_983	F6J84_RS05830	57	153	96.12903225806451	3.45e-46
+ctg1_985	F6J84_RS05840	64	333	95.95588235294117	6.43e-114
+ctg1_986	F6J84_RS05845	75	575	99.24812030075188	4.14e-205
+ctg1_987	F6J84_RS05850	64	437	86.9653767820774	1.43e-147
+ctg1_988	F6J84_RS05855	61	496	101.20481927710843	3.56e-173
+ctg1_989	F6J84_RS05860	66	618	99.79253112033194	2.67e-219
+ctg1_990	F6J84_RS05865	73	521	100.2754820936639	3.91e-185
+
+
+
+>>
+20. NZ_VYUY01000006
+Source: Microbacterium caowuchunii strain L-033 NODE_13_length_593234_cov_149.984085, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 5250.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	F6B40_RS03615	75	442	100.0	6.01e-156
+ctg1_978	F6B40_RS03620	77	139	85.34482758620689	2.92e-42
+ctg1_979	F6B40_RS03625	65	135	98.26086956521739	1.91e-40
+ctg1_980	F6B40_RS03630	73	733	96.98681732580037	3.52e-263
+ctg1_981	F6B40_RS03635	69	345	95.87628865979381	8.35e-118
+ctg1_982	F6B40_RS03640	54	320	99.14529914529915	5.69e-106
+ctg1_983	F6B40_RS03650	58	152	96.12903225806451	6.94e-46
+ctg1_985	F6B40_RS03660	64	333	96.32352941176471	6.43e-114
+ctg1_986	F6B40_RS03665	75	573	99.24812030075188	3.39e-204
+ctg1_987	F6B40_RS03670	64	437	86.9653767820774	1.43e-147
+ctg1_988	F6B40_RS03675	63	499	98.55421686746988	1.53e-174
+ctg1_989	F6B40_RS03680	66	621	99.79253112033194	1.15e-220
+ctg1_990	F6B40_RS03685	72	521	100.2754820936639	7.87e-185
+
+
+
+>>
+21. NZ_CP018762
+Source: Microbacterium aurum strain KACC 15219 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 5124.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	BOH66_RS07560	80	463	97.9381443298969	2.2e-164
+ctg1_978	BOH66_RS07565	58	116	87.06896551724138	9.53e-33
+ctg1_979	BOH66_RS07570	72	139	86.08695652173914	8.67e-42
+ctg1_980	BOH66_RS07575	74	753	97.36346516007532	2.74e-271
+ctg1_981	BOH66_RS07580	69	345	95.1890034364261	8.39e-118
+ctg1_982	BOH66_RS07585	63	377	100.56980056980056	2.26e-128
+ctg1_983	BOH66_RS07595	61	177	92.25806451612904	1.2e-55
+ctg1_984	BOH66_RS07605	69	190	91.22807017543859	2.51e-60
+ctg1_985	BOH66_RS07610	71	361	95.95588235294117	7.02e-125
+ctg1_986	BOH66_RS07615	75	578	99.74937343358395	2.8e-206
+ctg1_987	BOH66_RS07620	67	441	81.05906313645622	4.71e-149
+ctg1_988	BOH66_RS07625	63	478	99.51807228915662	2.87e-166
+ctg1_988	BOH66_RS07630	33	107	72.04819277108435	5.06e-23
+ctg1_989	BOH66_RS07630	65	599	100.4149377593361	6.25e-212
+
+
+
+>>
+22. NZ_SNWG01000001
+Source: Microbacterium sp. BK668 Ga0307658_11, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 5104.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	EV279_RS10070	80	472	97.2508591065292	8.91e-168
+ctg1_978	EV279_RS10075	64	125	85.34482758620689	1.78e-36
+ctg1_979	EV279_RS10080	60	118	86.08695652173914	1.38e-33
+ctg1_980	EV279_RS10085	73	734	96.98681732580037	7.76e-264
+ctg1_981	EV279_RS10090	72	383	95.87628865979381	6.76e-133
+ctg1_982	EV279_RS10095	56	333	100.56980056980056	2.1e-111
+ctg1_983	EV279_RS10105	57	157	87.09677419354838	4.64e-48
+ctg1_984	EV279_RS10115	63	184	102.92397660818713	7.93e-58
+ctg1_985	EV279_RS10120	69	367	96.32352941176471	3.54e-127
+ctg1_986	EV279_RS10125	73	585	99.24812030075188	4.59e-209
+ctg1_987	EV279_RS10130	65	470	87.78004073319755	3.6e-160
+ctg1_988	EV279_RS10135	62	478	100.48192771084337	4.07e-166
+ctg1_989	EV279_RS10140	65	609	100.20746887966806	7.03e-216
+ctg1_989	EV279_RS10135	31	89	61.41078838174274	1.03e-16
+
+
+
+>>
+23. NZ_CP049255
+Source: Microbacterium endophyticum strain DSM 27099 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 5077.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	G6N83_RS12200	73	415	96.56357388316151	1.98e-145
+ctg1_978	G6N83_RS12205	62	117	82.75862068965517	1.97e-33
+ctg1_979	G6N83_RS12210	58	109	86.08695652173914	3.94e-30
+ctg1_980	G6N83_RS12215	72	743	97.17514124293785	2.06e-267
+ctg1_981	G6N83_RS12220	61	330	98.28178694158075	4.29e-112
+ctg1_982	G6N83_RS12225	52	318	97.43589743589743	1.73e-105
+ctg1_983	G6N83_RS12235	48	144	96.12903225806451	1.06e-42
+ctg1_985	G6N83_RS12245	61	325	95.95588235294117	1.03e-110
+ctg1_986	G6N83_RS12250	72	575	99.24812030075188	6.1e-205
+ctg1_987	G6N83_RS12255	64	474	90.83503054989816	5.15e-162
+ctg1_988	G6N83_RS12260	56	437	97.83132530120481	4.07e-150
+ctg1_989	G6N83_RS12265	63	586	99.37759336099586	1.12e-206
+ctg1_990	G6N83_RS12270	73	504	99.72451790633609	3.89e-178
+
+
+
+>>
+24. NZ_CP038266
+Source: Microbacterium wangchenii strain dk512 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 5063.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	E4K62_RS11410	79	471	98.28178694158075	1.31e-167
+ctg1_978	E4K62_RS11405	77	115	67.24137931034483	9.54e-33
+ctg1_979	E4K62_RS11400	62	120	86.08695652173914	1.41e-34
+ctg1_980	E4K62_RS11395	72	727	97.74011299435028	5.5e-261
+ctg1_981	E4K62_RS11390	71	377	95.87628865979381	1.83e-130
+ctg1_982	E4K62_RS11385	57	317	99.14529914529915	5.07e-105
+ctg1_983	E4K62_RS11375	61	165	87.09677419354838	4.64e-51
+ctg1_984	E4K62_RS11365	69	188	88.88888888888889	1.4e-59
+ctg1_985	E4K62_RS11360	74	375	95.58823529411765	3.44e-130
+ctg1_986	E4K62_RS11355	76	593	99.24812030075188	4.15e-212
+ctg1_987	E4K62_RS11350	63	435	89.81670061099797	3.89e-147
+ctg1_988	E4K62_RS11345	63	477	98.79518072289156	7.12e-166
+ctg1_988	E4K62_RS11340	33	106	70.12048192771084	6.8e-23
+ctg1_989	E4K62_RS11340	64	597	97.0954356846473	6.98e-211
+
+
+
+>>
+25. NZ_SPQW01000002
+Source: Microbacterium sp. dk485 Scaffold2, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 5062.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	E4V99_RS12065	78	466	98.28178694158075	1.25e-165
+ctg1_978	E4V99_RS12070	77	115	67.24137931034483	9.54e-33
+ctg1_979	E4V99_RS12075	62	120	86.08695652173914	1.41e-34
+ctg1_980	E4V99_RS12080	72	727	97.74011299435028	5.5e-261
+ctg1_981	E4V99_RS12085	71	375	95.87628865979381	7.43e-130
+ctg1_982	E4V99_RS12090	57	319	99.14529914529915	8.89e-106
+ctg1_983	E4V99_RS12100	61	165	87.09677419354838	4.64e-51
+ctg1_984	E4V99_RS12110	68	188	91.22807017543859	9.85e-60
+ctg1_985	E4V99_RS12115	74	375	95.58823529411765	2.43e-130
+ctg1_986	E4V99_RS12120	76	592	99.24812030075188	5.89e-212
+ctg1_987	E4V99_RS12125	62	436	89.40936863543789	1.37e-147
+ctg1_988	E4V99_RS12130	63	478	98.79518072289156	1.76e-166
+ctg1_988	E4V99_RS12135	34	108	70.12048192771084	1.49e-23
+ctg1_989	E4V99_RS12135	65	598	97.0954356846473	1.21e-211
+
+
+
+>>
+26. NZ_CP044232
+Source: Microbacterium lushaniae strain L-031 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 5055.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	F6J85_RS10840	77	464	100.0	7.22e-165
+ctg1_978	F6J85_RS10835	77	115	67.24137931034483	9.54e-33
+ctg1_979	F6J85_RS10830	63	120	86.08695652173914	1.41e-34
+ctg1_980	F6J85_RS10825	72	723	97.74011299435028	1.29e-259
+ctg1_981	F6J85_RS10820	72	379	95.87628865979381	3.18e-131
+ctg1_982	F6J85_RS10815	55	307	99.14529914529915	6.1e-101
+ctg1_983	F6J85_RS10805	61	167	87.74193548387098	1.14e-51
+ctg1_984	F6J85_RS10795	69	191	91.22807017543859	1.21e-60
+ctg1_985	F6J85_RS10790	72	373	95.58823529411765	1.4e-129
+ctg1_986	F6J85_RS10785	77	603	99.24812030075188	4.59e-216
+ctg1_987	F6J85_RS10780	65	431	81.67006109979633	9.83e-146
+ctg1_988	F6J85_RS10775	63	473	98.79518072289156	2.35e-164
+ctg1_988	F6J85_RS10770	32	102	70.12048192771084	2.55e-21
+ctg1_989	F6J85_RS10770	65	607	97.0954356846473	5.53e-215
+
+
+
+>>
+27. NZ_MAYO01000003
+Source: Microbacterium oleivorans strain Wellendorf Contig3, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 5026.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	BBA86_RS03645	73	433	98.28178694158075	1.71e-152
+ctg1_978	BBA86_RS03650	67	122	82.75862068965517	1.5e-35
+ctg1_979	BBA86_RS03655	59	113	93.91304347826087	8.91e-32
+ctg1_980	BBA86_RS03660	70	688	96.98681732580037	9.09e-246
+ctg1_981	BBA86_RS03665	70	357	93.81443298969072	1.75e-122
+ctg1_982	BBA86_RS03670	59	360	100.56980056980056	7.72e-122
+ctg1_983	BBA86_RS03680	62	171	89.03225806451613	1.78e-53
+ctg1_984	BBA86_RS03690	70	197	91.81286549707602	3.15e-63
+ctg1_985	BBA86_RS03695	72	368	95.95588235294117	1.95e-127
+ctg1_986	BBA86_RS03700	69	547	99.49874686716792	3.98e-194
+ctg1_987	BBA86_RS03705	60	427	96.94501018329939	4.51e-144
+ctg1_988	BBA86_RS03710	58	447	99.27710843373494	3.31e-154
+ctg1_988	BBA86_RS03715	34	109	69.87951807228916	7.69e-24
+ctg1_989	BBA86_RS03715	62	580	98.54771784232366	1.3e-204
+ctg1_989	BBA86_RS03710	35	107	62.448132780082986	3e-23
+
+
+
+>>
+28. NZ_KB911459
+Source: Microbacterium sp. 11MF H286DRAFT_scaffold00001.1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 4959.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	H286_RS0103480	74	434	98.28178694158075	8.5e-153
+ctg1_978	H286_RS0103485	72	136	82.75862068965517	7.07e-41
+ctg1_979	H286_RS0103490	56	107	89.56521739130436	1.55e-29
+ctg1_980	H286_RS0103495	71	697	96.98681732580037	2.05e-249
+ctg1_981	H286_RS0103500	71	361	93.81443298969072	4.92e-124
+ctg1_982	H286_RS0103505	59	360	100.56980056980056	1.09e-121
+ctg1_983	H286_RS0103515	60	170	92.90322580645162	5.07e-53
+ctg1_984	H286_RS0103525	71	182	82.45614035087719	1.87e-57
+ctg1_985	H286_RS0103530	71	362	95.95588235294117	2.63e-125
+ctg1_986	H286_RS0103535	72	563	99.74937343358395	2.32e-200
+ctg1_987	H286_RS0103540	59	444	98.16700610997964	9.04e-151
+ctg1_988	H286_RS0103545	56	434	98.55421686746988	6.93e-149
+ctg1_989	H286_RS0103550	65	608	97.71784232365145	1.56e-215
+ctg1_989	H286_RS0103545	31	101	60.58091286307054	3.84e-21
+
+
+
+>>
+29. NZ_LT627736
+Source: Microbacterium sp. LKL04 chromosome I
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 4925.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	BLP38_RS05880	75	436	98.28178694158075	7.31e-154
+ctg1_978	BLP38_RS05875	66	129	82.75862068965517	2.74e-38
+ctg1_979	BLP38_RS05870	62	123	93.91304347826087	9.95e-36
+ctg1_980	BLP38_RS05865	70	687	96.98681732580037	2.6e-245
+ctg1_981	BLP38_RS05860	70	350	92.09621993127148	1.34e-119
+ctg1_982	BLP38_RS05855	58	357	100.56980056980056	1.78e-120
+ctg1_983	BLP38_RS05845	62	174	94.19354838709677	2.18e-54
+ctg1_984	BLP38_RS05835	69	195	91.81286549707602	1.81e-62
+ctg1_985	BLP38_RS05830	74	378	95.95588235294117	1.52e-131
+ctg1_986	BLP38_RS05825	70	550	99.74937343358395	4.87e-195
+ctg1_987	BLP38_RS05820	60	430	97.14867617107943	2.79e-145
+ctg1_988	BLP38_RS05815	58	446	99.27710843373494	6.65e-154
+ctg1_989	BLP38_RS05810	61	565	97.9253112033195	1.59e-198
+ctg1_989	BLP38_RS05815	31	105	74.89626556016597	2.51e-22
+
+
+
+>>
+30. NZ_JAKNUU010000002
+Source: Microbacterium invictum strain DSM 19600 NODE_2, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 5146.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	MA877_RS06265	76	436	97.2508591065292	9.66e-154
+ctg1_978	MA877_RS06260	71	136	82.75862068965517	6.86e-41
+ctg1_979	MA877_RS06255	65	121	81.73913043478261	4.39e-35
+ctg1_980	MA877_RS06250	72	723	96.7984934086629	2.04e-259
+ctg1_981	MA877_RS06245	67	340	95.87628865979381	3.8e-116
+ctg1_983	MA877_RS06235	60	169	92.25806451612904	2.05e-52
+ctg1_984	MA877_RS06225	72	204	91.22807017543859	3.69e-66
+ctg1_985	MA877_RS06220	74	381	97.05882352941177	9.24e-133
+ctg1_986	MA877_RS06215	75	593	99.74937343358395	2.22e-212
+ctg1_987	MA877_RS06210	67	496	97.75967413441956	3.83e-171
+ctg1_988	MA877_RS06205	59	460	99.03614457831326	3.04e-159
+ctg1_989	MA877_RS06200	64	598	97.9253112033195	1.05e-211
+ctg1_990	MA877_RS06195	73	489	93.66391184573003	9.88e-173
+
+
+
+>>
+31. NZ_CP090347
+Source: Microbacterium binotii strain Au-Mic3 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 5261.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	LXM64_RS06590	78	454	97.2508591065292	8.08e-161
+ctg1_978	LXM64_RS06595	73	129	81.03448275862068	2.66e-38
+ctg1_979	LXM64_RS06600	63	135	99.1304347826087	2.33e-40
+ctg1_980	LXM64_RS06605	71	708	97.5517890772128	1.13e-253
+ctg1_981	LXM64_RS06610	70	351	97.2508591065292	2.89e-120
+ctg1_982	LXM64_RS06615	55	332	100.28490028490029	1.16e-110
+ctg1_983	LXM64_RS06625	61	155	85.16129032258064	6.6e-47
+ctg1_985	LXM64_RS06635	62	317	96.32352941176471	3.01e-107
+ctg1_986	LXM64_RS06640	72	550	99.49874686716792	2.17e-195
+ctg1_987	LXM64_RS06645	61	434	88.39103869653768	9.03e-147
+ctg1_988	LXM64_RS06650	60	474	98.55421686746988	1.34e-164
+ctg1_989	LXM64_RS06655	65	609	97.30290456431536	8.04e-216
+ctg1_989	LXM64_RS06650	32	99	60.37344398340249	2.41e-20
+ctg1_990	LXM64_RS06660	72	514	100.2754820936639	3.04e-182
+
+
+
+>>
+32. NZ_CP034121
+Source: Microbacterium sp. RG1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 13
+Cumulative BLAST score: 5250.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	EHF32_RS06250	78	453	97.2508591065292	2.31e-160
+ctg1_978	EHF32_RS06245	73	129	81.03448275862068	2.66e-38
+ctg1_979	EHF32_RS06240	63	135	99.1304347826087	2.33e-40
+ctg1_980	EHF32_RS06235	72	708	97.5517890772128	1.13e-253
+ctg1_981	EHF32_RS06230	70	351	97.2508591065292	4.1e-120
+ctg1_982	EHF32_RS06225	55	332	100.28490028490029	1.16e-110
+ctg1_983	EHF32_RS06215	61	153	85.16129032258064	2.67e-46
+ctg1_985	EHF32_RS06205	63	317	96.32352941176471	2.12e-107
+ctg1_986	EHF32_RS06200	71	547	99.24812030075188	3.58e-194
+ctg1_987	EHF32_RS06195	61	435	88.39103869653768	6.38e-147
+ctg1_988	EHF32_RS06190	61	471	98.55421686746988	1.55e-163
+ctg1_989	EHF32_RS06185	64	605	97.30290456431536	3.77e-214
+ctg1_989	EHF32_RS06190	32	102	60.37344398340249	2.19e-21
+ctg1_990	EHF32_RS06180	72	512	100.2754820936639	2.48e-181
+
+
+
+>>
+33. NZ_CP054038
+Source: Microbacterium hominis strain PA2F3 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 12
+Cumulative BLAST score: 4783.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	HQM25_RS06960	80	468	96.90721649484536	1.88e-166
+ctg1_978	HQM25_RS06965	67	126	82.75862068965517	6.42e-37
+ctg1_979	HQM25_RS06970	69	138	86.08695652173914	1.97e-41
+ctg1_980	HQM25_RS06975	75	754	96.7984934086629	1.05e-271
+ctg1_981	HQM25_RS06980	75	391	97.59450171821305	7.32e-136
+ctg1_982	HQM25_RS06985	57	284	84.33048433048434	7.88e-93
+ctg1_983	HQM25_RS06995	59	162	91.61290322580645	9.76e-50
+ctg1_985	HQM25_RS07005	70	359	96.32352941176471	4.19e-124
+ctg1_986	HQM25_RS07010	74	588	99.49874686716792	2.11e-210
+ctg1_987	HQM25_RS07015	61	418	87.37270875763747	1.78e-139
+ctg1_988	HQM25_RS07020	60	468	101.44578313253012	3.46e-162
+ctg1_989	HQM25_RS07025	66	627	99.1701244813278	8.54e-223
+
+
+
+>>
+34. NZ_CP025299
+Source: Microbacterium hominis strain SJTG1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 12
+Cumulative BLAST score: 4768.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	CXR34_RS07585	79	446	97.9381443298969	1.1e-157
+ctg1_978	CXR34_RS07590	67	129	84.48275862068965	7.02e-38
+ctg1_979	CXR34_RS07595	60	125	96.52173913043478	3.04e-36
+ctg1_980	CXR34_RS07600	73	742	96.61016949152543	7.32e-267
+ctg1_981	CXR34_RS07605	70	354	95.87628865979381	2.41e-121
+ctg1_982	CXR34_RS07610	61	375	100.0	9.78e-128
+ctg1_983	CXR34_RS07620	59	171	92.90322580645162	2.6e-53
+ctg1_985	CXR34_RS07630	69	348	95.95588235294117	7.32e-120
+ctg1_986	CXR34_RS07635	75	579	99.74937343358395	1.09e-206
+ctg1_987	CXR34_RS07640	65	492	97.9633401221996	4.66e-169
+ctg1_988	CXR34_RS07645	56	431	99.51807228915662	1.29e-147
+ctg1_989	CXR34_RS07650	63	576	100.62240663900414	9.99e-203
+
+
+
+>>
+35. NZ_CP061344
+Source: Microbacterium hominis strain 01094 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 12
+Cumulative BLAST score: 4764.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	IC745_RS12960	79	447	97.9381443298969	5.47e-158
+ctg1_978	IC745_RS12965	67	128	84.48275862068965	9.96e-38
+ctg1_979	IC745_RS12970	60	128	97.3913043478261	2.63e-37
+ctg1_980	IC745_RS12975	73	745	96.61016949152543	6.31e-268
+ctg1_981	IC745_RS12980	70	351	95.87628865979381	2.79e-120
+ctg1_982	IC745_RS12985	61	374	100.0	3.95e-127
+ctg1_983	IC745_RS12995	59	171	92.90322580645162	2.6e-53
+ctg1_985	IC745_RS13005	69	346	95.95588235294117	5.98e-119
+ctg1_986	IC745_RS13010	75	579	99.74937343358395	1.55e-206
+ctg1_987	IC745_RS13015	64	490	97.9633401221996	2.66e-168
+ctg1_988	IC745_RS13020	55	423	99.51807228915662	9.79e-145
+ctg1_989	IC745_RS13025	63	582	101.03734439834025	5.28e-205
+
+
+
+>>
+36. NZ_CP070346
+Source: Microbacterium hominis strain PDNC016 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 12
+Cumulative BLAST score: 4764.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	JVX92_RS00370	78	445	97.9381443298969	3.16e-157
+ctg1_978	JVX92_RS00375	67	129	84.48275862068965	7.02e-38
+ctg1_979	JVX92_RS00380	62	128	93.91304347826087	2.63e-37
+ctg1_980	JVX92_RS00385	73	746	96.61016949152543	1.56e-268
+ctg1_981	JVX92_RS00390	70	350	95.87628865979381	5.62e-120
+ctg1_982	JVX92_RS00395	61	374	100.0	1.97e-127
+ctg1_983	JVX92_RS00405	59	171	92.90322580645162	2.6e-53
+ctg1_985	JVX92_RS00415	69	347	95.95588235294117	2.97e-119
+ctg1_986	JVX92_RS00420	76	581	99.49874686716792	2.69e-207
+ctg1_987	JVX92_RS00425	64	490	97.9633401221996	2.66e-168
+ctg1_988	JVX92_RS00430	55	424	99.51807228915662	3.44e-145
+ctg1_989	JVX92_RS00435	64	579	100.62240663900414	6.1e-204
+
+
+
+>>
+37. NZ_CP117996
+Source: Microbacterium sp. Clip185 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 12
+Cumulative BLAST score: 4582.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	PQV94_RS09670	78	447	95.53264604810997	6.31e-158
+ctg1_978	PQV94_RS09665	76	132	81.03448275862068	2.29e-39
+ctg1_979	PQV94_RS09660	68	135	86.08695652173914	1.16e-40
+ctg1_980	PQV94_RS09655	71	705	97.5517890772128	2.65e-252
+ctg1_981	PQV94_RS09650	68	340	97.2508591065292	7.35e-116
+ctg1_982	PQV94_RS09645	56	335	100.28490028490029	7.16e-112
+ctg1_983	PQV94_RS09635	58	150	85.16129032258064	3.08e-45
+ctg1_985	PQV94_RS09620	62	319	96.32352941176471	2.6e-108
+ctg1_986	PQV94_RS09615	65	484	99.49874686716792	2.12e-169
+ctg1_987	PQV94_RS09610	61	440	91.0386965376782	7.66e-149
+ctg1_988	PQV94_RS09605	60	476	100.0	1.65e-165
+ctg1_989	PQV94_RS09600	66	619	97.30290456431536	6.35e-220
+
+
+
+>>
+38. NZ_JAAOZB010000002
+Source: Microbacterium halimionae strain CECT 8593 Ga0372424_02, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 12
+Cumulative BLAST score: 4530.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	FHS06_RS10530	72	419	98.62542955326461	4.05e-147
+ctg1_978	FHS06_RS10535	61	114	80.17241379310344	2.03e-32
+ctg1_979	FHS06_RS10540	52	102	85.21739130434783	1.7e-27
+ctg1_980	FHS06_RS10545	70	729	97.74011299435028	1.23e-261
+ctg1_981	FHS06_RS10550	63	324	95.1890034364261	1.2e-109
+ctg1_982	FHS06_RS10555	52	313	97.43589743589743	3.2e-103
+ctg1_983	FHS06_RS10565	51	149	96.12903225806451	1.13e-44
+ctg1_985	FHS06_RS10575	61	332	95.95588235294117	3.83e-113
+ctg1_986	FHS06_RS10580	72	563	99.24812030075188	3.17e-200
+ctg1_987	FHS06_RS10585	64	460	88.79837067209776	2.2e-156
+ctg1_988	FHS06_RS10590	57	422	95.18072289156626	2.91e-144
+ctg1_989	FHS06_RS10595	66	603	97.30290456431536	1.36e-213
+
+
+
+>>
+39. NZ_CP034245
+Source: Microbacterium sp. 10M-3C3 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 12
+Cumulative BLAST score: 4399.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	EI169_RS07140	79	476	99.65635738831615	1.81e-169
+ctg1_978	EI169_RS07145	70	128	81.03448275862068	7.84e-38
+ctg1_979	EI169_RS07150	63	125	89.56521739130436	1.53e-36
+ctg1_980	EI169_RS07155	72	721	97.17514124293785	7.14e-259
+ctg1_981	EI169_RS07160	70	378	98.28178694158075	6.18e-131
+ctg1_982	EI169_RS07165	56	330	101.7094017094017	7.33e-110
+ctg1_983	EI169_RS07175	57	154	88.38709677419355	7.61e-47
+ctg1_984	EI169_RS07195	68	189	92.39766081871345	3.68e-60
+ctg1_985	EI169_RS07200	69	359	95.95588235294117	4.04e-124
+ctg1_986	EI169_RS07205	77	596	99.24812030075188	2.91e-213
+ctg1_987	EI169_RS07210	61	462	101.62932790224033	1.83e-157
+ctg1_988	EI169_RS07215	64	481	98.55421686746988	1.42e-167
+
+
+
+>>
+40. NZ_CP015810
+Source: Microbacterium chocolatum strain SIT 101 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 12
+Cumulative BLAST score: 5083.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	A8L33_RS11955	80	469	98.28178694158075	1e-166
+ctg1_978	A8L33_RS11950	72	132	81.03448275862068	2.5e-39
+ctg1_979	A8L33_RS11945	75	152	93.04347826086956	3.24e-47
+ctg1_980	A8L33_RS11940	71	716	97.92843691148776	2.35e-256
+ctg1_981	A8L33_RS11935	71	364	95.87628865979381	2.11e-125
+ctg1_982	A8L33_RS11930	57	330	97.43589743589743	6.22e-110
+ctg1_985	A8L33_RS11915	64	328	96.32352941176471	6.97e-112
+ctg1_986	A8L33_RS11910	71	554	99.24812030075188	1.15e-196
+ctg1_987	A8L33_RS11905	60	389	80.44806517311609	3.28e-129
+ctg1_988	A8L33_RS11900	60	457	99.27710843373494	7.29e-158
+ctg1_989	A8L33_RS11895	64	595	99.1701244813278	2.45e-210
+ctg1_989	A8L33_RS11900	33	104	62.863070539419084	3.74e-22
+ctg1_990	A8L33_RS11890	74	493	93.93939393939394	2.17e-174
+
+
+
+>>
+41. NZ_CP119753
+Source: Microbacter sp. GSS18 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 12
+Cumulative BLAST score: 4958.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	P0L94_RS03085	80	476	99.65635738831615	1.81e-169
+ctg1_978	P0L94_RS03090	71	135	85.34482758620689	1.56e-40
+ctg1_979	P0L94_RS03095	64	128	86.08695652173914	1.18e-37
+ctg1_980	P0L94_RS03100	75	751	97.36346516007532	2.75e-270
+ctg1_981	P0L94_RS03105	72	379	95.87628865979381	2.76e-131
+ctg1_982	P0L94_RS03110	60	343	98.00569800569801	2.21e-115
+ctg1_983	P0L94_RS03120	57	162	96.12903225806451	5.89e-50
+ctg1_985	P0L94_RS03130	71	368	95.95588235294117	2.02e-127
+ctg1_986	P0L94_RS03135	76	597	99.24812030075188	5.97e-214
+ctg1_987	P0L94_RS03140	63	427	83.5030549898167	1.88e-143
+ctg1_988	P0L94_RS03145	63	479	99.75903614457832	1.64e-166
+ctg1_989	P0L94_RS03150	64	603	99.5850622406639	2.25e-213
+ctg1_989	P0L94_RS03145	33	110	73.23651452282157	3.93e-24
+
+
+
+>>
+42. NZ_CP031423
+Source: Microbacterium lemovicicum strain Viu22 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 11
+Cumulative BLAST score: 3902.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	CVS47_RS09055	76	440	95.53264604810997	2.82e-155
+ctg1_978	CVS47_RS09050	72	129	81.03448275862068	4.56e-38
+ctg1_979	CVS47_RS09045	69	131	86.08695652173914	8.09e-39
+ctg1_980	CVS47_RS09040	72	746	97.5517890772128	1.74e-268
+ctg1_981	CVS47_RS09035	69	380	100.0	1.19e-131
+ctg1_982	CVS47_RS09030	57	340	101.13960113960114	4.24e-114
+ctg1_983	CVS47_RS09020	55	153	90.96774193548387	3.31e-46
+ctg1_984	CVS47_RS09010	70	193	90.05847953216374	1.53e-61
+ctg1_985	CVS47_RS09005	67	343	95.95588235294117	1.65e-117
+ctg1_986	CVS47_RS09000	74	581	98.99749373433583	2.09e-207
+ctg1_987	CVS47_RS08995	65	466	90.83503054989816	2.35e-158
+
+
+
+>>
+43. NZ_BSER01000009
+Source: Microbacterium dextranolyticum strain VKM Ac-1940 platanus_K_25_97_9, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 11
+Cumulative BLAST score: 3875.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	PKE76_RS08460	77	450	98.62542955326461	2.89e-159
+ctg1_978	PKE76_RS08465	60	110	81.03448275862068	1.71e-30
+ctg1_979	PKE76_RS08470	61	128	94.78260869565217	1.15e-37
+ctg1_980	PKE76_RS08475	72	730	97.17514124293785	3.87e-262
+ctg1_981	PKE76_RS08480	68	349	95.87628865979381	1.45e-119
+ctg1_982	PKE76_RS08485	60	363	101.13960113960114	6.94e-123
+ctg1_983	PKE76_RS08495	58	171	97.41935483870968	3.36e-53
+ctg1_984	PKE76_RS08505	68	192	87.71929824561403	4.51e-61
+ctg1_985	PKE76_RS08510	70	360	95.95588235294117	3.05e-124
+ctg1_986	PKE76_RS08515	74	572	99.49874686716792	7.08e-204
+ctg1_987	PKE76_RS08520	65	450	87.16904276985743	4.81e-152
+
+
+
+>>
+44. NZ_CP088261
+Source: Microbacterium sp. cx-55 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 11
+Cumulative BLAST score: 4065.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	LQ938_RS09900	78	460	100.0	3.77e-163
+ctg1_978	LQ938_RS09895	76	135	81.03448275862068	1.96e-40
+ctg1_979	LQ938_RS09890	69	141	86.08695652173914	1.06e-42
+ctg1_980	LQ938_RS09885	71	711	97.5517890772128	9.23e-255
+ctg1_981	LQ938_RS09880	70	357	95.87628865979381	2.39e-122
+ctg1_982	LQ938_RS09875	56	338	98.29059829059828	2.19e-113
+ctg1_983	LQ938_RS09865	57	149	89.03225806451613	1.13e-44
+ctg1_985	LQ938_RS09840	60	316	96.32352941176471	4.13e-107
+ctg1_986	LQ938_RS09835	73	568	99.49874686716792	2.27e-202
+ctg1_987	LQ938_RS09830	61	422	90.020366598778	1.1e-141
+ctg1_988	LQ938_RS09825	60	468	100.72289156626506	2.71e-162
+
+
+
+>>
+45. NZ_CP031015
+Source: Microbacterium sp. ABRD_28 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 12
+Cumulative BLAST score: 5144.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	DT073_RS11620	77	447	95.1890034364261	3.75e-158
+ctg1_978	DT073_RS11615	60	110	87.06896551724138	1.76e-30
+ctg1_980	DT073_RS11605	74	747	97.5517890772128	9.12e-269
+ctg1_981	DT073_RS11600	72	374	96.90721649484536	3.46e-129
+ctg1_982	DT073_RS11595	58	350	99.71509971509973	4.28e-118
+ctg1_984	DT073_RS11580	67	177	87.71929824561403	4.56e-55
+ctg1_985	DT073_RS11575	65	338	95.58823529411765	9.98e-116
+ctg1_986	DT073_RS11570	71	541	98.74686716791979	1.97e-191
+ctg1_987	DT073_RS11565	62	461	100.20366598778003	2.86e-157
+ctg1_988	DT073_RS11560	59	459	98.79518072289156	6.55e-159
+ctg1_989	DT073_RS11555	67	632	99.37759336099586	8.71e-225
+ctg1_990	DT073_RS11550	77	508	93.93939393939394	3.6e-180
+
+
+
+>>
+46. NZ_JACCCG010000004
+Source: Microbacterium sp. AK009 Ga0401616_04, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 12
+Cumulative BLAST score: 5122.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	HDC37_RS10545	77	449	95.1890034364261	6.26e-159
+ctg1_978	HDC37_RS10540	60	110	87.06896551724138	8.74e-31
+ctg1_980	HDC37_RS10530	73	741	97.5517890772128	2.47e-266
+ctg1_981	HDC37_RS10525	71	370	96.90721649484536	1.57e-127
+ctg1_982	HDC37_RS10520	57	344	99.71509971509973	1.61e-115
+ctg1_984	HDC37_RS10505	68	174	87.13450292397661	3.6e-54
+ctg1_985	HDC37_RS10500	64	340	95.58823529411765	1.74e-116
+ctg1_986	HDC37_RS10495	70	538	98.74686716791979	2.37e-190
+ctg1_987	HDC37_RS10490	62	466	100.0	1.97e-159
+ctg1_988	HDC37_RS10485	57	456	98.79518072289156	2.15e-157
+ctg1_989	HDC37_RS10480	66	625	99.5850622406639	2.35e-222
+ctg1_990	HDC37_RS10475	77	509	93.93939393939394	8.86e-181
+
+
+
+>>
+47. NZ_KE150458
+Source: Microbacterium sp. oral taxon 186 str. F0373 acKdS-supercont1.2, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 10
+Cumulative BLAST score: 3748.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	HMPREF1529_RS10150	78	456	97.9381443298969	8.54e-162
+ctg1_978	HMPREF1529_RS10155	58	110	85.34482758620689	1.56e-30
+ctg1_979	HMPREF1529_RS10160	65	126	87.82608695652175	7.23e-37
+ctg1_980	HMPREF1529_RS10165	73	744	96.61016949152543	1.94e-267
+ctg1_981	HMPREF1529_RS10170	69	347	95.87628865979381	1.1e-118
+ctg1_982	HMPREF1529_RS10175	63	383	100.0	6.39e-131
+ctg1_983	HMPREF1529_RS10185	61	175	92.90322580645162	7.14e-55
+ctg1_985	HMPREF1529_RS10195	68	344	95.95588235294117	3.44e-118
+ctg1_986	HMPREF1529_RS10200	75	584	99.74937343358395	1.57e-208
+ctg1_987	HMPREF1529_RS10205	64	479	94.09368635437882	6.93e-164
+
+
+
+>>
+48. NZ_BSEK01000005
+Source: Microbacterium laevaniformans strain VKM Ac-1138 platanus_K_21_77_5, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 10
+Cumulative BLAST score: 3723.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	PKE70_RS04755	77	453	97.9381443298969	1.41e-160
+ctg1_978	PKE70_RS04750	60	116	85.34482758620689	5.8e-33
+ctg1_979	PKE70_RS04745	65	130	90.43478260869566	3.09e-38
+ctg1_980	PKE70_RS04740	73	749	96.61016949152543	1.44e-269
+ctg1_981	PKE70_RS04735	69	347	95.87628865979381	1.1e-118
+ctg1_982	PKE70_RS04730	64	385	100.0	1.11e-131
+ctg1_983	PKE70_RS04720	63	177	92.90322580645162	1.24e-55
+ctg1_985	PKE70_RS04710	68	345	95.95588235294117	1.71e-118
+ctg1_986	PKE70_RS04705	75	577	99.74937343358395	6.07e-206
+ctg1_987	PKE70_RS04700	64	444	84.928716904277	2.59e-150
+
+
+
+>>
+49. NZ_RBWZ01000013
+Source: Microbacterium sp. AG790 Ga0222384_108, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 10
+Cumulative BLAST score: 3722.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	DEU37_RS13850	78	456	97.9381443298969	8.54e-162
+ctg1_978	DEU37_RS13845	58	111	85.34482758620689	5.48e-31
+ctg1_979	DEU37_RS13840	63	128	92.17391304347827	1.78e-37
+ctg1_980	DEU37_RS13835	73	741	96.61016949152543	1.59e-266
+ctg1_981	DEU37_RS13830	68	348	97.2508591065292	5.48e-119
+ctg1_982	DEU37_RS13825	63	384	100.85470085470085	4.99e-131
+ctg1_983	DEU37_RS13815	63	177	92.90322580645162	8.75e-56
+ctg1_985	DEU37_RS13805	68	344	95.95588235294117	3.44e-118
+ctg1_986	DEU37_RS13800	75	581	99.74937343358395	1.83e-207
+ctg1_987	DEU37_RS13795	66	452	83.70672097759673	2.64e-153
+
+
+
+>>
+50. NZ_CP022162
+Source: Microbacterium sp. PM5 chromosome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 10
+Cumulative BLAST score: 3714.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_977	CEP17_RS03600	77	451	97.9381443298969	8.14e-160
+ctg1_978	CEP17_RS03605	59	115	85.34482758620689	2.35e-32
+ctg1_979	CEP17_RS03610	64	128	90.43478260869566	1.78e-37
+ctg1_980	CEP17_RS03615	74	756	96.61016949152543	3.75e-272
+ctg1_981	CEP17_RS03620	71	354	95.53264604810997	1.43e-121
+ctg1_982	CEP17_RS03625	62	376	100.85470085470085	3.8e-128
+ctg1_983	CEP17_RS03635	63	177	92.90322580645162	6.16e-56
+ctg1_985	CEP17_RS03645	68	338	95.95588235294117	1.32e-115
+ctg1_986	CEP17_RS03650	75	577	99.74937343358395	8.62e-206
+ctg1_987	CEP17_RS03655	64	442	84.928716904277	1.47e-149
+

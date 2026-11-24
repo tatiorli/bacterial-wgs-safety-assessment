@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)https://tygs.dsmz.de/user_requests/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"></style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Matomo -->
+  <script type="text/javascript" async="" src="./Type Strain Genome Server_files/matomo.js.download"></script><script type="text/javascript">
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setCookieDomain", "*.tygs.dsmz.de"]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function () {
+          var u = "https://piwik.dsmz.de/";
+          _paq.push(['setTrackerUrl', u + 'matomo.php']);
+          _paq.push(['setSiteId', '12']);
+          var d = document, g = d.createElement('script'),
+              s = d.getElementsByTagName('script')[0];
+          g.type = 'text/javascript';
+          g.async = true;
+          g.src = u + 'matomo.js';
+          s.parentNode.insertBefore(g, s);
+      })();
+  </script>
+  <noscript><p>
+    <img src="https://piwik.dsmz.de/matomo.php?idsite=12&amp;rec=1" style="border:0;" alt=""/>
+  </p></noscript>
+  <!-- End Matomo Code -->
+
+  <title>Type Strain Genome Server</title>
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="fAwA4PFP7o2deXbJ7o2dTiUvcwsjjntPPevFM9yKZ80d+P9z8LsGQYqu+QLFwXUanE7vQ9SbgE63FEjcCxvfNg==">
+
+  <link rel="icon" type="image/x-icon" href="https://tygs.dsmz.de/assets/favicon-1a1e2373bcce495e4661c3318a9d6c26b8cf49259084d4046f814605eacbf5c2.ico">
+
+  <link rel="stylesheet" href="./Type Strain Genome Server_files/application-bbb8935098138788f5c4b5162e261a1ca2f844d6f4ee1179233c1b12c04ee6c7.css" media="all" data-turbolinks-track="reload">
+  <script src="./Type Strain Genome Server_files/application-1cb84d99d5dbefdd509c5b2b5dfa8940a8c1670cab546626a321823e49efa3cc.js.download" data-turbolinks-track="reload"></script>
+  <script src="./Type Strain Genome Server_files/digidive-be390fe2fe62161396e9cf96bcbe8f998f39b4fd59efea93f21672c44a1e86c7.js.download" data-turbolinks-track="reload"></script>
+
+  <script src="./Type Strain Genome Server_files/jquery-3.2.1.min-ee6abebdca3424d622d6bfe7024ae2ba7b65ce261ad5abee94f5c93ba4c218a4.js.download"></script>
+  <script src="./Type Strain Genome Server_files/suggested_examples-ebbb5c31430ea84b9e9810cc3ec7b414c49cb4c2ecd36e4e6e8927c2ec7425e3.js.download"></script>
+  <script src="./Type Strain Genome Server_files/tooltip_positioning-68f76ec44db6d7b9e44f61aad0f9881c0f06953907d61d8d1edd2212e2be796e.js.download"></script>
+  <script src="./Type Strain Genome Server_files/bootstrap.min-7d1785888ef617671498004048a5678c75e57597eadf263145510164155329b5.js.download"></script>
+  
+
+    <!-- duplicate? (see below) -->
+    <script src="./Type Strain Genome Server_files/datatables.min-f6fb7d3532d90021a151a92a5f509d95ca1771ce36b3b439801c8c669ae8deed.js.download"></script>
+
+    <!-- for user request submission page (strain select) -->
+    <script src="./Type Strain Genome Server_files/virtual-select.min-66ad4212d42b529e7bf18c66d4c265792ad2258155b5002e6ef1c3036e2c4ab3.js.download"></script>
+    <script src="./Type Strain Genome Server_files/tooltip.min-add49758f57b8c694e50a97a165e4b9996427e136d3cbe835286cce9f5ef5926.js.download"></script>
+
+    <!-- jQuery DataTable -->
+    <script src="./Type Strain Genome Server_files/datatables-ce8ff0fe27f45cdb7b7cdadf9e9b2ef8a08a397481ee8b3e0e3f10c2b6ad0df9.js.download"></script>
+    <script src="./Type Strain Genome Server_files/jquery.dataTables.min-46758101c5eb6a5a504ff85c3c74727bee00de6ba1cf934726a186b418672650.js.download"></script>
+    <script src="./Type Strain Genome Server_files/dataTables.buttons.min-febe8f590029a6608179d3807194df9a8912e0b583c46ed8ee45e820f2137c07.js.download"></script>
+    <script src="./Type Strain Genome Server_files/buttons.html5.min-4725244d711253462037cd1635f7c50b8997aafccb5c92788b60b9f9fbdefa7c.js.download"></script>
+    <script src="./Type Strain Genome Server_files/pdfmake.min-b3baca6f8921114fc78bbba3a876bc014bdbd1b383fa06fa190542bd42979995.js.download"></script>
+    <script src="./Type Strain Genome Server_files/vfs_fonts-9f5a20318b4ac913d219eb27a02b634a853dfb8981744c0e729633521a06c1f7.js.download"></script>
+    <script src="./Type Strain Genome Server_files/jszip.min-445016fffca92290f7d1de6f2e266065c6af266181b8ac1045994d9c68c602a4.js.download"></script>
+    <script src="./Type Strain Genome Server_files/buttons.print.min-610db4c2ee8209d9c545e217959bbf023f45046b93f8242b156746abc29d8e9d.js.download"></script>
+
+</head>
+
+<body data-sidebar-size="small">
+<noscript>
+  <div class="content-wrapper"></div>
+
+  <div class="container">
+    <div class="alert alert-danger">
+      <b>Warning: For full functionality of this site it is necessary to
+        enable JavaScript. Here are the
+        <a href="http://www.enable-javascript.com/" target="_blank">
+          instructions how to enable JavaScript in your web browser</a>.</b>
+    </div>
+  </div>
+</noscript>
+
+<!-- Header as partial ...-->
+<div class="page-wrapper with-transitions" data-sidebar-size="small">
+  <div class="sticky-alerts"></div>
+  <div class="sidebar-overlay" onclick="digidive.toggleSidebar()"></div>
+
+  <nav class="navbar navbar-top">
+      <div class="navbar-brand ml-20">
+        <a class="navbar-brand position-relative" href="https://tygs.dsmz.de/"><img alt="Type Strain Genome Server" height="84" src="./Type Strain Genome Server_files/tygs_brand_logov2-1b9acc60dd9b2da583cbd762f37d83c7d49363bd4fd82fe15e8a39fd8645eab3.png"></a>
+
+        <a target="_blank" rel="noopener noreferrer" class="navbar-brand ml-auto" href="https://hub.dsmz.de/"><img alt="Digital Diversity Hub logo" height="100" width="275" src="./Type Strain Genome Server_files/digital_diversity_logo-8131ef9ea2b05704ec5722896e1917171d229af20e542bd6ab1b42daf4b02e7e.png"></a>
+      </div>
+  </nav>
+    
+
+  <nav class="navbar navbar-bottom">
+      <div class="container navbar-bottom-container">
+        <button class="btn btn-action collapsible active" type="button" onclick="digidive.toggleSidebar(this);" aria-label="Toggle navigation sidebar">
+          <i class="ph ph-sidebar-collapse" aria-hidden="true"></i>
+        </button>
+        
+        <ul class="breadcrumb navbar-breadcrumb" aria-label="Breadcrumb">
+            <li> 
+              <a href="https://tygs.dsmz.de/">HOME</a>
+            </li>
+            <li class="active" aria-current="page">
+              <a href="javascript:void(0)">User requests</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav"></ul>
+
+        <div class="dropdown">
+          <button class="btn primary circle square mr-10" data-toggle="dropdown" type="button" id="accessibility-menu" aria-haspopup="true" aria-expanded="false">
+              <i class="ph ph-person-simple"></i>
+              <span class="sr-only">Accessibility Options</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-center" aria-labelledby="accessibility-menu">
+              <h6 class="header text-primary">Accessibility</h6>
+                <form action="https://tygs.dsmz.de/user_requests/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#" method="get" class="content" id="accessibility-settings-form" data-dyslexia-mode-initialized="true">
+                    <input type="hidden" name="accessibility[check]">
+
+                    <input type="hidden" name="redirect" value="/">
+
+                  <div class="form-group">
+                    <div class="custom-checkbox">
+                      <input type="checkbox" id="set-contrast" name="accessibility[contrast]" value="high-contrast">
+                        <label for="set-contrast">High contrast</label><br>
+                          <small class="text-muted">
+                            Enhance the contrast of the web page for better readability.                                    
+                          </small>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="custom-checkbox">
+                          <input type="checkbox" id="set-transitions" name="accessibility[transitions]" value="without-transitions">
+                              <label for="set-transitions">Reduce motion</label><br>
+                                <small class="text-muted">
+                                      Reduce motion and animations on the page.
+                                </small>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="custom-checkbox">
+                          <input type="checkbox" id="set-dyslexia" name="accessibility[dyslexia]" value="dyslexia">
+                              <label for="set-dyslexia">Dyslexia mode</label><br>
+                                <small class="text-muted">
+                                      Use a special font to increase readability for users with dyslexia.
+                                </small>
+                      </div>
+                  </div>
+                  <button class="btn primary">Apply</button>
+                </form>
+          </div>
+        </div>
+
+        <form id="navbar-search" action="https://tygs.dsmz.de/faqs" method="get" class="nav-search header-search" data-suggestions-initialized="true">
+          <div class="input-cont" style="margin-top:-5rem;">
+            <div class="header-search-control">
+              <div class="input-group">
+                <input type="search" name="search" class="search-term form-control" autocomplete="off" placeholder="Search TYGS FAQs" value="" aria-controls="suggested-example-queries" aria-expanded="false">
+                <div class="input-group-append">
+                  <button class="btn primary" id="home-search-submit" name="submit" type="submit" aria-label="Search">
+                    <i class="ph ph-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="suggested-example" id="suggested-example-queries" aria-label="Suggested example queries" hidden="">
+                <p class="suggested-example-text">Suggested example queries:</p>
+                <ul class="suggested-example-list">
+                  <li><a href="https://tygs.dsmz.de/faqs?search=dDDH">digital DNA-DNA hybridization</a></li>
+                  <li><a href="https://tygs.dsmz.de/faqs?search=TYGS+database">type strain database</a></li>
+                  <li><a href="https://tygs.dsmz.de/faqs?search=accessions">Genbank accessions</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+  </nav>
+
+  
+  
+<aside class="sidebar">
+    <nav class="sidebar-topnav">
+        <ul>
+            <li>
+              <a class="with-icon" href="https://tygs.dsmz.de/assets/TYGS_tutorial-fe4f87554db53994fb35d6a93d399b627cfb5fe397ba20e765482cde1076937c.pdf">
+                <i class="ph ph-book"></i>
+                <span class="label">Manual</span>
+</a>            </li>
+
+            <li>
+              <a class="with-icon" href="https://tygs.dsmz.de/feedbacks/new">
+                <i class="ph ph-headset"></i>
+                <span class="label">Contact</span>
+</a>            </li>
+        </ul>
+    </nav>
+    <nav class="sidebar-menu">
+      <h5 class="title">Content</h5>
+      <a class="with-icon success" aria_hidden="true" href="https://tygs.dsmz.de/user_requests/new">
+        <i class="ph ph-paper-plane"></i>
+        <span class="label">Submit your query</span>
+</a>      <a class="with-icon signal" href="https://tygs.dsmz.de/faqs">
+        <i class="ph ph-question"></i>
+        <span class="label">FAQs</span>
+</a>      <a class="with-icon danger" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLOBqrx8E9qdQ">
+        <i class="ph ph-youtube-logo"></i>
+        <span class="label">Tutorial Series<span style="font-size:1.4em; margin-left:7px;" class="ph ph-arrow-square-out"></span></span>
+</a>      <a class="with-icon primary" href="https://tygs.dsmz.de/application_programming_interface/show">
+        <i class="ph ph-terminal-window"></i>
+        <span class="label">API</span>
+</a>      
+      <details class="sidebar-example-dropdown">
+        <summary class="title sidebar-example-toggle">
+          <span>Examples</span>
+          <i class="ph ph-caret-down" aria-hidden="true"></i>
+        </summary>
+        <nav aria-label="Example jobs">
+          <a class="with-icon success" href="https://tygs.dsmz.de/user_results/show?guid=588b9751-63ae-4a55-83b7-9ce39343dfee">
+            <i class="ph ph-archive"></i>
+            <span class="label">Bacillus cereus group dataset</span>
+</a>          <a class="with-icon success" href="https://tygs.dsmz.de/user_results/show?guid=ec388433-020e-47c2-97b0-0d6430982f72">
+            <i class="ph ph-archive"></i>
+            <span class="label">Salmonella dataset</span>
+</a>          <a class="with-icon success" href="https://tygs.dsmz.de/user_results/show?guid=371cab98-ab08-459e-b2d6-2c00dcc21002">
+            <i class="ph ph-archive"></i>
+            <span class="label">Mycobacterium dataset</span>
+</a>          <a class="with-icon success" href="https://tygs.dsmz.de/user_results/show?guid=6d4dfe5e-decf-41d5-b14f-82efc2c9cdc9">
+            <i class="ph ph-archive"></i>
+            <span class="label">Escherichia coli dataset</span>
+</a>          <a class="with-icon success" href="https://tygs.dsmz.de/user_results/show?guid=46502028-a629-4cb0-b4ce-47ed172f07b5">
+            <i class="ph ph-archive"></i>
+            <span class="label">Rhodobacteraceae dataset</span>
+</a>          <a class="with-icon success" href="https://tygs.dsmz.de/user_results/show?guid=29ae139a-3a41-4571-a19b-809af76a3ec5">
+            <i class="ph ph-archive"></i>
+            <span class="label">Legionella dataset</span>
+</a>        </nav>
+      </details>
+
+      <h5 class="title">About TYGS</h5>
+      <a id="background-sidebar-link" class="with-icon success" href="https://tygs.dsmz.de/background/show">
+        <i class="ph ph-info"></i>
+        <span class="label">Background</span>
+</a>      <a id="cite-tygs-link" class="with-icon success" href="https://tygs.dsmz.de/background/show#literature">
+        <i class="ph ph-books"></i>
+        <span class="label">Cite TYGS</span>
+</a>
+      <h5 class="title">Tools</h5>
+      <a class="with-icon" target="_blank" rel="noopener noreferrer" href="https://ggdc.dsmz.de/ggdc.php#">
+        <i class="ph ph-git-branch"></i>
+        <span class="label">GGDC<span style="font-size:1.4em; margin-left:7px;" class="ph ph-arrow-square-out"></span></span>
+</a>      <a class="with-icon" target="_blank" rel="noopener noreferrer" href="https://ggdc.dsmz.de/victor.php#">
+        <i class="ph ph-virus"></i>
+        <span class="label">VICTOR<span style="font-size:1.4em; margin-left:7px;" class="ph ph-arrow-square-out"></span></span>
+</a>      <a class="with-icon" target="_blank" rel="noopener noreferrer" href="https://ggdc.dsmz.de/phylogeny-service.php#">
+        <i class="ph ph-tree-structure"></i>
+        <span class="label">PHYLOSERV<span style="font-size:1.4em; margin-left:7px;" class="ph ph-arrow-square-out"></span></span>
+</a>
+    </nav>
+  </aside>
+    
+  <main class="content-wrapper">
+    <div class="content-container">
+      <!-- yield the body ... -->
+      
+  <div class="page-header">
+    <h1>
+    <small><span> <i class="ph ph-paper-plane-tilt mr-5 text-primary"></i> </span></small>
+    User request
+    </h1>
+  </div>
+
+
+
+    <div class="panel panel-success">
+      <div class="panel-heading">Thank you for your submission!
+        A confirmation e-mail will arrive soon (hint: check your spam folder,
+        just in case...)
+      </div>
+      <div class="panel-body">
+
+
+        <table class="table">
+          <thead>
+          <tr>
+            <th>Job ID</th>
+            <th>Submission date</th>
+            <th>Contact e-mail</th>
+            <th>Num. query genomes</th>
+            <th>Restrict to query genomes</th>
+            <th>Num. reference genomes</th>
+
+            <th>Result
+              links <span class="tooltip-trigger tooltip-placement-left" data-title="Either a single accession ID or range of IDs is allowed. See FAQ for details." aria-label="Either a single accession ID or range of IDs is allowed. See FAQ for details." tabindex="0" style="padding-left: 0.2cm; --tooltip-available-width: 1795.140625px;"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></span></th>
+
+          </tr>
+          </thead>
+
+          <tbody>
+
+          <tr class="default">
+            <td>b1a3ad76-31a6-4d39-9596-4154f27b3379</td>
+            <td>2026-11-11 08:29:39 +0100</td>
+            <td>tatianaorli@gmail.com</td>
+            <td>1</td>
+            <td>no</td>
+            <td>1</td>
+            <td><a href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379">Results</a>
+            </td>
+          </tr>
+
+          </tbody>
+        </table>
+
+        <!-- Inform about problems, if any -->
+         
+
+        
+
+          <table class="table">
+            <thead>
+            <tr>
+              <th>#</th>
+              <th>Genome (user-provided or manually selected on submission)</th>
+              <th>Source</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <!-- NOTE: the symbol needs to be in pluralized form -->
+
+              <tr class="warning">
+                <td>1</td>
+                <td>Microbacterium_arborescens_spp._assembled_genome.fasta</td>
+                <td>per file</td>
+              </tr>
+              <tr class="warning">
+                <td>2</td>
+                <td><i>Microbacterium</i> <i>arborescens</i> DSM 20754</td>
+                <td>TYGS</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+
+        <div class="row extra-bottom-padding">
+          <div class="col-md-12">
+            <h4><span class="label label-primary">What will happen now?</span>
+            </h4>
+
+          </div>
+        </div>
+
+        <div class="row extra-bottom-padding">
+          <div class="col-md-12">
+            First, in case you have specified GenBank accession IDs, TYGS will try to download these data for you. In case of invalid accessions or other input problems, it will report back to you with an informative e-mail after data has been downloaded and checked. Download speed depends on the NCBI servers' load. Browse the FAQ to find out more about how TYGS both expects and handles accessions. Afterwards, TYGS will use a sophisticated pipeline to determine up to twenty type strains, most closely related to your query genome(s), from its own large database. Finally, TYGS will conduct a complete genome-based taxonomic analysis on the overall dataset and will report back with the results. The one type strain genomes, which you manually selected in the submission form, are added to the analysis as well.
+          </div>
+        </div>
+
+
+        <div class="row extra-bottom-padding">
+          <div class="col-md-12">
+            <h4>
+              <span class="label label-primary">How to proceed once the results are ready?</span>
+            </h4>
+          </div>
+        </div>
+
+        <div class="row extra-bottom-padding">
+          <div class="col-md-12">
+            TYGS will send a notification e-mail once your job is done.
+            Results <strong>won't</strong> be send as an e-mail attachment.
+            Instead, these can be conveniently accessed via your unique result
+            link (see above). For both privacy and data security reasons we will
+            remove user data and results older than 28 days. Please let us know
+            if you think that this retention period should be further increased.
+          </div>
+        </div>
+
+
+        <div class="row extra-bottom-padding">
+          <div class="col-md-12">
+            <h4>
+              <span class="label label-success">Further reading</span>
+            </h4>
+          </div>
+        </div>
+
+        <div class="row extra-bottom-padding">
+          <div class="col-md-12">
+            The TYGS paper was published online in
+            <a href="http://dx.doi.org/10.1038/s41467-019-10210-3" target="_blank">Nature
+              Communications</a>. We described subsequent updates to TYGS in a 
+              <a href="http://dx.doi.org/10.1093/nar/gkab902" target="_blank">2021 Nucleic Acids Research 
+              publication</a>, and more recent developments
+              (<a href="http://dx.doi.org/10.1093/nar/gkaf1110" target="_blank">Nucleic Acids Research, 2025</a>)
+              that expand interoperability and database content for genome-based classification and nomenclature of prokaryotes 
+              within the 
+              <a href="https://hub.dsmz.de/" target="_blank">DSMZ Digital Diversity</a> framework.
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+  <a class="btn muted" href="https://tygs.dsmz.de/user_requests/new">Back</a>
+
+
+    </div>
+
+    <footer class="page-footer">
+  <div class="link-parade">
+    <div class="row">
+      <div class="col">
+        <h3>TYGS</h3>
+        <a href="https://tygs.dsmz.de/changelogs?category=all">News and Changelogs</a>
+        <a href="https://tygs.dsmz.de/team/show">Team</a>
+      </div>
+
+      <div class="col">
+        <h3>Help</h3>
+        <a href="https://tygs.dsmz.de/faqs">FAQs</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=SaCJUMnO07Y&amp;list=PLOBqrx8E9qdQ">Tutorial Series</a>
+      </div>
+
+      <div class="col">
+        <h3>Feedback</h3>
+        <a href="https://tygs.dsmz.de/feedbacks/new">Feedback Form</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.surveymonkey.de/r/denbi-service?sc=db-node&amp;tool=tygs">de.NBI Survey</a>
+      </div>
+
+      <div class="col-md">
+        <h3>Social Media</h3>
+        <a class="footer-social-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/dsmzd3">
+          <i class="ph ph-linkedin-logo"></i>
+          <span class="footer-social-label">LinkedIn</span>
+</a>        <a class="footer-social-link" target="_blank" rel="noopener noreferrer" href="https://bsky.app/profile/dsmzd3.bsky.social">
+          <i class="ph ph-butterfly"></i>
+          <span class="footer-social-label">Bluesky</span>
+</a>      </div>
+
+      <div class="col">
+        <h3>Navigation</h3>
+        <a href="https://tygs.dsmz.de/">Home</a>
+        <a href="https://tygs.dsmz.de/user_requests/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#">Back to top</a>
+      </div>
+    </div>
+  </div>
+  <div class="logo-parade">
+    <a href="http://www.dsmz.de/"><img height="75px" alt="DSMZ logo" src="./Type Strain Genome Server_files/dsmzlogo_with_meaning-e5798c960c203ebb8ba645f90b6cb27f845c47dfd70df05f442d9d9bb643c5f4.svg"></a>
+    <a href="https://www.denbi.de/"><img height="75px" alt="de.NBI logo" src="./Type Strain Genome Server_files/deNBI_Logo_rgb-b4b64555c1990884508ae12c900ef64b0e81688fdb8ec099280f6158d1d7371f.svg"></a>
+    <a href="https://lpsn.dsmz.de/"><img height="75px" alt="LPSN logo" src="./Type Strain Genome Server_files/lpsn-db1cd674299674d15c2e8a0085018d4d7263d0a61c3831758bf2b9c2c7bbdd64.svg"></a>
+    <a href="https://elixir-europe.org/"><img height="75px" alt="Elixir logo" src="./Type Strain Genome Server_files/elixir_logo_0-c097ca52e4fcd2dd19df762fb433eb9a3bf3fcc101ae65b02edcf2eac67dd30c.png"></a>
+  </div>
+  <hr>
+  <div class="footer">
+    <span>
+      © DSMZ 2016-2026 
+    </span>
+    <a href="https://www.dsmz.de/imprint">Imprint</a>
+    <a href="https://tygs.dsmz.de/faqs/1">Privacy</a>
+    <a href="https://tygs.dsmz.de/legal_notice/show">Terms</a>
+    <a href="https://tygs.dsmz.de/changelogs?category=changelog">Changelog</a>
+    <span>v434</span>
+  </div>
+</footer>
+  </main>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+
+
+
+
+</body></html>

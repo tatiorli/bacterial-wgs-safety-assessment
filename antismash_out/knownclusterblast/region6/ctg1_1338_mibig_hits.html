@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ADI71432.1</td>
+              <td>putative_carbamoyl-phosphate_synthase_large_subunit</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000203.3">BGC0000203.3</a></td>
+              <td>PKS</td>
+              <td>66.0</td>
+              <td>100.4</td>
+              <td>1396.0</td>
+              <td>0.0</td>
+          </tr>
+    
+          <tr>
+              <td>AAW03322.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000982.5">BGC0000982.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>57.0</td>
+              <td>100.3</td>
+              <td>1147.0</td>
+              <td>0.0</td>
+          </tr>
+    
+          <tr>
+              <td>CAB56843.1</td>
+              <td>carbamoyl-phosphate_synthase_large_subunit</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000895.5">BGC0000895.5</a></td>
+              <td>other:other</td>
+              <td>45.0</td>
+              <td>86.9</td>
+              <td>746.0</td>
+              <td>3.34e-254</td>
+          </tr>
+    
+          <tr>
+              <td>CBF70389.1</td>
+              <td>carbamoyl-phosphate_synthetase,_arginine-specific_large_chain_(Eurofung)</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000684.4">BGC0000684.4</a></td>
+              <td>PKS</td>
+              <td>41.0</td>
+              <td>90.9</td>
+              <td>711.0</td>
+              <td>9.97e-239</td>
+          </tr>
+    
+          <tr>
+              <td>QCX41955.1</td>
+              <td>Amc18</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001957.4">BGC0001957.4</a></td>
+              <td>PKS</td>
+              <td>26.0</td>
+              <td>21.1</td>
+              <td>63.0</td>
+              <td>1.04e-09</td>
+          </tr>
+    
+          <tr>
+              <td>QHW08545.1</td>
+              <td>ATP-grasp_domain-containing_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002054.2">BGC0002054.2</a></td>
+              <td>PKS+NRPS:Type I+saccharide</td>
+              <td>26.0</td>
+              <td>21.1</td>
+              <td>63.0</td>
+              <td>1.04e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AAG30191.1</td>
+              <td>biotin_carboxylase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000261.5">BGC0000261.5</a></td>
+              <td>PKS</td>
+              <td>26.0</td>
+              <td>21.8</td>
+              <td>59.0</td>
+              <td>1.92e-08</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

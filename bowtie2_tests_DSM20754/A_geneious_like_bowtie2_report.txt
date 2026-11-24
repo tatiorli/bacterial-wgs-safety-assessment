@@ -1,0 +1,21 @@
+Test      : A_geneious_like
+Settings  : end-to-end, ~95% minimum identity (score-min L,0,-0.3), max insert 500 (reads map 'nearby'), random best hit
+Command   : bowtie2 -x DSM20754 -1 reads_R1.fastq.gz -2 reads_R2.fastq.gz -p 8 --end-to-end --sensitive --score-min L,0,-0.3 --maxins 500
+Bowtie2   : /apps/easybd/easybuild/amd/software/Bowtie2/2.5.1-GCC-12.3.0/bin/bowtie2-align-s version 2.5.1
+Run date  : 2026-11-11
+----------
+8136166 reads; of these:
+  8136166 (100.00%) were paired; of these:
+    487524 (5.99%) aligned concordantly 0 times
+    7635042 (93.84%) aligned concordantly exactly 1 time
+    13600 (0.17%) aligned concordantly >1 times
+    ----
+    487524 pairs aligned concordantly 0 times; of these:
+      341590 (70.07%) aligned discordantly 1 time
+    ----
+    145934 pairs aligned 0 times concordantly or discordantly; of these:
+      291868 mates make up the pairs; of these:
+        201047 (68.88%) aligned 0 times
+        89938 (30.81%) aligned exactly 1 time
+        883 (0.30%) aligned >1 times
+98.76% overall alignment rate

@@ -1,0 +1,65 @@
+Contig links (pairs, contigA, contigB):
+20745	NODE_1_length_1475171_cov_354.830449	NODE_2_length_676389_cov_354.803251
+15144	NODE_1_length_1475171_cov_354.830449	NODE_3_length_491278_cov_352.009914
+8663	NODE_1_length_1475171_cov_354.830449	NODE_4_length_275063_cov_365.955049
+6872	NODE_2_length_676389_cov_354.803251	NODE_3_length_491278_cov_352.009914
+6514	NODE_1_length_1475171_cov_354.830449	NODE_5_length_178176_cov_341.842385
+4688	NODE_1_length_1475171_cov_354.830449	NODE_6_length_134275_cov_361.180815
+4066	NODE_2_length_676389_cov_354.803251	NODE_4_length_275063_cov_365.955049
+3960	NODE_2_length_676389_cov_354.803251	NODE_5_length_178176_cov_341.842385
+2907	NODE_3_length_491278_cov_352.009914	NODE_4_length_275063_cov_365.955049
+2289	NODE_5_length_178176_cov_341.842385	NODE_9_length_5256_cov_1097.375555
+1767	NODE_2_length_676389_cov_354.803251	NODE_6_length_134275_cov_361.180815
+1744	NODE_3_length_491278_cov_352.009914	NODE_5_length_178176_cov_341.842385
+1488	NODE_2_length_676389_cov_354.803251	NODE_9_length_5256_cov_1097.375555
+1410	NODE_3_length_491278_cov_352.009914	NODE_6_length_134275_cov_361.180815
+1275	NODE_4_length_275063_cov_365.955049	NODE_6_length_134275_cov_361.180815
+1110	NODE_3_length_491278_cov_352.009914	NODE_9_length_5256_cov_1097.375555
+1108	NODE_4_length_275063_cov_365.955049	NODE_5_length_178176_cov_341.842385
+914	NODE_4_length_275063_cov_365.955049	NODE_7_length_24482_cov_367.297439
+813	NODE_1_length_1475171_cov_354.830449	NODE_7_length_24482_cov_367.297439
+625	NODE_3_length_491278_cov_352.009914	NODE_7_length_24482_cov_367.297439
+497	NODE_5_length_178176_cov_341.842385	NODE_6_length_134275_cov_361.180815
+374	NODE_1_length_1475171_cov_354.830449	NODE_9_length_5256_cov_1097.375555
+366	NODE_2_length_676389_cov_354.803251	NODE_7_length_24482_cov_367.297439
+97	NODE_5_length_178176_cov_341.842385	NODE_7_length_24482_cov_367.297439
+76	NODE_7_length_24482_cov_367.297439	NODE_8_length_18736_cov_24.231792
+66	NODE_4_length_275063_cov_365.955049	NODE_8_length_18736_cov_24.231792
+58	NODE_6_length_134275_cov_361.180815	NODE_7_length_24482_cov_367.297439
+54	NODE_4_length_275063_cov_365.955049	NODE_9_length_5256_cov_1097.375555
+34	NODE_1_length_1475171_cov_354.830449	NODE_8_length_18736_cov_24.231792
+22	NODE_6_length_134275_cov_361.180815	NODE_9_length_5256_cov_1097.375555
+18	NODE_2_length_676389_cov_354.803251	NODE_8_length_18736_cov_24.231792
+14	NODE_3_length_491278_cov_352.009914	NODE_8_length_18736_cov_24.231792
+10	NODE_7_length_24482_cov_367.297439	NODE_9_length_5256_cov_1097.375555
+4	NODE_6_length_134275_cov_361.180815	NODE_8_length_18736_cov_24.231792
+2	NODE_5_length_178176_cov_341.842385	NODE_8_length_18736_cov_24.231792
+
+Depth at contig ends:
+contig                                length   mean_depth  mean_depth_first500  mean_depth_last500
+NODE_1_length_1475171_cov_354.830449  1475171  743         837                  818
+NODE_2_length_676389_cov_354.803251   676389   743         699                  939
+NODE_3_length_491278_cov_352.009914   491278   738         583                  806
+NODE_4_length_275063_cov_365.955049   275063   767         747                  623
+NODE_5_length_178176_cov_341.842385   178176   716         739                  1421
+NODE_6_length_134275_cov_361.180815   134275   756         578                  683
+NODE_7_length_24482_cov_367.297439    24482    768         803                  776
+NODE_8_length_18736_cov_24.231792     18736    50          39                   54
+NODE_9_length_5256_cov_1097.375555    5256     2227        1977                 2353
+
+Mapping report:
+8136166 reads; of these:
+  8136166 (100.00%) were paired; of these:
+    408957 (5.03%) aligned concordantly 0 times
+    7687991 (94.49%) aligned concordantly exactly 1 time
+    39218 (0.48%) aligned concordantly >1 times
+    ----
+    408957 pairs aligned concordantly 0 times; of these:
+      358720 (87.72%) aligned discordantly 1 time
+    ----
+    50237 pairs aligned 0 times concordantly or discordantly; of these:
+      100474 mates make up the pairs; of these:
+        50652 (50.41%) aligned 0 times
+        47076 (46.85%) aligned exactly 1 time
+        2746 (2.73%) aligned >1 times
+99.69% overall alignment rate

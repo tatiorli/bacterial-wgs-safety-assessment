@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ADE22327.1</td>
+              <td>oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000065.5">BGC0000065.5</a></td>
+              <td>PKS:Iterative type I</td>
+              <td>48.0</td>
+              <td>99.7</td>
+              <td>263.0</td>
+              <td>1.88e-86</td>
+          </tr>
+    
+          <tr>
+              <td>ACK77755.1</td>
+              <td>putative_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000727.3">BGC0000727.3</a></td>
+              <td>saccharide</td>
+              <td>49.0</td>
+              <td>88.6</td>
+              <td>240.0</td>
+              <td>2.52e-77</td>
+          </tr>
+    
+          <tr>
+              <td>AHL46723.1</td>
+              <td>oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001179.5">BGC0001179.5</a></td>
+              <td>PKS:Type II</td>
+              <td>46.0</td>
+              <td>97.6</td>
+              <td>233.0</td>
+              <td>1.97e-74</td>
+          </tr>
+    
+          <tr>
+              <td>ABK32277.1</td>
+              <td>Amb9</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000014.5">BGC0000014.5</a></td>
+              <td>PKS</td>
+              <td>43.0</td>
+              <td>99.7</td>
+              <td>209.0</td>
+              <td>4.92e-65</td>
+          </tr>
+    
+          <tr>
+              <td>EAL94095.1</td>
+              <td>NADPH_dehydrogenase_Oye3,_putative</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000811.3">BGC0000811.3</a></td>
+              <td>other:other</td>
+              <td>44.0</td>
+              <td>80.5</td>
+              <td>170.0</td>
+              <td>3.97e-50</td>
+          </tr>
+    
+          <tr>
+              <td>EAU36098.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002273.2">BGC0002273.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>40.0</td>
+              <td>87.9</td>
+              <td>165.0</td>
+              <td>4.02e-48</td>
+          </tr>
+    
+          <tr>
+              <td>ABM91449.1</td>
+              <td>putative_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000348.4">BGC0000348.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>35.0</td>
+              <td>105.7</td>
+              <td>161.0</td>
+              <td>1.07e-46</td>
+          </tr>
+    
+          <tr>
+              <td>QQO98483.1</td>
+              <td>FrzD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002146.2">BGC0002146.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>40.0</td>
+              <td>87.9</td>
+              <td>158.0</td>
+              <td>1.43e-45</td>
+          </tr>
+    
+          <tr>
+              <td>ABV57819.1</td>
+              <td>putative_oxidase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001267.3">BGC0001267.3</a></td>
+              <td>terpene</td>
+              <td>33.0</td>
+              <td>105.7</td>
+              <td>156.0</td>
+              <td>1.26e-44</td>
+          </tr>
+    
+          <tr>
+              <td>AET79178.1</td>
+              <td>chanoclavine-I_aldehyde_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001241.4">BGC0001241.4</a></td>
+              <td>terpene</td>
+              <td>39.0</td>
+              <td>82.2</td>
+              <td>153.0</td>
+              <td>1.8e-43</td>
+          </tr>
+    
+          <tr>
+              <td>CCE30236.1</td>
+              <td>probable_NADPH2_dehydrogenase_chain_OYE2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002232.2">BGC0002232.2</a></td>
+              <td>other:other</td>
+              <td>39.0</td>
+              <td>82.2</td>
+              <td>153.0</td>
+              <td>1.8e-43</td>
+          </tr>
+    
+          <tr>
+              <td>AFO59868.1</td>
+              <td>ChxG</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000175.5">BGC0000175.5</a></td>
+              <td>PKS:Trans-AT type I</td>
+              <td>39.0</td>
+              <td>103.0</td>
+              <td>151.0</td>
+              <td>6.9e-43</td>
+          </tr>
+    
+          <tr>
+              <td>ARB50205.1</td>
+              <td>chanoclavine_cyclase_oxidoreducatase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001573.3">BGC0001573.3</a></td>
+              <td>other:other</td>
+              <td>38.0</td>
+              <td>82.8</td>
+              <td>143.0</td>
+              <td>1.21e-39</td>
+          </tr>
+    
+          <tr>
+              <td>TRO56971.1</td>
+              <td>NADH:flavin_oxidoreductase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002361.3">BGC0002361.3</a></td>
+              <td>PKS+saccharide</td>
+              <td>38.0</td>
+              <td>75.1</td>
+              <td>132.0</td>
+              <td>1.53e-35</td>
+          </tr>
+    
+          <tr>
+              <td>CAC36756.1</td>
+              <td>putative_enoyl_reductase,_MmyE</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000914.5">BGC0000914.5</a></td>
+              <td>other:other</td>
+              <td>38.0</td>
+              <td>76.4</td>
+              <td>126.0</td>
+              <td>2.85e-33</td>
+          </tr>
+    
+          <tr>
+              <td>EED53478.1</td>
+              <td>NADH_oxidase,_putative</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001304.3">BGC0001304.3</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>77.4</td>
+              <td>104.0</td>
+              <td>3.11e-25</td>
+          </tr>
+    
+          <tr>
+              <td>ADI58629.1</td>
+              <td>AsuB4</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000187.5">BGC0000187.5</a></td>
+              <td>PKS:Type II</td>
+              <td>37.0</td>
+              <td>73.4</td>
+              <td>103.0</td>
+              <td>1.69e-24</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

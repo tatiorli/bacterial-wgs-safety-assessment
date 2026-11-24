@@ -1,0 +1,20 @@
+>card~card~~~arr-1~~~AF001493:0-432~~~rifamycin arr-1 is a chromosome-encoded ribosyltransferase found in Mycolicibacter
+>card~card~~~arr-2~~~AF078527:4387-4840~~~rifamycin arr-2 is an integron-encoded ribosyltransferase found in Pseudomonas
+>card~card~~~arr-3~~~EU675686:1956-2409~~~rifamycin arr-3 is a plasmid-encoded ribosyltransferase found in Vibrio fluvia
+>card~card~~~arr-4~~~EF660562:1671-2124~~~rifamycin arr-4 is an integron-encoded ribosyltransferase found in Pseudomonas
+>card~card~~~arr-5~~~EF660563:392-845~~~rifamycin arr-5 is an integron-encoded ribosyltransferase found in Pseudomonas a
+>card~card~~~arr-7~~~FN397623:1188-1641~~~rifamycin arr-7 is an integron-encoded ribosyltransferase found in Pseudomonas
+>card~card~~~arr-8~~~KC199968:0-453~~~rifamycin arr-8 is an integron-encoded ribosyltransferase found in Klebsiella oxyt
+>ncbi~ncbi~~~arr~~~NG_047478.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase
+>ncbi~ncbi~~~arr-2~~~NG_048580.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-2
+>ncbi~ncbi~~~arr-269927220~~~NG_047480.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase
+>ncbi~ncbi~~~arr-3~~~NG_052173.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-3
+>ncbi~ncbi~~~arr-3~~~NG_052327.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-3
+>ncbi~ncbi~~~arr-3~~~NG_048581.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-3
+>ncbi~ncbi~~~arr-4~~~NG_048582.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-4
+>ncbi~ncbi~~~arr-5~~~NG_048583.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-5
+>ncbi~ncbi~~~arr-6~~~NG_047479.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-6
+>ncbi~ncbi~~~arr-6~~~NG_048584.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-6
+>ncbi~ncbi~~~arr-7~~~NG_048585.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-7
+>ncbi~ncbi~~~arr-8~~~NG_048586.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase Arr-8
+>ncbi~ncbi~~~arr-Ms~~~NG_047477.1~~~RIFAMYCIN NAD(+)--rifampin ADP-ribosyltransferase

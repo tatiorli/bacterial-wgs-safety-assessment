@@ -1,0 +1,21 @@
+Test      : B_end_to_end_very_sensitive
+Settings  : end-to-end, very sensitive, default (permissive) score threshold, max insert 800
+Command   : bowtie2 -x SSF12 -1 reads_R1.fastq.gz -2 reads_R2.fastq.gz -p 8 --end-to-end --very-sensitive --maxins 800
+Bowtie2   : /apps/easybd/easybuild/amd/software/Bowtie2/2.5.1-GCC-12.3.0/bin/bowtie2-align-s version 2.5.1
+Run date  : 2026-11-11
+----------
+8136166 reads; of these:
+  8136166 (100.00%) were paired; of these:
+    4319808 (53.09%) aligned concordantly 0 times
+    3768199 (46.31%) aligned concordantly exactly 1 time
+    48159 (0.59%) aligned concordantly >1 times
+    ----
+    4319808 pairs aligned concordantly 0 times; of these:
+      27325 (0.63%) aligned discordantly 1 time
+    ----
+    4292483 pairs aligned 0 times concordantly or discordantly; of these:
+      8584966 mates make up the pairs; of these:
+        6876562 (80.10%) aligned 0 times
+        1695837 (19.75%) aligned exactly 1 time
+        12567 (0.15%) aligned >1 times
+57.74% overall alignment rate

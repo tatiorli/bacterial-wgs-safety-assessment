@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<!-- saved from url=(0100)https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#results_phylogenies -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.turbolinks-progress-bar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0076ff;
+  z-index: 9999;
+  transition: width 300ms ease-out, opacity 150ms 150ms ease-in;
+  transform: translate3d(0, 0, 0);
+}</style><style type="text/css"></style>
+  
+
+  <!-- Matomo -->
+  <script type="text/javascript" async="" src="./Type Strain Genome Server_results_files/matomo.js.download"></script><script type="text/javascript">
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setCookieDomain", "*.tygs.dsmz.de"]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function () {
+          var u = "https://piwik.dsmz.de/";
+          _paq.push(['setTrackerUrl', u + 'matomo.php']);
+          _paq.push(['setSiteId', '12']);
+          var d = document, g = d.createElement('script'),
+              s = d.getElementsByTagName('script')[0];
+          g.type = 'text/javascript';
+          g.async = true;
+          g.src = u + 'matomo.js';
+          s.parentNode.insertBefore(g, s);
+      })();
+  </script>
+  
+  <!-- End Matomo Code -->
+
+  
+  
+
+
+  
+
+  <link rel="stylesheet" href="./Type Strain Genome Server_results_files/application-bbb8935098138788f5c4b5162e261a1ca2f844d6f4ee1179233c1b12c04ee6c7.css" media="all" data-turbolinks-track="reload">
+  <script src="./Type Strain Genome Server_results_files/application-1cb84d99d5dbefdd509c5b2b5dfa8940a8c1670cab546626a321823e49efa3cc.js.download" data-turbolinks-track="reload"></script>
+  <script src="./Type Strain Genome Server_results_files/digidive-be390fe2fe62161396e9cf96bcbe8f998f39b4fd59efea93f21672c44a1e86c7.js.download" data-turbolinks-track="reload"></script>
+
+  <script src="./Type Strain Genome Server_results_files/jquery-3.2.1.min-ee6abebdca3424d622d6bfe7024ae2ba7b65ce261ad5abee94f5c93ba4c218a4.js.download"></script>
+  <script src="./Type Strain Genome Server_results_files/suggested_examples-ebbb5c31430ea84b9e9810cc3ec7b414c49cb4c2ecd36e4e6e8927c2ec7425e3.js.download"></script>
+  <script src="./Type Strain Genome Server_results_files/tooltip_positioning-68f76ec44db6d7b9e44f61aad0f9881c0f06953907d61d8d1edd2212e2be796e.js.download"></script>
+  <script src="./Type Strain Genome Server_results_files/bootstrap.min-7d1785888ef617671498004048a5678c75e57597eadf263145510164155329b5.js.download"></script>
+  
+
+    
+  <script src="./Type Strain Genome Server_results_files/d3.v3.min-71eac541c4a2b6d93272b0599b4fafaf5e2da9a27d86d9a4589d8a8540c1d369.js.download"></script>
+  <script src="./Type Strain Genome Server_results_files/phyd3.min-49c2a8f82a03cfbf84da31a44816328af5f0a62204ff45d5ba1c4f75c39bc62b.js.download"></script>
+  <link rel="stylesheet" href="./Type Strain Genome Server_results_files/phyd3.min-73014a22e9575dd69e8e6639ef1d92944af1e18fdc195d95dc815582e6575636.css" media="screen">
+
+  <script>
+      // more settings to be found at:
+      // https://github.com/vibbits/phyd3/blob/master/js/phyd3.phylogram.js
+      var opts = {
+          //dynamicHide: true,
+          //height: 800,
+          //width: 800,
+          //invertColors: false,
+          margin: 50, // preventing legend titles to be cut off!
+          scaleX: 1,
+          scaleY: 1,
+          lineupNodes: true,
+          //showDomains: true,
+          //showDomainNames: false,
+          //showDomainColors: true,
+          showGraphs: true,
+          showGraphLegend: true,
+          //showLength: true,
+          showNodeNames: true,
+          showNodesType: "all",
+          //showPhylogram: false,
+          //showTaxonomy: true,
+          //showFullTaxonomy: false,
+          showSupportValues: true,
+          //showSequences: false,
+          //showTaxonomyColors: true,
+          backgroundColor: "#ffffff",
+          foregroundColor: "#000000",
+          nanColor: "#f5f5f5"
+      };
+
+      // http://localhost:3000/user_phylogenies/16/with_guid/0cc0d445-df32-4dd8-8ba0-cad74ef36754
+      //
+      function load_from_xml_file() {
+          //d3.select("#phyd3").html("Loading 1...<br /><br />");
+
+          // use for debugging: /assets/sample.xml):
+          //d3.xml("/assets/sample.xml", function (xml) {
+
+          d3.xml("https://tygs.dsmz.de/user_phylogenies/469726/phyloxmlannot_by_guid/b1a3ad76-31a6-4d39-9596-4154f27b3379", function (xml) {
+              // Console.log("Now drawing PhyD3 tree");
+              //d3.select("#phyd3").text(null);
+              var tree = phyd3.phyloxml.parse(xml);
+              phyd3.phylogram.build("#phyd3", tree, opts);
+          });
+      }
+
+
+      /*
+      function load() {
+          // d3.select("#phyd3").html("Loading 2...<br /><br />");
+          // use for debugging: /assets/sample.xml)
+          d3.xml(" <insert tree> ", function (xml) {
+              //d3.select("#phyd3").text(null);
+              var tree = phyd3.phyloxml.parse(xml);
+              phyd3.phylogram.build("#phyd3", tree, opts);
+          });
+      };
+      */
+
+
+      // this code section is to ensure that the tree loading routines
+      // are executed and the tree is properly rendered
+      var callback = function () {
+          load_from_xml_file();
+      };
+
+      function reloadPage() {
+          location.reload();
+      }
+
+      if (document.readyState === "complete" ||
+          (document.readyState !== "loading" && !document.documentElement.doScroll)
+      ) {
+          callback();
+      } else {
+          document.addEventListener("DOMContentLoaded", callback);
+      }
+  </script>
+
+<script src="./Type Strain Genome Server_results_files/datatables.min-f6fb7d3532d90021a151a92a5f509d95ca1771ce36b3b439801c8c669ae8deed.js.download"></script><script src="./Type Strain Genome Server_results_files/virtual-select.min-66ad4212d42b529e7bf18c66d4c265792ad2258155b5002e6ef1c3036e2c4ab3.js.download"></script><script src="./Type Strain Genome Server_results_files/tooltip.min-add49758f57b8c694e50a97a165e4b9996427e136d3cbe835286cce9f5ef5926.js.download"></script><script src="./Type Strain Genome Server_results_files/datatables-ce8ff0fe27f45cdb7b7cdadf9e9b2ef8a08a397481ee8b3e0e3f10c2b6ad0df9.js.download"></script><script src="./Type Strain Genome Server_results_files/jquery.dataTables.min-46758101c5eb6a5a504ff85c3c74727bee00de6ba1cf934726a186b418672650.js.download"></script><script src="./Type Strain Genome Server_results_files/dataTables.buttons.min-febe8f590029a6608179d3807194df9a8912e0b583c46ed8ee45e820f2137c07.js.download"></script><script src="./Type Strain Genome Server_results_files/buttons.html5.min-4725244d711253462037cd1635f7c50b8997aafccb5c92788b60b9f9fbdefa7c.js.download"></script><script src="./Type Strain Genome Server_results_files/pdfmake.min-b3baca6f8921114fc78bbba3a876bc014bdbd1b383fa06fa190542bd42979995.js.download"></script><script src="./Type Strain Genome Server_results_files/vfs_fonts-9f5a20318b4ac913d219eb27a02b634a853dfb8981744c0e729633521a06c1f7.js.download"></script><script src="./Type Strain Genome Server_results_files/jszip.min-445016fffca92290f7d1de6f2e266065c6af266181b8ac1045994d9c68c602a4.js.download"></script><script src="./Type Strain Genome Server_results_files/buttons.print.min-610db4c2ee8209d9c545e217959bbf023f45046b93f8242b156746abc29d8e9d.js.download"></script><meta name="viewport" content="width=device-width, initial-scale=1"><noscript><p>
+    <img src="https://piwik.dsmz.de/matomo.php?idsite=12&amp;rec=1" style="border:0;" alt=""/>
+  </p></noscript><title>Type Strain Genome Server</title><meta name="csrf-param" content="authenticity_token"><meta name="csrf-token" content="hSRcYfeOowyeCZb4NzNPssiv58JtkHL7v9d9u/tZrXbk0KPy9npLwIneGTMcf6fmcc57ipqFifo1KPBULMgVjQ=="><link rel="icon" type="image/x-icon" href="https://tygs.dsmz.de/assets/favicon-1a1e2373bcce495e4661c3318a9d6c26b8cf49259084d4046f814605eacbf5c2.ico"></head>
+
+<body data-sidebar-size="small">
+<noscript>
+  <div class="content-wrapper"></div>
+
+  <div class="container">
+    <div class="alert alert-danger">
+      <b>Warning: For full functionality of this site it is necessary to
+        enable JavaScript. Here are the
+        <a href="http://www.enable-javascript.com/" target="_blank">
+          instructions how to enable JavaScript in your web browser</a>.</b>
+    </div>
+  </div>
+</noscript>
+
+<!-- Header as partial ...-->
+<div class="page-wrapper" data-sidebar-size="small">
+  <div class="sticky-alerts"></div>
+  <div class="sidebar-overlay" onclick="digidive.toggleSidebar()"></div>
+
+  <nav class="navbar navbar-top">
+      <div class="navbar-brand ml-20">
+        <a class="navbar-brand position-relative" href="https://tygs.dsmz.de/"><img alt="Type Strain Genome Server" height="84" src="./Type Strain Genome Server_results_files/tygs_brand_logov2-1b9acc60dd9b2da583cbd762f37d83c7d49363bd4fd82fe15e8a39fd8645eab3.png"></a>
+
+        <a target="_blank" rel="noopener noreferrer" class="navbar-brand ml-auto" href="https://hub.dsmz.de/"><img alt="Digital Diversity Hub logo" height="100" width="275" src="./Type Strain Genome Server_results_files/digital_diversity_logo-8131ef9ea2b05704ec5722896e1917171d229af20e542bd6ab1b42daf4b02e7e.png"></a>
+      </div>
+  </nav>
+    
+
+  <nav class="navbar navbar-bottom">
+      <div class="container navbar-bottom-container">
+        <button class="btn btn-action collapsible active" type="button" onclick="digidive.toggleSidebar(this);" aria-label="Toggle navigation sidebar">
+          <i class="ph ph-sidebar-collapse" aria-hidden="true"></i>
+        </button>
+        
+        <ul class="breadcrumb navbar-breadcrumb" aria-label="Breadcrumb">
+            <li> 
+              <a href="https://tygs.dsmz.de/">HOME</a>
+            </li>
+            <li class="active" aria-current="page">
+              <a href="javascript:void(0)">User results</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav"></ul>
+
+        <div class="dropdown">
+          <button class="btn primary circle square mr-10" data-toggle="dropdown" type="button" id="accessibility-menu" aria-haspopup="true" aria-expanded="false">
+              <i class="ph ph-person-simple"></i>
+              <span class="sr-only">Accessibility Options</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-center" aria-labelledby="accessibility-menu">
+              <h6 class="header text-primary">Accessibility</h6>
+                <form action="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#" method="get" class="content" id="accessibility-settings-form" data-dyslexia-mode-initialized="true">
+                    <input type="hidden" name="accessibility[check]">
+
+                    <input type="hidden" name="redirect" value="/">
+
+                  <div class="form-group">
+                    <div class="custom-checkbox">
+                      <input type="checkbox" id="set-contrast" name="accessibility[contrast]" value="high-contrast">
+                        <label for="set-contrast">High contrast</label><br>
+                          <small class="text-muted">
+                            Enhance the contrast of the web page for better readability.                                    
+                          </small>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="custom-checkbox">
+                          <input type="checkbox" id="set-transitions" name="accessibility[transitions]" value="without-transitions">
+                              <label for="set-transitions">Reduce motion</label><br>
+                                <small class="text-muted">
+                                      Reduce motion and animations on the page.
+                                </small>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="custom-checkbox">
+                          <input type="checkbox" id="set-dyslexia" name="accessibility[dyslexia]" value="dyslexia">
+                              <label for="set-dyslexia">Dyslexia mode</label><br>
+                                <small class="text-muted">
+                                      Use a special font to increase readability for users with dyslexia.
+                                </small>
+                      </div>
+                  </div>
+                  <button class="btn primary">Apply</button>
+                </form>
+          </div>
+        </div>
+
+        <form id="navbar-search" action="https://tygs.dsmz.de/faqs" method="get" class="nav-search header-search" data-suggestions-initialized="true">
+          <div class="input-cont" style="margin-top:-5rem;">
+            <div class="header-search-control">
+              <div class="input-group">
+                <input type="search" name="search" class="search-term form-control" autocomplete="off" placeholder="Search TYGS FAQs" value="" aria-controls="suggested-example-queries" aria-expanded="false">
+                <div class="input-group-append">
+                  <button class="btn primary" id="home-search-submit" name="submit" type="submit" aria-label="Search">
+                    <i class="ph ph-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="suggested-example" id="suggested-example-queries" aria-label="Suggested example queries" hidden="">
+                <p class="suggested-example-text">Suggested example queries:</p>
+                <ul class="suggested-example-list">
+                  <li><a href="https://tygs.dsmz.de/faqs?search=dDDH">digital DNA-DNA hybridization</a></li>
+                  <li><a href="https://tygs.dsmz.de/faqs?search=TYGS+database">type strain database</a></li>
+                  <li><a href="https://tygs.dsmz.de/faqs?search=accessions">Genbank accessions</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+  </nav>
+
+  
+  
+<aside class="sidebar">
+    <nav class="sidebar-topnav">
+        <ul>
+            <li>
+              <a class="with-icon" href="https://tygs.dsmz.de/assets/TYGS_tutorial-fe4f87554db53994fb35d6a93d399b627cfb5fe397ba20e765482cde1076937c.pdf">
+                <i class="ph ph-book"></i>
+                <span class="label">Manual</span>
+</a>            </li>
+
+            <li>
+              <a class="with-icon" href="https://tygs.dsmz.de/feedbacks/new">
+                <i class="ph ph-headset"></i>
+                <span class="label">Contact</span>
+</a>            </li>
+        </ul>
+    </nav>
+    <nav class="sidebar-menu">
+      <h5 class="title">Content</h5>
+      <a class="with-icon success" aria_hidden="true" href="https://tygs.dsmz.de/user_requests/new">
+        <i class="ph ph-paper-plane"></i>
+        <span class="label">Submit your query</span>
+</a>      <a class="with-icon signal" href="https://tygs.dsmz.de/faqs">
+        <i class="ph ph-question"></i>
+        <span class="label">FAQs</span>
+</a>      <a class="with-icon danger" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/playlist?list=PLOBqrx8E9qdQ">
+        <i class="ph ph-youtube-logo"></i>
+        <span class="label">Tutorial Series<span style="font-size:1.4em; margin-left:7px;" class="ph ph-arrow-square-out"></span></span>
+</a>      <a class="with-icon primary" href="https://tygs.dsmz.de/application_programming_interface/show">
+        <i class="ph ph-terminal-window"></i>
+        <span class="label">API</span>
+</a>      
+      <details class="sidebar-example-dropdown">
+        <summary class="title sidebar-example-toggle">
+          <span>Examples</span>
+          <i class="ph ph-caret-down" aria-hidden="true"></i>
+        </summary>
+        <nav aria-label="Example jobs">
+          <a class="with-icon success" href="https://tygs.dsmz.de/user_results/show?guid=588b9751-63ae-4a55-83b7-9ce39343dfee">
+            <i class="ph ph-archive"></i>
+            <span class="label">Bacillus cereus group dataset</span>
+</a>          <a class="with-icon success" href="https://tygs.dsmz.de/user_results/show?guid=ec388433-020e-47c2-97b0-0d6430982f72">
+            <i class="ph ph-archive"></i>
+            <span class="label">Salmonella dataset</span>
+</a>          <a class="with-icon success" href="https://tygs.dsmz.de/user_results/show?guid=371cab98-ab08-459e-b2d6-2c00dcc21002">
+            <i class="ph ph-archive"></i>
+            <span class="label">Mycobacterium dataset</span>
+</a>          <a class="with-icon success" href="https://tygs.dsmz.de/user_results/show?guid=6d4dfe5e-decf-41d5-b14f-82efc2c9cdc9">
+            <i class="ph ph-archive"></i>
+            <span class="label">Escherichia coli dataset</span>
+</a>          <a class="with-icon success" href="https://tygs.dsmz.de/user_results/show?guid=46502028-a629-4cb0-b4ce-47ed172f07b5">
+            <i class="ph ph-archive"></i>
+            <span class="label">Rhodobacteraceae dataset</span>
+</a>          <a class="with-icon success" href="https://tygs.dsmz.de/user_results/show?guid=29ae139a-3a41-4571-a19b-809af76a3ec5">
+            <i class="ph ph-archive"></i>
+            <span class="label">Legionella dataset</span>
+</a>        </nav>
+      </details>
+
+      <h5 class="title">About TYGS</h5>
+      <a id="background-sidebar-link" class="with-icon success" href="https://tygs.dsmz.de/background/show">
+        <i class="ph ph-info"></i>
+        <span class="label">Background</span>
+</a>      <a id="cite-tygs-link" class="with-icon success" href="https://tygs.dsmz.de/background/show#literature">
+        <i class="ph ph-books"></i>
+        <span class="label">Cite TYGS</span>
+</a>
+      <h5 class="title">Tools</h5>
+      <a class="with-icon" target="_blank" rel="noopener noreferrer" href="https://ggdc.dsmz.de/ggdc.php#">
+        <i class="ph ph-git-branch"></i>
+        <span class="label">GGDC<span style="font-size:1.4em; margin-left:7px;" class="ph ph-arrow-square-out"></span></span>
+</a>      <a class="with-icon" target="_blank" rel="noopener noreferrer" href="https://ggdc.dsmz.de/victor.php#">
+        <i class="ph ph-virus"></i>
+        <span class="label">VICTOR<span style="font-size:1.4em; margin-left:7px;" class="ph ph-arrow-square-out"></span></span>
+</a>      <a class="with-icon" target="_blank" rel="noopener noreferrer" href="https://ggdc.dsmz.de/phylogeny-service.php#">
+        <i class="ph ph-tree-structure"></i>
+        <span class="label">PHYLOSERV<span style="font-size:1.4em; margin-left:7px;" class="ph ph-arrow-square-out"></span></span>
+</a>
+    </nav>
+  </aside>
+    
+  <main class="content-wrapper">
+    <div class="content-container">
+      <!-- yield the body ... -->
+      <script>
+    function download_newick(filename, tree_data) {
+        var element = document.createElement('a');
+        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(tree_data));
+        element.setAttribute('download', filename);
+        element.style.display = 'none';
+        document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element);
+    }
+</script>
+
+
+
+<div class="container-fluid user-results-page">
+
+  <div class="page-header">
+    <h1>Results
+      <small>b1a3ad76-31a6-4d39-9596-4154f27b3379</small>
+            <button type="button" class="btn btn-default">
+         Job runtime <span class="badge">238 m</span></button>
+
+            <button type="button" class="btn btn-default">
+         Page expires in <span class="badge">27 days 23 hours</span></button>
+
+           <a href="https://tygs.dsmz.de/faqs/2" target="_blank" class="btn btn-default" role="button">Terms of Usage</a>
+
+    </h1>
+  </div>
+
+  <p id="notice"></p>
+
+
+    <div class="collapse" id="quickDatasetOverview">
+      <div class="well well-lg">
+        <b>Quick overview on input data and settings used for this job:</b><br><br>Selected TYGS mode:<br><span class="label label-primary">default mode (TYGS automatically determined strains most closely related to the user strains)</span><br><br>Strains or INSDC accessions provided by user:<br><span class="label label-primary">Microbacterium_arborescens_spp._assembled_genome.fasta</span><br><br>Type strains manually selected from the TYGS database by user:<br><span class="label label-primary">Microbacterium arborescens</span><br><br>Note: All details on the involved strains and their metadata are found in below <a href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#results_strain_list">Table 4</a>
+      </div>
+    </div>
+
+
+    <!-- quick navigation -->
+    <nav class="results-quick-nav" aria-label="Result sections">
+
+      <a class="btn btn-primary btn-lg" data-toggle="collapse" href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#quickDatasetOverview" role="button" aria-expanded="false" aria-controls="quickDatasetOverview">
+        <span class="glyphicon glyphicon-info-sign"></span>
+      </a>
+
+      <a class="btn btn-danger btn-lg" href="https://tygs.dsmz.de/user_results/show.pdf?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379"><span class="glyphicon glyphicon-download-alt"></span>
+                    Download PDF Report</a>
+
+      <a href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#results_identification" class="btn btn-success btn-lg" role="button">
+        <span class="glyphicon glyphicon-eye-open"></span> Identification
+      </a>
+
+      <a href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#results_phylogenies" class="btn btn-success btn-lg" role="button">
+        <span class="glyphicon glyphicon-tree-deciduous"></span> Trees
+      </a>
+
+      <a href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#results_pairwise_comps" class="btn btn-success btn-lg" role="button">
+        <span class="glyphicon glyphicon-transfer"></span> Pairwise
+        comparisons
+      </a>
+
+      <a href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#results_strain_list" class="btn btn-success btn-lg" role="button">
+        <span class="glyphicon glyphicon-list"></span> Strains
+      </a>
+
+      <a href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#results_descriptions" class="btn btn-success btn-lg" role="button">
+        <span class="glyphicon glyphicon-pencil"></span> Methods
+      </a>
+    </nav>
+
+    <!-- ++++++++++++++ TABLE 1 +++++++++++++++++ -->
+    <a id="results_phylogenies"></a>
+
+    <div class="panel panel-primary">
+      <!-- Default panel contents -->
+      <div class="panel-heading" id="submissionForm">Table 1: Phylogenies
+      </div>
+      <div class="panel-body">
+        <table class="table">
+          <thead>
+          <tr>
+            <th>Figure</th>
+            <th>View tree <i class="glyphicon glyphicon-tree-conifer"></i>
+            </th>
+            <th>No.
+              strains<span class="tooltip-trigger" data-title="These numbers might differ if, for example, 16S rDNA sequences could not be extracted from a user genome." aria-label="These numbers might differ if, for example, 16S rDNA sequences could not be extracted from a user genome." tabindex="0" style="padding-left: 0.2cm; --tooltip-available-width: 767.03125px;"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></span></th>
+            <th>Average branch
+              support<span class="tooltip-trigger" data-title="What is average branch support? Consider a case where clade A is supported by 100% and clade B by 0% in tree 1 but clade A is supported by 50% and clade B by 0% in tree 2. Then, obviously, overall support is higher in tree 1 than in tree 2. This is what we want to know, and it is well indicated by the average support values of the two clades (50% in tree 1 but only 25% in tree 2). Now, a tree with on average higher support values is on average better resolved. Of course this does not tell the scientist anything about the support for single clades (unless you obtain 0% or 100% average support, of course)." aria-label="What is average branch support? Consider a case where clade A is supported by 100% and clade B by 0% in tree 1 but clade A is supported by 50% and clade B by 0% in tree 2. Then, obviously, overall support is higher in tree 1 than in tree 2. This is what we want to know, and it is well indicated by the average support values of the two clades (50% in tree 1 but only 25% in tree 2). Now, a tree with on average higher support values is on average better resolved. Of course this does not tell the scientist anything about the support for single clades (unless you obtain 0% or 100% average support, of course)." tabindex="0" style="padding-left: 0.2cm; --tooltip-available-width: 565.234375px;"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></span> </th>
+
+            <th>δ
+              statistics<span class="tooltip-trigger" data-title="Delta statistics allow for the assessment of phylogenetic accuracy in terms of treelikeness (Holland et al. 2002). The lower the delta value, the higher the accuracy." aria-label="Delta statistics allow for the assessment of phylogenetic accuracy in terms of treelikeness (Holland et al. 2002). The lower the delta value, the higher the accuracy." tabindex="0" style="padding-left: 0.2cm; --tooltip-available-width: 434.515625px;"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></span> </th>
+            <th>Download tree<span class="tooltip-trigger tooltip-placement-left" data-title="Newick tree format is a widespread way of representing phylogenetic trees, using parentheses and commas." aria-label="Newick tree format is a widespread way of representing phylogenetic trees, using parentheses and commas." tabindex="0" style="padding-left: 0.2cm; --tooltip-available-width: 1574.046875px;"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></span></th>
+          </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+
+              <td>
+                <b>Figure 2:</b> GBDP tree (whole-genome sequence-based)
+              </td>
+
+              <td>
+                <a class="btn btn-default" href="https://tygs.dsmz.de/user_phylogenies/469726?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379"><i class="glyphicon glyphicon-search"></i></a>
+              </td>
+
+              <td>
+                15
+              </td>
+
+              <td>
+                76.3 %
+              </td>
+
+              <td>
+                0.154
+              </td>
+
+              <td>
+                <!-- oneclick arg. must not include chars breaking Javascript -->
+                <button name="download_svg" type="submit" class="btn btn-default" onclick="download_newick('GBDP_genomes_trimming_D5.phy', '(((((((((Microbacterium_arborescens_spp._assembled_genome:2.385e-05,Microbacterium arborescens DSM 20754:0.00014615)58:0.04712494,Microbacterium plantarum NE2HP2T:0.04955403)59:0.0072354,Microbacterium pratiae 2P06AB:0.05539104)100:0.02983733,(Microbacterium thalli NM3R9T:0.04896493,Microbacterium imperiale DSM 20530:0.04696207)100:0.03607428)100:0.00988385,Microbacterium radiodurans DSM 25564:0.09410337)100:0.02099339,((Microbacterium festucae W1NT:0.10823297,Microbacterium saccharophilum NBRC108778:0.10667303)52:0.00124567,(Microbacterium aquilitoris KSW-18:0.07999743,Microbacterium gawkjiense KSW4-11:0.07615457)100:0.03786903)53:0.00107508)83:0.00267685,Microbacterium ginsengisoli DSM 18659:0.11951955)48:0.00155674,Microbacterium alkaliflavum B2969:0.10735618):0.0008265,(Microbacterium sediminicola JCM 15577:0.12277031,Microbacterium lushaniae L-031:0.11602469)63:0.00123132);')" data-placement="bottom">
+                  <span class="glyphicon glyphicon-download-alt"></span>
+                  Newick
+</button>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+        
+      </div>
+
+
+    </div>
+
+
+    <!-- ++++++++++++++ TABLE 2 +++++++++++++++++ -->
+    <a id="results_identification"></a>
+
+    <div class="panel panel-primary">
+      <!-- Default panel contents -->
+      <div class="panel-heading" id="submissionForm">Table 2: Identification
+      </div>
+      <div class="panel-body">
+             <ul class="list-group">
+       <li class="list-group-item"><span class="glyphicon glyphicon-check"></span> Your strain <b>'Microbacterium_arborescens_spp._assembled_genome'</b> belongs to species <i>Microbacterium</i> <i>arborescens</i>.      </li>
+     </ul>
+<br>      <table class="table">
+        <thead>
+          <tr>
+            <th>Overall</th><th>Regarding your genomes</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr><td>      <button type="button" class="btn btn-default">
+         No. of species clusters  <span class="badge">14</span></button>
+</td><td>      <button type="button" class="btn btn-default">
+         No. species clusters including user strains <span class="badge">1</span></button>
+</td></tr><tr><td>      <button type="button" class="btn btn-default">
+         No. of subspecies clusters  <span class="badge">14</span></button>
+</td><td>      <button type="button" class="btn btn-default">
+         No. subspecies clusters including user strains <span class="badge">1</span></button>
+</td></tr>
+        </tbody>
+      </table>
+
+      </div>
+    </div>
+
+
+    <!-- ++++++++++++++ TABLE 3 +++++++++++++++++ -->
+    <a id="results_pairwise_comps"></a>
+
+    <div class="panel panel-primary">
+      <!-- Default panel contents -->
+      <div class="panel-heading" id="submissionForm">Table 3: Pairwise
+        comparisons of user genomes vs. type strain genomes
+      </div>
+
+      <div class="panel-body">
+
+
+        <p>
+          <a class="btn btn-primary btn" data-toggle="collapse" href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#instructions" role="button" aria-expanded="false" aria-controls="instructions">
+            <span class="glyphicon glyphicon-info-sign"></span>
+          </a>
+        </p>
+
+
+        <div class="collapse" id="instructions">
+          <div class="well well-lg">
+            <p>
+              <span class="glyphicon glyphicon-exclamation-sign text-info"></span>
+              <span>Your genomes are printed in bold-face and the table is ordered
+                  by recommended (<span class="glyphicon glyphicon-star"></span>)
+                  dDDH formula d<sub>4</sub> in descending order (d<sub>4</sub> is
+                  identical to GGDC formula 2) . Hold SHIFT key and click column
+                  headers if you want to order by multiple criteria.
+              </span>
+            </p>
+
+            <p>
+              <span class="glyphicon glyphicon-exclamation-sign text-info"></span>
+              <span>Don't know which formula to use and how they relate to the
+                  GGDC output? Please see the <a href="https://tygs.dsmz.de/faqs/12">FAQ</a> for some
+                  basic info and links. The YouTube video 
+                  <a href="https://www.youtube.com/watch?v=b1exnRXIiBI" target="_blank">here</a> 
+                  also explains the differences between the three formulas.
+                </span>
+            </p>
+
+            <p>
+              <span class="glyphicon glyphicon-exclamation-sign text-info"></span>
+              <span>If the export buttons and quick search bar are not visible,
+                  please reload the page.</span>
+            </p>
+          </div>
+        </div>
+
+
+        <div id="digital_ddh_results_wrapper" class="dataTables_wrapper no-footer"><div class="dt-buttons">          <a class="dt-button buttons-copy buttons-html5" tabindex="0" aria-controls="digital_ddh_results" href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#"><span>Copy</span></a> <a class="dt-button buttons-csv buttons-html5" tabindex="0" aria-controls="digital_ddh_results" href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#"><span>CSV</span></a> <a class="dt-button buttons-pdf buttons-html5" tabindex="0" aria-controls="digital_ddh_results" href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#"><span>PDF</span></a> <a class="dt-button buttons-excel buttons-html5" tabindex="0" aria-controls="digital_ddh_results" href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#"><span>Excel</span></a> <a class="dt-button buttons-print" tabindex="0" aria-controls="digital_ddh_results" href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#"><span>Print</span></a> </div><div id="digital_ddh_results_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="digital_ddh_results"></label></div><div class="dataTables_scroll"><div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;"><div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 1110px; padding-right: 10px;"><table class="table table-striped table-bordered dataTable no-footer" width="100%" cellspacing="0" role="grid" style="margin-left: 0px; width: 1110px;"><thead>
+          <tr role="row"><th class="sorting" tabindex="0" aria-controls="digital_ddh_results" rowspan="1" colspan="1" style="width: 156.625px;" aria-label="Query strain: activate to sort column ascending">Query strain</th><th class="sorting" tabindex="0" aria-controls="digital_ddh_results" rowspan="1" colspan="1" style="width: 131.969px;" aria-label="Subject strain: activate to sort column ascending">Subject strain</th><th class="sorting" tabindex="0" aria-controls="digital_ddh_results" rowspan="1" colspan="1" style="width: 52.6875px;" aria-label="dDDH (d0, in %): activate to sort column ascending">dDDH (d<sub>0</sub>, in %)</th><th class="sorting" tabindex="0" aria-controls="digital_ddh_results" rowspan="1" colspan="1" style="width: 38.6875px;" aria-label="C.I. (d0, in %): activate to sort column ascending">C.I. (d<sub>0</sub>, in %)</th><th class="sorting_desc" tabindex="0" aria-controls="digital_ddh_results" rowspan="1" colspan="1" style="width: 57.5938px;" aria-sort="descending" aria-label="dDDH (d4, in %)
+              
+            : activate to sort column ascending">dDDH (d<sub>4</sub>, in %)
+              <span class="glyphicon glyphicon-star"></span>
+            </th><th class="sorting" tabindex="0" aria-controls="digital_ddh_results" rowspan="1" colspan="1" style="width: 38.6875px;" aria-label="C.I. (d4, in %): activate to sort column ascending">C.I. (d<sub>4</sub>, in %)</th><th class="sorting" tabindex="0" aria-controls="digital_ddh_results" rowspan="1" colspan="1" style="width: 52.6875px;" aria-label="dDDH (d6, in %): activate to sort column ascending">dDDH (d<sub>6</sub>, in %)</th><th class="sorting" tabindex="0" aria-controls="digital_ddh_results" rowspan="1" colspan="1" style="width: 38.6875px;" aria-label="C.I. (d6, in %): activate to sort column ascending">C.I. (d<sub>6</sub>, in %)</th><th class="sorting" tabindex="0" aria-controls="digital_ddh_results" rowspan="1" colspan="1" style="width: 100.375px;" aria-label="G+C content difference (in %): activate to sort column ascending">G+C content difference (in %)</th></tr>
+          </thead></table></div></div><div class="dataTables_scrollBody" style="position: relative; overflow: auto; max-height: 800px; width: 100%;"><table id="digital_ddh_results" class="table table-striped table-bordered dataTable no-footer" width="100%" cellspacing="0" role="grid" aria-describedby="digital_ddh_results_info" style="width: 100%;"><thead>
+          <tr role="row" style="height: 1px;"><th class="sorting" aria-controls="digital_ddh_results" rowspan="1" colspan="1" style="width: 156.625px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Query strain</div></th><th class="sorting" aria-controls="digital_ddh_results" rowspan="1" colspan="1" style="width: 131.969px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Subject strain</div></th><th class="sorting" aria-controls="digital_ddh_results" rowspan="1" colspan="1" style="width: 52.6875px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">dDDH (d<sub>0</sub>, in %)</div></th><th class="sorting" aria-controls="digital_ddh_results" rowspan="1" colspan="1" style="width: 38.6875px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">C.I. (d<sub>0</sub>, in %)</div></th><th class="sorting" aria-controls="digital_ddh_results" rowspan="1" colspan="1" style="width: 57.5938px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">dDDH (d<sub>4</sub>, in %)
+              <span class="glyphicon glyphicon-star"></span>
+            </div></th><th class="sorting" aria-controls="digital_ddh_results" rowspan="1" colspan="1" style="width: 38.6875px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">C.I. (d<sub>4</sub>, in %)</div></th><th class="sorting" aria-controls="digital_ddh_results" rowspan="1" colspan="1" style="width: 52.6875px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">dDDH (d<sub>6</sub>, in %)</div></th><th class="sorting" aria-controls="digital_ddh_results" rowspan="1" colspan="1" style="width: 38.6875px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">C.I. (d<sub>6</sub>, in %)</div></th><th class="sorting" aria-controls="digital_ddh_results" rowspan="1" colspan="1" style="width: 100.375px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">G+C content difference (in %)</div></th></tr>
+          </thead>
+          
+
+          <tbody>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+          <tr role="row" class="odd">
+              <td>
+                <b>'Microbacterium arborescens spp. assembled genome'</b> 
+              </td>
+
+              <td>
+                <i>Microbacterium</i> <i>arborescens</i> <a target=" blank" href="https://www.dsmz.de/collection/catalogue/details/culture/DSM-20754">DSM 20754</a>
+              </td>
+
+              <td>
+                98.1
+              </td>
+
+              <td>
+                [96.8 - 98.9]
+              </td>
+
+              <td class="sorting_1">
+                99.9
+              </td>
+
+              <td>
+                [99.9 - 100.0]
+              </td>
+
+              <td>
+                99.1
+              </td>
+
+              <td>
+                [98.5 - 99.5]
+              </td>
+
+              <td>
+                0.86
+              </td>
+
+            </tr><tr role="row" class="even">
+              <td>
+                <b>'Microbacterium arborescens spp. assembled genome'</b> 
+              </td>
+
+              <td>
+                <i>Microbacterium</i> <i>plantarum</i> NE2HP2T
+              </td>
+
+              <td>
+                79.1
+              </td>
+
+              <td>
+                [75.1 - 82.6]
+              </td>
+
+              <td class="sorting_1">
+                41.8
+              </td>
+
+              <td>
+                [39.3 - 44.3]
+              </td>
+
+              <td>
+                71.5
+              </td>
+
+              <td>
+                [68.0 - 74.7]
+              </td>
+
+              <td>
+                0.3
+              </td>
+
+            </tr><tr role="row" class="odd">
+              <td>
+                <b>'Microbacterium arborescens spp. assembled genome'</b> 
+              </td>
+
+              <td>
+                <i>Microbacterium</i> <i>pratiae</i> 2P06AB
+              </td>
+
+              <td>
+                85.9
+              </td>
+
+              <td>
+                [82.2 - 88.9]
+              </td>
+
+              <td class="sorting_1">
+                39.1
+              </td>
+
+              <td>
+                [36.7 - 41.7]
+              </td>
+
+              <td>
+                75.6
+              </td>
+
+              <td>
+                [72.1 - 78.8]
+              </td>
+
+              <td>
+                0.2
+              </td>
+
+            </tr><tr role="row" class="even">
+              <td>
+                <b>'Microbacterium arborescens spp. assembled genome'</b> 
+              </td>
+
+              <td>
+                <i>Microbacterium</i> <i>imperiale</i> <a target=" blank" href="https://www.dsmz.de/collection/catalogue/details/culture/DSM-20530">DSM 20530</a>
+              </td>
+
+              <td>
+                56.2
+              </td>
+
+              <td>
+                [52.6 - 59.7]
+              </td>
+
+              <td class="sorting_1">
+                27.3
+              </td>
+
+              <td>
+                [24.9 - 29.8]
+              </td>
+
+              <td>
+                47.1
+              </td>
+
+              <td>
+                [44.1 - 50.1]
+              </td>
+
+              <td>
+                0.25
+              </td>
+
+            </tr><tr role="row" class="odd">
+              <td>
+                <b>'Microbacterium arborescens spp. assembled genome'</b> 
+              </td>
+
+              <td>
+                <i>Microbacterium</i> <i>thalli</i> NM3R9T
+              </td>
+
+              <td>
+                57.8
+              </td>
+
+              <td>
+                [54.2 - 61.3]
+              </td>
+
+              <td class="sorting_1">
+                27.0
+              </td>
+
+              <td>
+                [24.6 - 29.4]
+              </td>
+
+              <td>
+                48.0
+              </td>
+
+              <td>
+                [45.0 - 51.0]
+              </td>
+
+              <td>
+                0.64
+              </td>
+
+            </tr><tr role="row" class="even">
+              <td>
+                <b>'Microbacterium arborescens spp. assembled genome'</b> 
+              </td>
+
+              <td>
+                <i>Microbacterium</i> <i>radiodurans</i> <a target=" blank" href="https://www.dsmz.de/collection/catalogue/details/culture/DSM-25564">DSM 25564</a>
+              </td>
+
+              <td>
+                46.9
+              </td>
+
+              <td>
+                [43.5 - 50.3]
+              </td>
+
+              <td class="sorting_1">
+                24.5
+              </td>
+
+              <td>
+                [22.2 - 27.0]
+              </td>
+
+              <td>
+                39.5
+              </td>
+
+              <td>
+                [36.5 - 42.5]
+              </td>
+
+              <td>
+                0.59
+              </td>
+
+            </tr><tr role="row" class="odd">
+              <td>
+                <b>'Microbacterium arborescens spp. assembled genome'</b> 
+              </td>
+
+              <td>
+                <i>Microbacterium</i> <i>saccharophilum</i> <a target=" blank" href="https://www.nite.go.jp/nbrc/catalogue/NBRCCatalogueDetailServlet?ID=NBRC&amp;CAT=00108778">NBRC108778</a>
+              </td>
+
+              <td>
+                24.8
+              </td>
+
+              <td>
+                [21.5 - 28.5]
+              </td>
+
+              <td class="sorting_1">
+                21.0
+              </td>
+
+              <td>
+                [18.7 - 23.4]
+              </td>
+
+              <td>
+                23.0
+              </td>
+
+              <td>
+                [20.2 - 26.1]
+              </td>
+
+              <td>
+                0.98
+              </td>
+
+            </tr><tr role="row" class="even">
+              <td>
+                <b>'Microbacterium arborescens spp. assembled genome'</b> 
+              </td>
+
+              <td>
+                <i>Microbacterium</i> <i>festucae</i> W1NT
+              </td>
+
+              <td>
+                24.2
+              </td>
+
+              <td>
+                [20.9 - 27.8]
+              </td>
+
+              <td class="sorting_1">
+                21.0
+              </td>
+
+              <td>
+                [18.8 - 23.5]
+              </td>
+
+              <td>
+                22.6
+              </td>
+
+              <td>
+                [19.8 - 25.7]
+              </td>
+
+              <td>
+                1.55
+              </td>
+
+            </tr><tr role="row" class="odd">
+              <td>
+                <b>'Microbacterium arborescens spp. assembled genome'</b> 
+              </td>
+
+              <td>
+                <i>Microbacterium</i> <i>alkaliflavum</i> B2969
+              </td>
+
+              <td>
+                18.8
+              </td>
+
+              <td>
+                [15.7 - 22.4]
+              </td>
+
+              <td class="sorting_1">
+                20.7
+              </td>
+
+              <td>
+                [18.5 - 23.1]
+              </td>
+
+              <td>
+                18.3
+              </td>
+
+              <td>
+                [15.7 - 21.3]
+              </td>
+
+              <td>
+                0.24
+              </td>
+
+            </tr><tr role="row" class="even">
+              <td>
+                <b>'Microbacterium arborescens spp. assembled genome'</b> 
+              </td>
+
+              <td>
+                <i>Microbacterium</i> <i>gawkjiense</i> KSW4-11
+              </td>
+
+              <td>
+                27.3
+              </td>
+
+              <td>
+                [24.0 - 31.0]
+              </td>
+
+              <td class="sorting_1">
+                20.6
+              </td>
+
+              <td>
+                [18.3 - 23.0]
+              </td>
+
+              <td>
+                24.8
+              </td>
+
+              <td>
+                [21.9 - 27.9]
+              </td>
+
+              <td>
+                0.44
+              </td>
+
+            </tr><tr role="row" class="odd">
+              <td>
+                <b>'Microbacterium arborescens spp. assembled genome'</b> 
+              </td>
+
+              <td>
+                <i>Microbacterium</i> <i>aquilitoris</i> KSW-18
+              </td>
+
+              <td>
+                25.7
+              </td>
+
+              <td>
+                [22.4 - 29.3]
+              </td>
+
+              <td class="sorting_1">
+                20.3
+              </td>
+
+              <td>
+                [18.1 - 22.7]
+              </td>
+
+              <td>
+                23.5
+              </td>
+
+              <td>
+                [20.7 - 26.6]
+              </td>
+
+              <td>
+                0.35
+              </td>
+
+            </tr><tr role="row" class="even">
+              <td>
+                <b>'Microbacterium arborescens spp. assembled genome'</b> 
+              </td>
+
+              <td>
+                <i>Microbacterium</i> <i>lushaniae</i> L-031
+              </td>
+
+              <td>
+                19.5
+              </td>
+
+              <td>
+                [16.3 - 23.1]
+              </td>
+
+              <td class="sorting_1">
+                20.2
+              </td>
+
+              <td>
+                [18.0 - 22.6]
+              </td>
+
+              <td>
+                18.8
+              </td>
+
+              <td>
+                [16.1 - 21.8]
+              </td>
+
+              <td>
+                0.47
+              </td>
+
+            </tr><tr role="row" class="odd">
+              <td>
+                <b>'Microbacterium arborescens spp. assembled genome'</b> 
+              </td>
+
+              <td>
+                <i>Microbacterium</i> <i>ginsengisoli</i> <a target=" blank" href="https://www.dsmz.de/collection/catalogue/details/culture/DSM-18659">DSM 18659</a>
+              </td>
+
+              <td>
+                20.4
+              </td>
+
+              <td>
+                [17.2 - 24.0]
+              </td>
+
+              <td class="sorting_1">
+                19.8
+              </td>
+
+              <td>
+                [17.6 - 22.3]
+              </td>
+
+              <td>
+                19.5
+              </td>
+
+              <td>
+                [16.8 - 22.5]
+              </td>
+
+              <td>
+                0.03
+              </td>
+
+            </tr><tr role="row" class="even">
+              <td>
+                <b>'Microbacterium arborescens spp. assembled genome'</b> 
+              </td>
+
+              <td>
+                <i>Microbacterium</i> <i>sediminicola</i> <a target=" blank" href="https://www.jcm.riken.jp/cgi-bin/jcm/jcm%20number?JCM=15577">JCM 15577</a>
+              </td>
+
+              <td>
+                17.5
+              </td>
+
+              <td>
+                [14.4 - 21.0]
+              </td>
+
+              <td class="sorting_1">
+                19.7
+              </td>
+
+              <td>
+                [17.5 - 22.1]
+              </td>
+
+              <td>
+                17.2
+              </td>
+
+              <td>
+                [14.6 - 20.1]
+              </td>
+
+              <td>
+                2.43
+              </td>
+
+            </tr></tbody>
+        </table></div></div><div class="dataTables_info" id="digital_ddh_results_info" role="status" aria-live="polite">Showing 1 to 14 of 14 entries</div></div>
+
+      </div>
+    </div>
+
+
+    <!-- ++++++++++++++ TABLE 4 +++++++++++++++++ -->
+    <a id="results_strain_list"></a>
+
+    <div class="panel panel-primary">
+      <!-- Default panel contents -->
+      <div class="panel-heading" id="submissionForm">Table 4: Strains in your
+        dataset
+      </div>
+
+      <div class="panel-body">
+
+        <p>
+
+
+        </p><div class="btn-group">
+
+          <a class="btn btn-primary btn" data-toggle="collapse" href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#moreinstructions" role="button" aria-expanded="false" aria-controls="moreinstructions">
+            <span class="glyphicon glyphicon-info-sign"></span>
+          </a>
+
+          <button type="button" class="btn btn-default">Get literature</button>
+
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+
+          <ul class="dropdown-menu">
+            <li> <a class="dropdown-item" href="https://tygs.dsmz.de/user_results/show/bibtex/b1a3ad76-31a6-4d39-9596-4154f27b3379"> BibTeX format</a></li>
+            <li role="separator" class="divider"></li>
+            <li> <a class="dropdown-item" href="https://tygs.dsmz.de/user_results/show/bibtex_with_html/b1a3ad76-31a6-4d39-9596-4154f27b3379"> BibTeX format (with html tags)</a> </li>
+          </ul>
+        </div>
+        <p></p>
+
+        <div class="collapse" id="moreinstructions">
+          <div class="well well-lg">
+            <p>
+              <span class="glyphicon glyphicon-exclamation-sign text-info"></span>
+              <span>The table's horizontal scrollbar can be used to view all columns.
+                    Hold SHIFT key and click column headers if you want to order
+                    by multiple criteria.</span>
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-exclamation-sign text-info"></span>
+              <span>If the export buttons and quick search bar are not visible,
+                    please reload the page.</span>
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-exclamation-sign text-info"></span>
+              <span>See the YouTube video 
+              <a href="https://www.youtube.com/watch?v=UBhY2awSBs0" target="_blank">here</a> 
+              for more information on how to understand the table.</span>
+            </p>
+          </div>
+        </div>
+
+        <div id="genome_browser_wrapper" class="dataTables_wrapper"><div class="dt-buttons">      <a class="dt-button buttons-copy buttons-html5" tabindex="0" aria-controls="genome_browser" href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#"><span>Copy</span></a> <a class="dt-button buttons-csv buttons-html5" tabindex="0" aria-controls="genome_browser" href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#"><span>CSV</span></a> <a class="dt-button buttons-excel buttons-html5" tabindex="0" aria-controls="genome_browser" href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#"><span>Excel</span></a> <a class="dt-button buttons-print" tabindex="0" aria-controls="genome_browser" href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#"><span>Print</span></a> </div><div id="genome_browser_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="genome_browser"></label></div><div class="dataTables_scroll"><div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;"><div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 1959.36px; padding-right: 10px;"><table class="table table-striped table-bordered dataTable" width="100%" cellspacing="0" role="grid" style="margin-left: 0px; width: 1959.36px;"><thead>
+          <tr role="row"><th class="sorting" tabindex="0" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 34.0625px;" aria-label="TYGS ID: activate to sort column ascending">TYGS ID</th><th class="sorting" tabindex="0" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 28.2969px;" aria-label="Kind: activate to sort column ascending">Kind</th><th class="sorting_asc" tabindex="0" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 49.9219px;" aria-sort="ascending" aria-label="Species cluster: activate to sort column descending">Species cluster</th><th class="sorting_asc" tabindex="0" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 73.2656px;" aria-label="Subspecies cluster: activate to sort column ascending">Subspecies cluster</th><th class="sorting" tabindex="0" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 77.6719px;" aria-label="Preferred name: activate to sort column ascending">Preferred name</th><th class="sorting" tabindex="0" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 56.625px;" aria-label="Deposit: activate to sort column ascending">Deposit</th><th class="sorting" tabindex="0" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 61.875px;" aria-label="Authority: activate to sort column ascending">Authority</th><th class="sorting" tabindex="0" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 55.0625px;" aria-label="Other deposits: activate to sort column ascending">Other deposits</th><th class="sorting" tabindex="0" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 82.5781px;" aria-label="Synonymous taxon names: activate to sort column ascending">Synonymous taxon names</th><th class="sorting" tabindex="0" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 38.125px;" aria-label="Base pairs: activate to sort column ascending">Base pairs</th><th class="sorting" tabindex="0" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 50.9062px;" aria-label="Percent G+C: activate to sort column ascending">Percent G+C</th><th class="sorting" tabindex="0" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 53.7031px;" aria-label="No. proteins: activate to sort column ascending">No. proteins</th><th class="sorting" tabindex="0" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 69px;" aria-label="Goldstamp: activate to sort column ascending">Goldstamp</th><th class="sorting" tabindex="0" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 72.6406px;" aria-label="Bioproject accession: activate to sort column ascending">Bioproject accession</th><th class="sorting" tabindex="0" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 80.1562px;" aria-label="Biosample accession: activate to sort column ascending">Biosample accession</th><th class="sorting" tabindex="0" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 86.6406px;" aria-label="Assembly accession: activate to sort column ascending">Assembly accession</th><th class="sorting" tabindex="0" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 53.9844px;" aria-label="IMG OID: activate to sort column ascending">IMG OID</th><th class="sorting" tabindex="0" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 51.8438px;" aria-label="BacDive: activate to sort column ascending">BacDive</th></tr>
+          </thead></table></div></div><div class="dataTables_scrollBody" style="position: relative; overflow: auto; width: 100%; max-height: 800px;"><table id="genome_browser" class="table table-striped table-bordered dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="genome_browser_info" style="width: 100%;"><thead>
+          <tr role="row" style="height: 1px;"><th class="sorting" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 34.0625px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">TYGS ID</div></th><th class="sorting" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 28.2969px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Kind</div></th><th class="sorting" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 49.9219px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Species cluster</div></th><th class="sorting" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 73.2656px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Subspecies cluster</div></th><th class="sorting" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 77.6719px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Preferred name</div></th><th class="sorting" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 56.625px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Deposit</div></th><th class="sorting" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 61.875px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Authority</div></th><th class="sorting" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 55.0625px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Other deposits</div></th><th class="sorting" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 82.5781px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Synonymous taxon names</div></th><th class="sorting" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 38.125px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Base pairs</div></th><th class="sorting" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 50.9062px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Percent G+C</div></th><th class="sorting" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 53.7031px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">No. proteins</div></th><th class="sorting" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 69px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Goldstamp</div></th><th class="sorting" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 72.6406px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Bioproject accession</div></th><th class="sorting" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 80.1562px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Biosample accession</div></th><th class="sorting" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 86.6406px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Assembly accession</div></th><th class="sorting" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 53.9844px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">IMG OID</div></th><th class="sorting" aria-controls="genome_browser" rowspan="1" colspan="1" style="width: 51.8438px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">BacDive</div></th></tr>
+          </thead><tfoot>
+          <tr style="height: 1px;"><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 46.0625px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">TYGS ID</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 40.2969px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Kind</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 61.9219px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Species cluster</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 85.2656px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Subspecies cluster</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 89.6719px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Preferred name</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 68.625px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Deposit</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 73.875px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Authority</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 67.0625px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Other deposits</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 94.5781px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Synonymous taxon names</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 50.125px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Base pairs</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 62.9062px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Percent G+C</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 65.7031px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">No. proteins</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 81px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Goldstamp</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 84.6406px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Bioproject accession</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 92.1562px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Biosample accession</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 98.6406px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">Assembly accession</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 65.9844px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">IMG OID</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 63.8438px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">BacDive</div></th></tr>
+          </tfoot>
+
+          
+
+          
+
+          <tbody>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          <tr role="row" class="odd">
+              <td>118127</td>
+              <td>type strain</td>
+              <td class="sorting_1">1</td>
+              <td class="sorting_2">0</td>
+              <td>
+                <a href="https://lpsn.dsmz.de/species/microbacterium-imperiale" target="_blank"><i>Microbacterium</i> <i>imperiale</i></a>
+                
+              </td>
+              <td>
+                <a target="_blank" href="https://www.dsmz.de/collection/catalogue/details/culture/DSM-20530">DSM 20530</a>
+                
+              </td>
+              <td>(<a target="_blank" href="http://doi.org/10.1128/jb.42.6.757-790.1941">Steinhaus 1941</a>) <a target="_blank" href="http://doi.org/10.1016/s0723-2020(83)80034-4">Collins et al. 1983</a></td>
+              <td><a target="_blank" href="https://catalogue-crbip.pasteur.fr/fiche_catalogue.xhtml?crbip=CIP%2082.108">CIP 82.108</a>; <a target="_blank" href="https://store.ncimb.com/NCIMB/NCIMB%209888">NCIMB 9888</a>; <a target="_blank" href="https://www.atcc.org/products/8365">ATCC 8365</a>; <a target="_blank" href="https://www.jcm.riken.jp/cgi-bin/jcm/jcm_number?JCM=1378">JCM 1378</a>; <a target="_blank" href="https://www.nite.go.jp/nbrc/catalogue/NBRCCatalogueDetailServlet?ID=IFO&amp;CAT=00012610">IFO 12610</a>; <a target="_blank" href="https://www.nite.go.jp/nbrc/catalogue/NBRCCatalogueDetailServlet?ID=NBRC&amp;CAT=00012610">NBRC 12610</a>; <a target="_blank" href="http://www.vkm.ru/strains.php?vkm=Ac-1447">VKM Ac-1447</a>; HAMBI 117; HAMBI 1891; NCIB 9888</td>
+              <td><i>Bacterium</i> <i>imperiale</i>; <i>Brevibacterium</i> <i>imperiale</i>; <i>Microbacterium</i> <i>imperiale</i></td>
+              <td>3,167,543</td>
+              <td>70.43</td>
+              <td>3056</td>
+              <td><a href="https://gold.jgi.doe.gov/projects?id=Gp0502525" target="_blank">Gp0502525</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=" target="_blank"></a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/biosample/?term=" target="_blank"></a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/assembly//" target="_blank"></a></td>
+              <td><a href="https://img.jgi.doe.gov/cgi-bin/mer/main.cgi?section=TaxonDetail&amp;page=taxonDetail&amp;taxon_oid=2918394494" target="_blank">2918394494</a></td>
+              <td><a href="https://bacdive.dsmz.de/index.php?site=search&amp;search=Microbacterium%20imperiale" target="_blank">species page</a> </td>
+
+            </tr><tr role="row" class="even">
+              <td>143620</td>
+              <td>type strain</td>
+              <td class="sorting_1">2</td>
+              <td class="sorting_2">1</td>
+              <td>
+                <a href="https://lpsn.dsmz.de/species/microbacterium-lushaniae" target="_blank"><i>Microbacterium</i> <i>lushaniae</i></a>
+                
+              </td>
+              <td>
+                L-031
+                
+              </td>
+              <td><a target="_blank" href="http://doi.org/10.1099/ijsem.0.004662">Tian et al. 2021</a></td>
+              <td><a target="_blank" href="https://cgmcc.net/english/search?stn=1.16363">CGMCC 1.16363</a>; <a target="_blank" href="https://www.dsmz.de/collection/catalogue/details/culture/DSM-106170">DSM 106170</a></td>
+              <td><i>Microbacterium</i> <i>lushaniae</i></td>
+              <td>3,650,161</td>
+              <td>70.65</td>
+              <td>3375</td>
+              <td><a href="https://gold.jgi.doe.gov/projects?id=" target="_blank"></a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA543373" target="_blank">PRJNA543373</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN12791242" target="_blank">SAMN12791242</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/assembly/GCA_008727775/" target="_blank">GCA_008727775</a></td>
+              <td><a href="https://img.jgi.doe.gov/cgi-bin/mer/main.cgi?section=TaxonDetail&amp;page=taxonDetail&amp;taxon_oid=" target="_blank"></a></td>
+              <td><a href="https://bacdive.dsmz.de/index.php?site=search&amp;search=Microbacterium%20lushaniae" target="_blank">species page</a> </td>
+
+            </tr><tr role="row" class="odd">
+              <td>148571</td>
+              <td>type strain</td>
+              <td class="sorting_1">3</td>
+              <td class="sorting_2">2</td>
+              <td>
+                <a href="https://lpsn.dsmz.de/species/microbacterium-plantarum" target="_blank"><i>Microbacterium</i> <i>plantarum</i></a>
+                
+              </td>
+              <td>
+                NE2HP2T
+                
+              </td>
+              <td><a target="_blank" href="http://doi.org/10.1099/ijsem.0.006052">Arroyo-Herrera et al. 2023</a></td>
+              <td>CCBAU 101117; LMG 30875</td>
+              <td><i>Microbacterium</i> <i>plantarum</i></td>
+              <td>3,216,742</td>
+              <td>69.88</td>
+              <td>3039</td>
+              <td><a href="https://gold.jgi.doe.gov/projects?id=" target="_blank"></a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA224116" target="_blank">PRJNA224116</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN33195176" target="_blank">SAMN33195176</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/assembly/GCF_028737425/" target="_blank">GCF_028737425</a></td>
+              <td><a href="https://img.jgi.doe.gov/cgi-bin/mer/main.cgi?section=TaxonDetail&amp;page=taxonDetail&amp;taxon_oid=" target="_blank"></a></td>
+              <td><a href="https://bacdive.dsmz.de/index.php?site=search&amp;search=Microbacterium%20plantarum" target="_blank">species page</a> </td>
+
+            </tr><tr role="row" class="even">
+              <td>148572</td>
+              <td>type strain</td>
+              <td class="sorting_1">4</td>
+              <td class="sorting_2">3</td>
+              <td>
+                <a href="https://lpsn.dsmz.de/species/microbacterium-thalli" target="_blank"><i>Microbacterium</i> <i>thalli</i></a>
+                
+              </td>
+              <td>
+                NM3R9T
+                
+              </td>
+              <td><a target="_blank" href="http://doi.org/10.1099/ijsem.0.006052">Arroyo-Herrera et al. 2023</a></td>
+              <td>CCBAU 101116; LMG 30873</td>
+              <td><i>Microbacterium</i> <i>thalli</i></td>
+              <td>2,833,610</td>
+              <td>70.82</td>
+              <td>2689</td>
+              <td><a href="https://gold.jgi.doe.gov/projects?id=" target="_blank"></a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA224116" target="_blank">PRJNA224116</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN33195177" target="_blank">SAMN33195177</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/assembly/GCF_028737415/" target="_blank">GCF_028737415</a></td>
+              <td><a href="https://img.jgi.doe.gov/cgi-bin/mer/main.cgi?section=TaxonDetail&amp;page=taxonDetail&amp;taxon_oid=" target="_blank"></a></td>
+              <td><a href="https://bacdive.dsmz.de/index.php?site=search&amp;search=Microbacterium%20thalli" target="_blank">species page</a> </td>
+
+            </tr><tr role="row" class="odd">
+              <td>16408</td>
+              <td>type strain</td>
+              <td class="sorting_1">5</td>
+              <td class="sorting_2">4</td>
+              <td>
+                <a href="https://lpsn.dsmz.de/species/microbacterium-saccharophilum" target="_blank"><i>Microbacterium</i> <i>saccharophilum</i></a>
+                
+              </td>
+              <td>
+                <a target="_blank" href="https://www.nite.go.jp/nbrc/catalogue/NBRCCatalogueDetailServlet?ID=NBRC&amp;CAT=00108778">NBRC108778</a>
+                
+              </td>
+              <td><a target="_blank" href="http://doi.org/10.1099/ijs.0.047258-0">Ohta et al. 2013</a></td>
+              <td><a target="_blank" href="https://store.ncimb.com/NCIMB/NCIMB%2014782">NCIMB 14782</a>; <a target="_blank" href="https://www.dsmz.de/collection/catalogue/details/culture/DSM-28107">DSM 28107</a>; <a target="_blank" href="https://www.nite.go.jp/nbrc/catalogue/NBRCCatalogueDetailServlet?ID=NBRC&amp;CAT=00108778">NBRC 108778</a>; K-1</td>
+              <td><i>Microbacterium</i> <i>saccharophilum</i></td>
+              <td>2,985,694</td>
+              <td>71.16</td>
+              <td>2836</td>
+              <td><a href="https://gold.jgi.doe.gov/projects?id=" target="_blank"></a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJDB6314" target="_blank">PRJDB6314</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/biosample/?term=SAMD00172671" target="_blank">SAMD00172671</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/assembly/GCA_007992455/" target="_blank">GCA_007992455</a></td>
+              <td><a href="https://img.jgi.doe.gov/cgi-bin/mer/main.cgi?section=TaxonDetail&amp;page=taxonDetail&amp;taxon_oid=" target="_blank"></a></td>
+              <td><a href="https://bacdive.dsmz.de/strain/24188" target="_blank">strain page</a> </td>
+
+            </tr><tr role="row" class="even">
+              <td>21158</td>
+              <td>type strain</td>
+              <td class="sorting_1">6</td>
+              <td class="sorting_2">5</td>
+              <td>
+                <a href="https://lpsn.dsmz.de/species/microbacterium-radiodurans" target="_blank"><i>Microbacterium</i> <i>radiodurans</i></a>
+                
+              </td>
+              <td>
+                <a target="_blank" href="https://www.dsmz.de/collection/catalogue/details/culture/DSM-25564">DSM 25564</a>
+                
+              </td>
+              <td><a target="_blank" href="http://doi.org/10.1099/ijs.0.017400-0">Zhang et al. 2010</a></td>
+              <td><a target="_blank" href="https://nrrl.ncaur.usda.gov/cgi-bin/usda/prokaryote/report.html?nrrlcodes=B-24799">NRRL B-24799</a>; CCTCC M 208212; GIMN 1.002</td>
+              <td><i>Microbacterium</i> <i>radiodurans</i></td>
+              <td>3,178,485</td>
+              <td>70.77</td>
+              <td>2908</td>
+              <td><a href="https://gold.jgi.doe.gov/projects?id=" target="_blank"></a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA224116" target="_blank">PRJNA224116</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN12792677" target="_blank">SAMN12792677</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/assembly/GCF_008710705/" target="_blank">GCF_008710705</a></td>
+              <td><a href="https://img.jgi.doe.gov/cgi-bin/mer/main.cgi?section=TaxonDetail&amp;page=taxonDetail&amp;taxon_oid=" target="_blank"></a></td>
+              <td><a href="https://bacdive.dsmz.de/strain/7454" target="_blank">strain page</a> </td>
+
+            </tr><tr role="row" class="odd">
+              <td>24129</td>
+              <td>type strain</td>
+              <td class="sorting_1">7</td>
+              <td class="sorting_2">6</td>
+              <td>
+                <a href="https://lpsn.dsmz.de/species/microbacterium-gawkjiense" target="_blank">'<i>Microbacterium</i> <i>gawkjiense</i>'</a>
+                <span class="tooltip-trigger" data-title="This is not a validly published name!" aria-label="This is not a validly published name!" tabindex="0" style="padding-left: 0.2cm; color: red; --tooltip-available-width: 1742.6875px;"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span></span>
+              </td>
+              <td>
+                KSW4-11
+                
+              </td>
+              <td><a target="_blank" href="http://doi.org/10.1007/s00203-024-03929-1">Lee et al. 2024</a></td>
+              <td><a target="_blank" href="https://www.dsmz.de/collection/catalogue/details/culture/DSM-116380">DSM 116380</a>; KACC 23321</td>
+              <td><i>Microbacterium</i> <i>gawkjiense</i>; <i>Microbacterium</i> <i>gwkjiense</i></td>
+              <td>3,103,047</td>
+              <td>70.62</td>
+              <td>2949</td>
+              <td><a href="https://gold.jgi.doe.gov/projects?id=" target="_blank"></a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA1001642" target="_blank">PRJNA1001642</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN36814196" target="_blank">SAMN36814196</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/assembly/GCA_031932225/" target="_blank">GCA_031932225</a></td>
+              <td><a href="https://img.jgi.doe.gov/cgi-bin/mer/main.cgi?section=TaxonDetail&amp;page=taxonDetail&amp;taxon_oid=" target="_blank"></a></td>
+              <td><a href="https://bacdive.dsmz.de/index.php?site=search&amp;search=Microbacterium%20gawkjiense" target="_blank">species page</a> </td>
+
+            </tr><tr role="row" class="even">
+              <td>24241</td>
+              <td>type strain</td>
+              <td class="sorting_1">8</td>
+              <td class="sorting_2">7</td>
+              <td>
+                <a href="https://lpsn.dsmz.de/species/microbacterium-aquilitoris" target="_blank"><i>Microbacterium</i> <i>aquilitoris</i></a>
+                
+              </td>
+              <td>
+                KSW-18
+                
+              </td>
+              <td><a target="_blank" href="http://doi.org/10.1007/s00203-023-03804-5">Lee et al. 2024</a></td>
+              <td><a target="_blank" href="https://kctc.kribb.re.kr/en/collection/view?sn=49623">KCTC 49623</a>; <a target="_blank" href="https://www.nite.go.jp/nbrc/catalogue/NBRCCatalogueDetailServlet?ID=NBRC&amp;CAT=00115222">NBRC 115222</a></td>
+              <td><i>Microbacterium</i> <i>aquilitoris</i></td>
+              <td>2,925,074</td>
+              <td>69.83</td>
+              <td>2811</td>
+              <td><a href="https://gold.jgi.doe.gov/projects?id=" target="_blank"></a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA224116" target="_blank">PRJNA224116</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN36814194" target="_blank">SAMN36814194</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/assembly/GCF_031932285/" target="_blank">GCF_031932285</a></td>
+              <td><a href="https://img.jgi.doe.gov/cgi-bin/mer/main.cgi?section=TaxonDetail&amp;page=taxonDetail&amp;taxon_oid=" target="_blank"></a></td>
+              <td><a href="https://bacdive.dsmz.de/index.php?site=search&amp;search=Microbacterium%20aquilitoris" target="_blank">species page</a> </td>
+
+            </tr><tr role="row" class="odd">
+              <td>5862</td>
+              <td>type strain</td>
+              <td class="sorting_1">9</td>
+              <td class="sorting_2">8</td>
+              <td>
+                <a href="https://lpsn.dsmz.de/species/microbacterium-ginsengisoli" target="_blank"><i>Microbacterium</i> <i>ginsengisoli</i></a>
+                
+              </td>
+              <td>
+                <a target="_blank" href="https://www.dsmz.de/collection/catalogue/details/culture/DSM-18659">DSM 18659</a>
+                
+              </td>
+              <td><a target="_blank" href="http://doi.org/10.1099/ijs.0.65226-0">Park et al. 2008</a></td>
+              <td><a target="_blank" href="https://kctc.kribb.re.kr/en/collection/view?sn=19189">KCTC 19189</a>; <a target="_blank" href="https://www.jcm.riken.jp/cgi-bin/jcm/jcm_number?JCM=15304">JCM 15304</a>; Gsoil 259</td>
+              <td><i>Microbacterium</i> <i>ginsengisoli</i></td>
+              <td>3,047,473</td>
+              <td>70.22</td>
+              <td>2970</td>
+              <td><a href="https://gold.jgi.doe.gov/projects?id=Gp0144182" target="_blank">Gp0144182</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA224116" target="_blank">PRJNA224116</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN03266139" target="_blank">SAMN03266139</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/assembly/GCF_000956535/" target="_blank">GCF_000956535</a></td>
+              <td><a href="https://img.jgi.doe.gov/cgi-bin/mer/main.cgi?section=TaxonDetail&amp;page=taxonDetail&amp;taxon_oid=" target="_blank"></a></td>
+              <td><a href="https://bacdive.dsmz.de/strain/7429" target="_blank">strain page</a> </td>
+
+            </tr><tr role="row" class="even">
+              <td>6522</td>
+              <td>type strain</td>
+              <td class="sorting_1">10</td>
+              <td class="sorting_2">13</td>
+              <td>
+                <a href="https://lpsn.dsmz.de/species/microbacterium-arborescens" target="_blank"><i>Microbacterium</i> <i>arborescens</i></a>
+                
+              </td>
+              <td>
+                <a target="_blank" href="https://www.dsmz.de/collection/catalogue/details/culture/DSM-20754">DSM 20754</a>
+                
+              </td>
+              <td>(ex Frankland and Frankland 1889) <a target="_blank" href="http://doi.org/10.1007/bf01567386">Imai et al. 1985</a></td>
+              <td><a target="_blank" href="https://catalogue-crbip.pasteur.fr/fiche_catalogue.xhtml?crbip=CIP%2055.81">CIP 55.81</a>; <a target="_blank" href="https://www.atcc.org/products/4358">ATCC 4358</a>; <a target="_blank" href="https://www.jcm.riken.jp/cgi-bin/jcm/jcm_number?JCM=5884">JCM 5884</a>; <a target="_blank" href="https://www.nite.go.jp/nbrc/catalogue/NBRCCatalogueDetailServlet?ID=IFO&amp;CAT=00003750">IFO 3750</a>; <a target="_blank" href="https://www.nite.go.jp/nbrc/catalogue/NBRCCatalogueDetailServlet?ID=NBRC&amp;CAT=00003750">NBRC 3750</a>; <a target="_blank" href="http://www.vkm.ru/strains.php?vkm=Ac-1944">VKM Ac-1944</a>; HAMBI 1892; LMG 4009</td>
+              <td><i>Microbacterium</i> <i>arborescens</i></td>
+              <td>3,390,579</td>
+              <td>69.32</td>
+              <td>3162</td>
+              <td><a href="https://gold.jgi.doe.gov/projects?id=Gp0393597" target="_blank">Gp0393597</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA224116" target="_blank">PRJNA224116</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN09428468" target="_blank">SAMN09428468</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/assembly/GCF_003339645/" target="_blank">GCF_003339645</a></td>
+              <td><a href="https://img.jgi.doe.gov/cgi-bin/mer/main.cgi?section=TaxonDetail&amp;page=taxonDetail&amp;taxon_oid=" target="_blank"></a></td>
+              <td><a href="https://bacdive.dsmz.de/strain/7370" target="_blank">strain page</a> </td>
+
+            </tr><tr role="row" class="odd">
+              <td>U1414163</td>
+              <td>        <span class="glyphicon glyphicon-user"></span> user strain
+</td>
+              <td class="sorting_1">10</td>
+              <td class="sorting_2">13</td>
+              <td>
+                Microbacterium arborescens spp. assembled genome
+                
+              </td>
+              <td>
+                
+                
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>3,278,826</td>
+              <td>70.18</td>
+              <td>3102</td>
+              <td><a href="https://gold.jgi.doe.gov/projects?id=" target="_blank"></a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=" target="_blank"></a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/biosample/?term=" target="_blank"></a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/assembly//" target="_blank"></a></td>
+              <td><a href="https://img.jgi.doe.gov/cgi-bin/mer/main.cgi?section=TaxonDetail&amp;page=taxonDetail&amp;taxon_oid=" target="_blank"></a></td>
+              <td> </td>
+
+            </tr><tr role="row" class="even">
+              <td>6985</td>
+              <td>type strain</td>
+              <td class="sorting_1">11</td>
+              <td class="sorting_2">9</td>
+              <td>
+                <a href="https://lpsn.dsmz.de/species/microbacterium-alkaliflavum" target="_blank">'<i>Microbacterium</i> <i>alkaliflavum</i>'</a>
+                <span class="tooltip-trigger" data-title="This is not a validly published name!" aria-label="This is not a validly published name!" tabindex="0" style="padding-left: 0.2cm; color: red; --tooltip-available-width: 1822.40625px;"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span></span>
+              </td>
+              <td>
+                B2969
+                
+              </td>
+              <td><a target="_blank" href="http://doi.org/10.1186/s12866-025-03801-2">Hu et al. 2025</a></td>
+              <td><a target="_blank" href="https://mccc.org.cn/TypeStrain/Detail?id=MCCC%201K099113">MCCC 1K099113</a>; <a target="_blank" href="https://www.jcm.riken.jp/cgi-bin/jcm/jcm_number?JCM=36707">JCM 36707</a>; <a target="_blank" href="https://www.jcm.riken.jp/cgi-bin/jcm/jcm_number?JCM=36707">JCM T -36707</a></td>
+              <td><i>Microbacterium</i> <i>alkaliflavum</i></td>
+              <td>5,159,619</td>
+              <td>69.94</td>
+              <td>4601</td>
+              <td><a href="https://gold.jgi.doe.gov/projects?id=" target="_blank"></a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA224116" target="_blank">PRJNA224116</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN43280680" target="_blank">SAMN43280680</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/assembly/GCF_044325405/" target="_blank">GCF_044325405</a></td>
+              <td><a href="https://img.jgi.doe.gov/cgi-bin/mer/main.cgi?section=TaxonDetail&amp;page=taxonDetail&amp;taxon_oid=" target="_blank"></a></td>
+              <td><a href="https://bacdive.dsmz.de/index.php?site=search&amp;search=Microbacterium%20alkaliflavum" target="_blank">species page</a> </td>
+
+            </tr><tr role="row" class="odd">
+              <td>71645</td>
+              <td>type strain</td>
+              <td class="sorting_1">12</td>
+              <td class="sorting_2">10</td>
+              <td>
+                <a href="https://lpsn.dsmz.de/species/microbacterium-festucae" target="_blank"><i>Microbacterium</i> <i>festucae</i></a>
+                
+              </td>
+              <td>
+                W1NT
+                
+              </td>
+              <td><a target="_blank" href="http://doi.org/10.1099/ijsem.0.006121">Li et al. 2023</a></td>
+              <td>ACCC 61807; <a target="_blank" href="https://www.jcm.riken.jp/cgi-bin/jcm/jcm_number?JCM=35339">JCM 35339</a>; GDMCC 1.2966</td>
+              <td><i>Microbacterium</i> <i>festucae</i></td>
+              <td>3,319,842</td>
+              <td>71.73</td>
+              <td>2989</td>
+              <td><a href="https://gold.jgi.doe.gov/projects?id=" target="_blank"></a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA224116" target="_blank">PRJNA224116</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN30723158" target="_blank">SAMN30723158</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/assembly/GCF_025421715/" target="_blank">GCF_025421715</a></td>
+              <td><a href="https://img.jgi.doe.gov/cgi-bin/mer/main.cgi?section=TaxonDetail&amp;page=taxonDetail&amp;taxon_oid=" target="_blank"></a></td>
+              <td><a href="https://bacdive.dsmz.de/index.php?site=search&amp;search=Microbacterium%20festucae" target="_blank">species page</a> </td>
+
+            </tr><tr role="row" class="even">
+              <td>7943</td>
+              <td>type strain</td>
+              <td class="sorting_1">13</td>
+              <td class="sorting_2">11</td>
+              <td>
+                <a href="https://lpsn.dsmz.de/species/microbacterium-pratiae" target="_blank"><i>Microbacterium</i> <i>pratiae</i></a>
+                
+              </td>
+              <td>
+                2P06AB
+                
+              </td>
+              <td><a target="_blank" href="http://doi.org/10.1186/s40168-025-02082-1">Schultz et al. 2025</a></td>
+              <td><a target="_blank" href="https://www.dsmz.de/collection/catalogue/details/culture/DSM-117976">DSM 117976</a>; MTCC 13671</td>
+              <td><i>Microbacterium</i> <i>pratiae</i></td>
+              <td>3,412,097</td>
+              <td>69.98</td>
+              <td>3186</td>
+              <td><a href="https://gold.jgi.doe.gov/projects?id=" target="_blank"></a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA224116" target="_blank">PRJNA224116</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN40372276" target="_blank">SAMN40372276</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/assembly/GCF_047302165/" target="_blank">GCF_047302165</a></td>
+              <td><a href="https://img.jgi.doe.gov/cgi-bin/mer/main.cgi?section=TaxonDetail&amp;page=taxonDetail&amp;taxon_oid=" target="_blank"></a></td>
+              <td><a href="https://bacdive.dsmz.de/index.php?site=search&amp;search=Microbacterium%20pratiae" target="_blank">species page</a> </td>
+
+            </tr><tr role="row" class="odd">
+              <td>97479</td>
+              <td>type strain</td>
+              <td class="sorting_1">14</td>
+              <td class="sorting_2">12</td>
+              <td>
+                <a href="https://lpsn.dsmz.de/species/microbacterium-sediminicola" target="_blank"><i>Microbacterium</i> <i>sediminicola</i></a>
+                
+              </td>
+              <td>
+                <a target="_blank" href="https://www.jcm.riken.jp/cgi-bin/jcm/jcm_number?JCM=15577">JCM 15577</a>
+                
+              </td>
+              <td><a target="_blank" href="http://doi.org/10.1099/ijs.0.65038-0">Kageyama et al. 2007</a></td>
+              <td><a target="_blank" href="https://www.dsmz.de/collection/catalogue/details/culture/DSM-18905">DSM 18905</a>; MBIC 8264; YM 10-847</td>
+              <td><i>Microbacterium</i> <i>sediminicola</i></td>
+              <td>2,862,509</td>
+              <td>67.75</td>
+              <td>2683</td>
+              <td><a href="https://gold.jgi.doe.gov/projects?id=" target="_blank"></a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJDB10510" target="_blank">PRJDB10510</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/biosample/?term=SAMD00645271" target="_blank">SAMD00645271</a></td>
+              <td><a href="https://www.ncbi.nlm.nih.gov/assembly/GCA_039531125/" target="_blank">GCA_039531125</a></td>
+              <td><a href="https://img.jgi.doe.gov/cgi-bin/mer/main.cgi?section=TaxonDetail&amp;page=taxonDetail&amp;taxon_oid=" target="_blank"></a></td>
+              <td><a href="https://bacdive.dsmz.de/strain/7435" target="_blank">strain page</a> </td>
+
+            </tr></tbody>
+        </table></div><div class="dataTables_scrollFoot" style="overflow: hidden; border: 0px; width: 100%;"><div class="dataTables_scrollFootInner" style="width: 1959.36px; padding-right: 10px;"><table class="table table-striped table-bordered dataTable" width="100%" cellspacing="0" role="grid" style="margin-left: 0px; width: 1959.36px;"><tfoot>
+          <tr><th rowspan="1" colspan="1" style="width: 46.0625px;">TYGS ID</th><th rowspan="1" colspan="1" style="width: 40.2969px;">Kind</th><th rowspan="1" colspan="1" style="width: 61.9219px;">Species cluster</th><th rowspan="1" colspan="1" style="width: 85.2656px;">Subspecies cluster</th><th rowspan="1" colspan="1" style="width: 89.6719px;">Preferred name</th><th rowspan="1" colspan="1" style="width: 68.625px;">Deposit</th><th rowspan="1" colspan="1" style="width: 73.875px;">Authority</th><th rowspan="1" colspan="1" style="width: 67.0625px;">Other deposits</th><th rowspan="1" colspan="1" style="width: 94.5781px;">Synonymous taxon names</th><th rowspan="1" colspan="1" style="width: 50.125px;">Base pairs</th><th rowspan="1" colspan="1" style="width: 62.9062px;">Percent G+C</th><th rowspan="1" colspan="1" style="width: 65.7031px;">No. proteins</th><th rowspan="1" colspan="1" style="width: 81px;">Goldstamp</th><th rowspan="1" colspan="1" style="width: 84.6406px;">Bioproject accession</th><th rowspan="1" colspan="1" style="width: 92.1562px;">Biosample accession</th><th rowspan="1" colspan="1" style="width: 98.6406px;">Assembly accession</th><th rowspan="1" colspan="1" style="width: 65.9844px;">IMG OID</th><th rowspan="1" colspan="1" style="width: 63.8438px;">BacDive</th></tr>
+          </tfoot></table></div></div></div><div class="dataTables_info" id="genome_browser_info" role="status" aria-live="polite">Showing 1 to 15 of 15 entries</div></div>
+      </div>
+    </div>
+
+
+    <!-- ++++++++++++++ METHOD DESCRIPTIONS +++++++++++++++++ -->
+    <a id="results_descriptions"></a>
+
+    <div class="panel panel-primary">
+      <!-- Default panel contents -->
+      <div class="panel-heading" id="submissionForm">Methods, Results and
+        References
+      </div>
+
+      <div class="panel-body">
+        
+
+    
+
+    <h3>Materials and Methods</h3>
+
+    <div class="well">
+      The genome sequence data were uploaded to the Type (Strain) Genome
+      Server (TYGS), a free bioinformatics platform available under
+      https://tygs.dsmz.de, for a whole genome-based taxonomic
+      analysis [1]. The analysis also made use of recently introduced
+      methodological updates and features [2,3]. Information on nomenclature,
+      synonymy and associated taxonomic literature was provided by TYGS's sister
+      database, the List of Prokaryotic names with Standing in Nomenclature
+      (LPSN, available at https://lpsn.dsmz.de) [2,3]. The results were
+      provided by the TYGS on 2026-11-11. The
+      TYGS analysis was subdivided into the following steps:
+    </div>
+
+              <h4>Determination of closely related type strains</h4>
+          <div class="well">
+      The determination of closely related type strains did not succeed
+      because not a single 16S rDNA gene sequence was detected in the
+      provided user genomes. The subsequent analyses are thus only based
+      on the provided genome data and the manually selected type strains,
+      if any.
+    </div>
+
+
+              <h4>Pairwise comparison of genome sequences</h4>
+          <div class="well">
+      For the phylogenomic inference, all pairwise comparisons among the set of
+      genomes were conducted using GBDP and accurate intergenomic distances
+      inferred under the algorithm 'trimming' and distance formula
+      <i>d<sub>5</sub></i> [4]. 100 distance replicates were
+      calculated each.
+
+      
+
+      Digital DDH values and confidence intervals were calculated using the
+      recommended settings of the GGDC 4.0 [2,4].
+    </div>
+
+
+              <h4>Phylogenetic inference</h4>
+          <div class="well">
+      The resulting intergenomic distances were used to infer a balanced
+      minimum evolution tree with branch support via FASTME 2.1.6.1 including
+      SPR postprocessing [5]. Branch support was inferred from 100
+      pseudo-bootstrap replicates each. The trees were rooted at the midpoint
+      [6] and visualized with PhyD3 [7].
+    </div>
+
+
+              <h4>Type-based species and subspecies clustering</h4>
+          <div class="well">
+      The type-based species clustering using a 70% dDDH radius around each of
+      the 14 type strains was done as previously
+      described [1]. The resulting groups are shown in Table 1 and 4.
+
+      Subspecies clustering was done using a 79% dDDH threshold as previously
+      introduced [8].
+    </div>
+
+
+    <h3>Results</h3>
+
+              <h4>Type-based species and subspecies clustering</h4>
+          <div class="well">
+      The resulting species and subspecies clusters are listed in Table
+      4, whereas the taxonomic identification of the query strains is found
+         in Table 1. Briefly, the clustering yielded 14 species
+         clusters and the provided query strains were assigned
+         to 1 of these. Moreover, user strains were
+         located in 1 of
+         14 subspecies clusters.
+    </div>
+
+
+    
+
+              <h4>Figure caption genome tree</h4>
+          <div class="well">
+      <b>Figure 2.</b> Tree inferred with FastME 2.1.6.1 [5] from GBDP
+      distances calculated from genome sequences. The branch lengths are scaled
+      in terms of GBDP distance formula <i>d<sub>5</sub></i>. The numbers above
+      branches are GBDP pseudo-bootstrap support values &gt; 60 % from 100
+      replications, with an average branch support of 76.3 %.
+      The tree was rooted at the midpoint [6].
+    </div>
+
+
+    
+
+    
+
+    
+
+    <h3>References</h3>
+
+              <h4></h4>
+          <div class="well"><p>[1] Meier-Kolthoff JP, Göker M. TYGS is an automated
+                     high-throughput platform for state-of-the-art
+                     genome-based taxonomy. Nat. Commun. 2019;10: 2182.
+                     DOI: <a href="http://dx.doi.org/10.1038/s41467-019-10210-3" target="_blank">10.1038/s41467-019-10210-3</a></p><p>[2] Meier-Kolthoff JP, Sardà Carbasse J, Peinado-Olarte RL, Göker M.
+                     TYGS and LPSN: a database tandem for fast and reliable
+                     genome-based classification and nomenclature of prokaryotes.
+                     Nucleic Acid Res. 2022;50: D801–D807.
+                     DOI: <a href="https://doi.org/10.1093/nar/gkab902" target="_blank">10.1093/nar/gkab902</a></p><p>[3] Freese HM, Meier-Kolthoff JP, Sardà Carbasse J, Afolayan AO, Göker M.
+                     TYGS and LPSN in 2025: a Global Core Biodata Resource for genome-based classification
+                     and nomenclature of prokaryotes within DSMZ Digital Diversity.
+                     Nucleic Acid Res. 2025;54: D884–D891.
+                     DOI: <a href="https://doi.org/10.1093/nar/gkaf1110" target="_blank">10.1093/nar/gkaf1110</a></p><p>[4] Meier-Kolthoff JP, Auch AF, Klenk H-P, Göker M. Genome
+                     sequence-based species delimitation with confidence
+                     intervals and improved distance functions.
+                     BMC Bioinformatics. 2013;14: 60.
+                     DOI: <a href="http://dx.doi.org/10.1186/1471-2105-14-60" target="_blank">10.1186/1471-2105-14-60</a></p><p>[5] Lefort V, Desper R, Gascuel O. FastME 2.0: A comprehensive,
+                     accurate, and fast distance-based phylogeny inference
+                     program. Mol Biol Evol. 2015;32: 2798–2800.
+                     DOI: <a href="http://dx.doi.org/10.1093/molbev/msv150" target="_blank">10.1093/molbev/msv150</a></p><p>[6] Farris JS. Estimating phylogenetic trees from distance
+                     matrices. Am Nat. 1972;106: 645–667.</p><p>[7] Kreft L, Botzki A, Coppens F, Vandepoele K,
+                     Van Bel M. PhyD3: A phylogenetic tree viewer with
+                     extended phyloXML support for functional genomics data
+                     visualization. Bioinformatics. 2017;33: 2946–2947.
+                     DOI: <a href="http://dx.doi.org/10.1093/bioinformatics/btx324" target="_blank">10.1093/bioinformatics/btx324</a></p><p>[8] Meier-Kolthoff JP, Hahnke RL, Petersen J, Scheuner C,
+                     Michael V, Fiebig A, et al. Complete genome sequence of
+                     DSM 30083<sup>T</sup>, the type strain (U5/41<sup>T</sup>)
+                     of <i>Escherichia coli</i>, and a proposal for delineating
+                     subspecies in microbial taxonomy. Stand Genomic Sci.
+                     2014;9: 2.
+                     DOI: <a href="http://dx.doi.org/10.1186/1944-3277-9-2" target="_blank">10.1186/1944-3277-9-2</a></p></div>
+
+
+    
+      </div>
+    </div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+
+
+    function hideshowssu() {
+        $("#btnssuanalysis").addClass('hidden');
+        $("#oklabelssu").removeClass('hidden');
+    };
+
+    function hideshowprot() {
+        $("#btnprotgbdpanalysis").addClass('hidden');
+        $("#oklabelprot").removeClass('hidden');
+    };
+
+
+    $(document).ready(
+        function () {
+            $('#digital_ddh_results').DataTable({
+                "scrollY": "800px",
+                "scrollCollapse": true,
+                paging: false,
+                //"bSort": false, // completely disables sorting
+                "order": [[4, "desc"]], // sort by dDDH d4
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'pdf', 'excel', 'print'
+                ]
+            });
+
+            $('#genome_browser').DataTable({
+                //paging: false,
+                //"bSort": false, // completely disables sorting
+                "order": [[2, "asc"], [3, "asc"]], // sort by species and subspecies cluster ...
+                "scrollX": true,
+                "scrollY": "800px",
+                "scrollCollapse": true,
+                "paging": false,
+                dom: 'Bfrtip',
+                //"deferRender": true,
+                buttons: [
+                    'copy', 'csv', 'excel', 'print'
+                ]
+            });
+
+
+            btn1 = document.getElementById('btnprotgbdpanalysis');
+            // following && construct avoids JS crash if btn is not available
+            btn1 && btn1.addEventListener('click', hideshowprot, false);
+            btn2 = document.getElementById('btnssuanalysis');
+            btn2 && btn2.addEventListener('click', hideshowssu, false);
+
+        });
+
+
+</script>
+    </div>
+
+    <footer class="page-footer">
+  <div class="link-parade">
+    <div class="row">
+      <div class="col">
+        <h3>TYGS</h3>
+        <a href="https://tygs.dsmz.de/changelogs?category=all">News and Changelogs</a>
+        <a href="https://tygs.dsmz.de/team/show">Team</a>
+      </div>
+
+      <div class="col">
+        <h3>Help</h3>
+        <a href="https://tygs.dsmz.de/faqs">FAQs</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=SaCJUMnO07Y&amp;list=PLOBqrx8E9qdQ">Tutorial Series</a>
+      </div>
+
+      <div class="col">
+        <h3>Feedback</h3>
+        <a href="https://tygs.dsmz.de/feedbacks/new">Feedback Form</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.surveymonkey.de/r/denbi-service?sc=db-node&amp;tool=tygs">de.NBI Survey</a>
+      </div>
+
+      <div class="col-md">
+        <h3>Social Media</h3>
+        <a class="footer-social-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/dsmzd3">
+          <i class="ph ph-linkedin-logo"></i>
+          <span class="footer-social-label">LinkedIn</span>
+</a>        <a class="footer-social-link" target="_blank" rel="noopener noreferrer" href="https://bsky.app/profile/dsmzd3.bsky.social">
+          <i class="ph ph-butterfly"></i>
+          <span class="footer-social-label">Bluesky</span>
+</a>      </div>
+
+      <div class="col">
+        <h3>Navigation</h3>
+        <a href="https://tygs.dsmz.de/">Home</a>
+        <a href="https://tygs.dsmz.de/user_results/show?guid=b1a3ad76-31a6-4d39-9596-4154f27b3379#">Back to top</a>
+      </div>
+    </div>
+  </div>
+  <div class="logo-parade">
+    <a href="http://www.dsmz.de/"><img height="75px" alt="DSMZ logo" src="./Type Strain Genome Server_results_files/dsmzlogo_with_meaning-e5798c960c203ebb8ba645f90b6cb27f845c47dfd70df05f442d9d9bb643c5f4.svg"></a>
+    <a href="https://www.denbi.de/"><img height="75px" alt="de.NBI logo" src="./Type Strain Genome Server_results_files/deNBI_Logo_rgb-b4b64555c1990884508ae12c900ef64b0e81688fdb8ec099280f6158d1d7371f.svg"></a>
+    <a href="https://lpsn.dsmz.de/"><img height="75px" alt="LPSN logo" src="./Type Strain Genome Server_results_files/lpsn-db1cd674299674d15c2e8a0085018d4d7263d0a61c3831758bf2b9c2c7bbdd64.svg"></a>
+    <a href="https://elixir-europe.org/"><img height="75px" alt="Elixir logo" src="./Type Strain Genome Server_results_files/elixir_logo_0-c097ca52e4fcd2dd19df762fb433eb9a3bf3fcc101ae65b02edcf2eac67dd30c.png"></a>
+  </div>
+  <hr>
+  <div class="footer">
+    <span>
+      © DSMZ 2016-2026 
+    </span>
+    <a href="https://www.dsmz.de/imprint">Imprint</a>
+    <a href="https://tygs.dsmz.de/faqs/1">Privacy</a>
+    <a href="https://tygs.dsmz.de/legal_notice/show">Terms</a>
+    <a href="https://tygs.dsmz.de/changelogs?category=changelog">Changelog</a>
+    <span>v434</span>
+  </div>
+</footer>
+  </main>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+
+
+
+
+</body></html>

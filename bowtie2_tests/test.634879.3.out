@@ -1,0 +1,115 @@
+Test      : C_local_very_sensitive
+Settings  : local alignment (soft-clipping), very sensitive-local, max insert 800
+Command   : bowtie2 -x SSF12 -1 reads_R1.fastq.gz -2 reads_R2.fastq.gz -p 8 --local --very-sensitive-local --maxins 800
+Bowtie2   : /apps/easybd/easybuild/amd/software/Bowtie2/2.5.1-GCC-12.3.0/bin/bowtie2-align-s version 2.5.1
+Run date  : 2026-11-11
+----------
+8136166 reads; of these:
+  8136166 (100.00%) were paired; of these:
+    1899354 (23.34%) aligned concordantly 0 times
+    6047719 (74.33%) aligned concordantly exactly 1 time
+    189093 (2.32%) aligned concordantly >1 times
+    ----
+    1899354 pairs aligned concordantly 0 times; of these:
+      43432 (2.29%) aligned discordantly 1 time
+    ----
+    1855922 pairs aligned 0 times concordantly or discordantly; of these:
+      3711844 mates make up the pairs; of these:
+        3500646 (94.31%) aligned 0 times
+        197043 (5.31%) aligned exactly 1 time
+        14155 (0.38%) aligned >1 times
+78.49% overall alignment rate
+
+------------------------------------------------------------
+Sender: LSF System <DoNotReply>
+Subject: Job 634879[3]: <bt2_test[1-3]> in cluster <server> Done
+
+Job <bt2_test[1-3]> was submitted from host <login4> by user <tatianas> in cluster <server> at Wed Nov 11 09:21:44 2026
+Job was executed on host(s) <8*hgn36>, in queue <short>, as user <tatianas> in cluster <server> at Wed Nov 11 09:21:57 2026
+<tatianas> was used as the home directory.
+<tatianas/microbacterium_analysis> was used as the working directory.
+Started at Wed Nov 11 09:21:57 2026
+Terminated at Wed Nov 11 09:31:43 2026
+Results reported at Wed Nov 11 09:31:43 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# Bowtie2 parameter test, one array element per parameter set (called by submit_bowtie2_tests.sh).
+# Not meant to be submitted on its own.
+#
+#BSUB -q short
+#BSUB -n 8
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=8192]"
+#BSUB -M 8192
+
+set -euo pipefail
+cd "$LS_SUBCWD" 2>/dev/null || cd "$(dirname "$0")"
+
+OUT=bowtie2_tests
+IDX=$OUT/SSF12_index/SSF12
+R1=reads_R1.fastq.gz
+R2=reads_R2.fastq.gz
+THREADS=8
+SAVE_BAM=${SAVE_BAM:-0}      # 1 = also write a sorted BAM (needs SAMtools), default: only the Bowtie2 report
+
+module purge
+module load Bowtie2/2.5.1-GCC-12.3.0
+
+case "$LSB_JOBINDEX" in
+  1) NAME=A_geneious_like
+     DESC="end-to-end, ~95% minimum identity (score-min L,0,-0.3), max insert 500 (reads map 'nearby'), random best hit"
+     PARAMS="--end-to-end --sensitive --score-min L,0,-0.3 --maxins 500" ;;
+  2) NAME=B_end_to_end_very_sensitive
+     DESC="end-to-end, very sensitive, default (permissive) score threshold, max insert 800"
+     PARAMS="--end-to-end --very-sensitive --maxins 800" ;;
+  3) NAME=C_local_very_sensitive
+     DESC="local alignment (soft-clipping), very sensitive-local, max insert 800"
+     PARAMS="--local --very-sensitive-local --maxins 800" ;;
+  *) echo "bad index $LSB_JOBINDEX"; exit 1 ;;
+esac
+
+REPORT=$OUT/${NAME}_bowtie2_report.txt
+echo "Test      : $NAME" > "$REPORT"
+echo "Settings  : $DESC" >> "$REPORT"
+echo "Command   : bowtie2 -x SSF12 -1 $R1 -2 $R2 -p $THREADS $PARAMS" >> "$REPORT"
+echo "Bowtie2   : $(bowtie2 --version | head -1)" >> "$REPORT"
+echo "Run date  : $(date +%Y-%m-%d)" >> "$REPORT"
+echo "----------" >> "$REPORT"
+
+# mapping (alignments discarded unless SAVE_BAM=1; the Bowtie2 report on stderr has the statistics)
+bowtie2 -x "$IDX" -1 "$R1" -2 "$R2" -p $THREADS $PARAMS -S "$OUT/${NAME}.sam" 2>> "$REPORT"
+
+if [ "$SAVE_BAM" = "1" ]; then
+  module purge
+  module load SAMtools/1.21-GCC-13.2.0
+
+(... more ...)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   4546.78 sec.
+    Max Memory :                                 189 MB
+    Average Memory :                             186.05 MB
+    Total Requested Memory :                     65536.00 MB
+    Delta Memory :                               65347.00 MB
+    Max Swap :                                   -
+    Max Processes :                              7
+    Max Threads :                                17
+    Run time :                                   586 sec.
+    Turnaround time :                            599 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <bowtie2_tests/test.634879.3.err> for stderr output of this job.
+

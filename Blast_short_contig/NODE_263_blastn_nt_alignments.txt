@@ -1,0 +1,549 @@
+BLASTN 2.15.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: Nucleotide collection (nt)
+           120,166,478 sequences; 3,403,705,599,802 total letters
+
+
+
+Query= NODE_263_length_155_cov_535.192308
+
+Length=155
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+CP027929.1 Microbacterium sp. SGAir0570 chromosome, complete genome   281     6e-71
+AP029192.1 Microbacterium imperiale JCM 1378 DNA, complete genome     281     6e-71
+CP018134.1 Microbacterium paludicola strain CC3 chromosome, compl...  281     6e-71
+CP128474.1 Microbacterium arborescens strain SSF12 chromosome, co...  281     6e-71
+CP154843.1 Microbacterium sp. 2P06AB chromosome                       265     6e-66
+CP141117.1 Microbacterium plantarum strain CoE-159-22 chromosome,...  265     6e-66
+CP120712.1 Microbacterium sp. BDGP8 chromosome, complete genome       265     6e-66
+CP058316.1 Microbacterium oleivorans strain I46 chromosome, compl...  259     3e-64
+CP154849.1 Microbacterium sp. 1P06AB chromosome                       257     1e-63
+CP031421.1 Microbacterium oleivorans strain A9 chromosome, comple...  257     1e-63
+OZ075067.1 Microbacterium sp. MM2322 isolate Microbacterium MM232...  257     1e-63
+LT627736.1 Microbacterium sp. LKL04 genome assembly, chromosome: I    257     1e-63
+CP119321.1 Candidatus Microbacterium phytovorans isolate MAG_4610...  255     4e-63
+AP027141.1 Microbacterium terricola KV-448 DNA, complete genome       248     6e-61
+CP107222.1 Microbacterium terricola strain JCM 14903 chromosome, ...  248     6e-61
+OZ242910.1 Microbacterium lacticum isolate isolate_24 genome asse...  246     2e-60
+CP064760.1 Microbacterium schleiferi strain A32-1 chromosome, com...  246     2e-60
+CP049256.1 Microbacterium sp. 4R-513 chromosome, complete genome      244     8e-60
+CP187567.1 Microbacterium sp. PA5 chromosome, complete genome         243     3e-59
+OZ242841.1 Microbacterium lacticum isolate isolate_53 genome asse...  241     1e-58
+CP084996.1 Microbacterium lacus strain SLM-617 chromosome, comple...  241     1e-58
+CP197470.1 Microbacterium sp. F51-2R chromosome, complete genome      237     1e-57
+CP025299.1 Microbacterium hominis strain SJTG1 chromosome, comple...  237     1e-57
+CP080381.1 Microbacterium sp. PAMC21962 chromosome, complete genome   237     1e-57
+CP070346.1 Microbacterium hominis strain PDNC016 chromosome, comp...  237     1e-57
+CP061345.1 Microbacterium hominis strain 01094 chromosome, comple...  237     1e-57
+CP061344.1 Microbacterium hominis strain 01094 chromosome, comple...  237     1e-57
+OZ242921.1 Microbacterium lacticum isolate isolate_45 genome asse...  235     5e-57
+OZ242909.1 Microbacterium aurum isolate isolate_35 genome assembl...  235     5e-57
+OZ242881.1 Microbacterium aurum isolate isolate_08 genome assembl...  235     5e-57
+OZ242839.1 Microbacterium aurum isolate isolate_06 genome assembl...  235     5e-57
+OZ242833.1 Microbacterium lacticum isolate isolate_68 genome asse...  235     5e-57
+OZ242803.1 Microbacterium aurum isolate isolate_73 genome assembl...  235     5e-57
+CP018762.1 Microbacterium aurum strain KACC 15219 chromosome, com...  235     5e-57
+AP024335.1 Microbacterium sp. SW12 DNA, complete genome               235     5e-57
+OZ242857.1 Microbacterium paulum isolate isolate_44 genome assemb...  233     2e-56
+CP031423.1 Microbacterium lemovicicum strain Viu22 chromosome, co...  233     2e-56
+CP116226.1 Microbacterium enclense isolate bin7 chromosome, compl...  231     6e-56
+OZ242882.1 Microbacterium aurum isolate isolate_27 genome assembl...  230     2e-55
+CP158846.1 Microbacterium laevaniformans strain MIC2 chromosome, ...  230     2e-55
+CP044232.1 Microbacterium lushaniae strain L-031 chromosome, comp...  226     3e-54
+CP038266.1 Microbacterium wangchenii strain dk512 chromosome, com...  226     3e-54
+CP160455.1 Microbacterium proteolyticum strain ZJSU01 chromosome,...  226     3e-54
+AP031501.1 Microbacterium sp. che218 DNA, complete genome             226     3e-54
+CP121274.1 Microbacterium proteolyticum strain ustc chromosome, c...  226     3e-54
+AP012052.1 Microbacterium testaceum StLB037 DNA, complete genome      226     3e-54
+CP085219.1 Microbacterium marinum strain QJJ-211 chromosome, comp...  224     1e-53
+CP138996.1 Microbacterium sp. R86528 chromosome, complete genome      222     4e-53
+CP121699.1 Microbacterium testaceum strain HW4 chromosome, comple...  222     4e-53
+CP113067.1 Microbacterium sp. SL75 chromosome                         222     4e-53
+OZ262858.1 Microbacterium sp. MM2322 isolate Microbacterium sp. g...  220     1e-52
+CP017674.1 Microbacterium sp. BH-3-3-3 chromosome, complete genome    220     1e-52
+CP103793.1 Microbacterium testaceum strain D12 chromosome, comple...  220     1e-52
+LT629692.1 Microbacterium pygmaeum strain DSM 23142 genome assemb...  219     5e-52
+CP015810.1 Microbacterium aurantiacum strain SIT 101, complete se...  209     3e-49
+CP151633.1 Microbacterium sp. LWO14-1.2 chromosome                    207     1e-48
+CP196042.1 Microbacterium sp. CJ88 chromosome, complete genome        206     4e-48
+CP137080.1 Microbacterium limosum strain Y20 chromosome, complete...  206     4e-48
+CP126739.1 Microbacterium sp. zg-B185 chromosome, complete genome     206     4e-48
+CP044231.1 Microbacterium caowuchunii strain ST-M6 chromosome, co...  204     1e-47
+CP162025.1 Microbacterium sp. HA-8 chromosome, complete genome        202     5e-47
+CP043430.1 Microbacterium sp. 1S1 chromosome, complete genome         198     6e-46
+CP027434.1 Microbacterium sp. str. 'China' chromosome, complete g...  198     6e-46
+CP025422.1 Zhihengliuella sp. ISTPL4 chromosome                       198     6e-46
+CP146240.1 Microbacterium paraoxydans strain GJ_SRA_44_2022 chrom...  198     6e-46
+LT629770.1 Microbacterium paraoxydans strain DSM 15019 genome ass...  198     6e-46
+CP133984.1 Microbacterium meiriae (nom. nud.) strain F6_8S_P_2B c...  198     6e-46
+CP014313.1 Microbacterium sp. PAMC 28756 strain HSR44 chromosome,...  198     6e-46
+CP078105.1 Microbacterium sp. E22 chromosome, complete genome         198     6e-46
+CP064873.1 Microbacterium paraoxydans strain 70447 chromosome, co...  198     6e-46
+LR880474.1 Microbacterium sp. Nx66 genome assembly, chromosome: Nx66  198     6e-46
+CP088261.1 Microbacterium sp. cx-55 chromosome, complete genome       196     2e-45
+OZ346128.1 Microbacterium sufflavum strain R-93060 genome assembl...  195     8e-45
+CP078076.1 Microbacterium sufflavum strain SSW1-51 chromosome         195     8e-45
+OZ344842.1 Microbacterium maritypicum strain R-91692 genome assem...  193     3e-44
+CP145908.1 Microbacterium sp. PMB16 chromosome, complete genome       193     3e-44
+CP188171.1 Microbacterium sp. As-52 chromosome, complete genome       193     3e-44
+AP027918.1 Microbacterium sp. T3-8 DNA, complete genome               193     3e-44
+CP042412.1 Microbacterium sp. CBA3102 chromosome                      193     3e-44
+CP162522.1 Microbacterium oxydans strain UPB 460 chromosome, comp...  193     3e-44
+CP168171.1 Microbacterium sp. WHRI 7836 chromosome, complete genome   193     3e-44
+CP031338.1 Microbacterium oxydans strain VIU2A chromosome, comple...  193     3e-44
+CP031422.1 Microbacterium oxydans strain HG3 chromosome, complete...  193     3e-44
+CP168030.1 Microbacterium maritypicum strain Sneb159 chromosome, ...  193     3e-44
+CP158357.1 Microbacterium sp. A8/3-1 chromosome, complete genome      193     3e-44
+CP155793.1 Microbacterium sp. SY138 chromosome, complete genome       193     3e-44
+CP151634.1 Microbacterium sp. LWO13-1.2 chromosome                    193     3e-44
+CP147994.1 Microbacterium sp. LMS4 chromosome                         193     3e-44
+CP147855.1 Microbacterium sp. LTA6 chromosome                         193     3e-44
+AP017975.1 Microbacterium sp. TPU 3598 DNA, complete genome           193     3e-44
+CP130429.1 Microbacterium maritypicum strain MWF001 chromosome, c...  193     3e-44
+CP119308.1 Candidatus Microbacterium colombiense isolate MAG_1911...  193     3e-44
+CP118606.1 Microbacterium maritypicum strain B1075 chromosome, co...  193     3e-44
+CP078075.1 Microbacterium luteolum strain KACC 14465 chromosome       193     3e-44
+CP092891.1 Microbacterium oxydans strain ML-6 chromosome, complet...  193     3e-44
+CP089590.1 Microbacterium sp. J1-1 chromosome, complete genome        193     3e-44
+CP101471.1 Microbacterium maritypicum strain DND4 chromosome, com...  193     3e-44
+CP078078.1 Microbacterium aurugineum strain KSW4-10 chromosome        193     3e-44
+CP078077.1 Microbacterium galbinum strain SSW1-36 chromosome          193     3e-44
+CP080491.1 Microbacterium sp. Se5.02b chromosome, complete genome     193     3e-44
+
+
+>CP027929.1 Microbacterium sp. SGAir0570 chromosome, complete genome
+Length=3380208
+
+ Score = 281 bits (152),  Expect = 6e-71
+ Identities = 154/155 (99%), Gaps = 0/155 (0%)
+ Strand=Plus/Minus
+
+Query  1        TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2059082  TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  2059023
+
+Query  61       AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+                ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2059022  AAGCCGATGACTTGATAACACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  2058963
+
+Query  121      GTACGGTCGAGAACCGCATAACGATCAATCGTTGT  155
+                |||||||||||||||||||||||||||||||||||
+Sbjct  2058962  GTACGGTCGAGAACCGCATAACGATCAATCGTTGT  2058928
+
+
+>AP029192.1 Microbacterium imperiale JCM 1378 DNA, complete genome
+Length=3171213
+
+ Score = 281 bits (152),  Expect = 6e-71
+ Identities = 154/155 (99%), Gaps = 0/155 (0%)
+ Strand=Plus/Plus
+
+Query  1       TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  474040  TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  474099
+
+Query  61      AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+               ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  474100  AAGCCGATGACTTGATAACACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  474159
+
+Query  121     GTACGGTCGAGAACCGCATAACGATCAATCGTTGT  155
+               |||||||||||||||||||||||||||||||||||
+Sbjct  474160  GTACGGTCGAGAACCGCATAACGATCAATCGTTGT  474194
+
+
+>CP018134.1 Microbacterium paludicola strain CC3 chromosome, complete genome
+Length=3410829
+
+ Score = 281 bits (152),  Expect = 6e-71
+ Identities = 154/155 (99%), Gaps = 0/155 (0%)
+ Strand=Plus/Plus
+
+Query  1       TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  293586  TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  293645
+
+Query  61      AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+               ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  293646  AAGCCGATGACTTGATAACACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  293705
+
+Query  121     GTACGGTCGAGAACCGCATAACGATCAATCGTTGT  155
+               |||||||||||||||||||||||||||||||||||
+Sbjct  293706  GTACGGTCGAGAACCGCATAACGATCAATCGTTGT  293740
+
+
+>CP128474.1 Microbacterium arborescens strain SSF12 chromosome, complete 
+genome
+Length=3370341
+
+ Score = 281 bits (152),  Expect = 6e-71
+ Identities = 154/155 (99%), Gaps = 0/155 (0%)
+ Strand=Plus/Minus
+
+Query  1        TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2054322  TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  2054263
+
+Query  61       AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+                ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2054262  AAGCCGATGACTTGATAACACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  2054203
+
+Query  121      GTACGGTCGAGAACCGCATAACGATCAATCGTTGT  155
+                |||||||||||||||||||||||||||||||||||
+Sbjct  2054202  GTACGGTCGAGAACCGCATAACGATCAATCGTTGT  2054168
+
+
+>CP154843.1 Microbacterium sp. 2P06AB chromosome
+Length=3412197
+
+ Score = 265 bits (143),  Expect = 6e-66
+ Identities = 152/156 (97%), Gaps = 1/156 (1%)
+ Strand=Plus/Minus
+
+Query  1    TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  330  TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  271
+
+Query  61   AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+            ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  270  AAGCCGATGACTTGATAACACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  211
+
+Query  121  GTACGGTCGAGAACCGCATAACGA-TCAATCGTTGT  155
+            |||||||||||||||||||||||| |  ||||||||
+Sbjct  210  GTACGGTCGAGAACCGCATAACGAATTGATCGTTGT  175
+
+
+>CP141117.1 Microbacterium plantarum strain CoE-159-22 chromosome, complete 
+genome
+Length=3356760
+
+ Score = 265 bits (143),  Expect = 6e-66
+ Identities = 152/156 (97%), Gaps = 1/156 (1%)
+ Strand=Plus/Minus
+
+Query  1        TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1918015  TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  1917956
+
+Query  61       AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+                ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1917955  AAGCCGATGACTTGATAACACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  1917896
+
+Query  121      GTACGGTCGAGAACCGCATAACGA-TCAATCGTTGT  155
+                |||||||||||||||||||||||| |  ||||||||
+Sbjct  1917895  GTACGGTCGAGAACCGCATAACGAATTGATCGTTGT  1917860
+
+
+>CP120712.1 Microbacterium sp. BDGP8 chromosome, complete genome
+Length=3293567
+
+ Score = 265 bits (143),  Expect = 6e-66
+ Identities = 152/156 (97%), Gaps = 1/156 (1%)
+ Strand=Plus/Minus
+
+Query  1        TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2030261  TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  2030202
+
+Query  61       AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+                ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2030201  AAGCCGATGACTTGATAACACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  2030142
+
+Query  121      GTACGGTCGAGAACCGCATAACGA-TCAATCGTTGT  155
+                |||||||||||||||||||||||| |  ||||||||
+Sbjct  2030141  GTACGGTCGAGAACCGCATAACGAATTGATCGTTGT  2030106
+
+
+>CP058316.1 Microbacterium oleivorans strain I46 chromosome, complete genome
+Length=3350353
+
+ Score = 259 bits (140),  Expect = 3e-64
+ Identities = 151/156 (97%), Gaps = 1/156 (1%)
+ Strand=Plus/Minus
+
+Query  1       TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+               ||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||||
+Sbjct  491089  TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGCAACACGTGAAGCTGACCGGTACTAAT  491030
+
+Query  61      AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+               ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  491029  AAGCCGATGACTTGATAACACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  490970
+
+Query  121     GTACGGTCGAGAACCGCATAACGA-TCAATCGTTGT  155
+               |||||||||||||||||||||||| |  ||||||||
+Sbjct  490969  GTACGGTCGAGAACCGCATAACGAATTGATCGTTGT  490934
+
+
+>CP154849.1 Microbacterium sp. 1P06AB chromosome
+Length=3006168
+
+ Score = 257 bits (139),  Expect = 1e-63
+ Identities = 150/155 (97%), Gaps = 1/155 (1%)
+ Strand=Plus/Minus
+
+Query  1    TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  302  TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  243
+
+Query  61   AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+            ||||||||||||||||| ||||||||||  ||||||||||||||||||||||||||||||
+Sbjct  242  AAGCCGATGACTTGATAACACACCGTTT-AGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  184
+
+Query  121  GTACGGTCGAGAACCGCATAACGATCAATCGTTGT  155
+            ||||||||||||||||||||||||  |||||||||
+Sbjct  183  GTACGGTCGAGAACCGCATAACGAATAATCGTTGT  149
+
+
+>CP031421.1 Microbacterium oleivorans strain A9 chromosome, complete genome
+Length=2996750
+
+ Score = 257 bits (139),  Expect = 1e-63
+ Identities = 150/155 (97%), Gaps = 1/155 (1%)
+ Strand=Plus/Plus
+
+Query  1        TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1010844  TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  1010903
+
+Query  61       AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+                |||||||||| |||||| ||||||| ||| ||||||||||||||||||||||||||||||
+Sbjct  1010904  AAGCCGATGATTTGATAACACACCG-TTTAGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  1010962
+
+Query  121      GTACGGTCGAGAACCGCATAACGATCAATCGTTGT  155
+                ||||||||||||||||||||||||| |||||||||
+Sbjct  1010963  GTACGGTCGAGAACCGCATAACGATGAATCGTTGT  1010997
+
+
+>OZ075067.1 Microbacterium sp. MM2322 isolate Microbacterium MM2322 assembly 
+genome assembly, chromosome: MM2322
+Length=3085801
+
+ Score = 257 bits (139),  Expect = 1e-63
+ Identities = 150/155 (97%), Gaps = 1/155 (1%)
+ Strand=Plus/Plus
+
+Query  1        TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1074611  TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  1074670
+
+Query  61       AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+                ||||||||||||||||| ||||||| ||| ||||||||||||||||||||||||||||||
+Sbjct  1074671  AAGCCGATGACTTGATAACACACCG-TTTAGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  1074729
+
+Query  121      GTACGGTCGAGAACCGCATAACGATCAATCGTTGT  155
+                ||||||||||||||||||||||| | |||||||||
+Sbjct  1074730  GTACGGTCGAGAACCGCATAACGTTTAATCGTTGT  1074764
+
+
+>LT627736.1 Microbacterium sp. LKL04 genome assembly, chromosome: I
+Length=2922123
+
+ Score = 257 bits (139),  Expect = 1e-63
+ Identities = 150/155 (97%), Gaps = 1/155 (1%)
+ Strand=Plus/Plus
+
+Query  1       TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  561861  TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  561920
+
+Query  61      AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+               ||||||||||||||||| ||||||| ||| ||||||||||||||||||||||||||||||
+Sbjct  561921  AAGCCGATGACTTGATAACACACCG-TTTAGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  561979
+
+Query  121     GTACGGTCGAGAACCGCATAACGATCAATCGTTGT  155
+               ||||||||||||||||||||||||  |||||||||
+Sbjct  561980  GTACGGTCGAGAACCGCATAACGAATAATCGTTGT  562014
+
+
+>CP119321.1 MAG: Candidatus Microbacterium phytovorans isolate MAG_4610 chromosome, 
+complete genome
+Length=3032576
+
+ Score = 255 bits (138),  Expect = 4e-63
+ Identities = 142/144 (99%), Gaps = 0/144 (0%)
+ Strand=Plus/Plus
+
+Query  1       TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  497484  TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  497543
+
+Query  61      AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+               ||||||||||||||||| ||||||||||| ||||||||||||||||||||||||||||||
+Sbjct  497544  AAGCCGATGACTTGATAACACACCGTTTTAGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  497603
+
+Query  121     GTACGGTCGAGAACCGCATAACGA  144
+               ||||||||||||||||||||||||
+Sbjct  497604  GTACGGTCGAGAACCGCATAACGA  497627
+
+
+>AP027141.1 Microbacterium terricola KV-448 DNA, complete genome
+Length=3251508
+
+ Score = 248 bits (134),  Expect = 6e-61
+ Identities = 148/155 (95%), Gaps = 0/155 (0%)
+ Strand=Plus/Plus
+
+Query  1        TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+                ||||||||||||||||  |||||||||||||||||||||||| |||||||  ||||||||
+Sbjct  1044220  TACTGGGTTGATAGGCGAGATGTGGAAGCGTGGTAACACGTGCAGCTGACTCGTACTAAT  1044279
+
+Query  61       AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+                ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1044280  AAGCCGATGACTTGATAACACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  1044339
+
+Query  121      GTACGGTCGAGAACCGCATAACGATCAATCGTTGT  155
+                ||||||||||||||||||||||||||| |||||||
+Sbjct  1044340  GTACGGTCGAGAACCGCATAACGATCATTCGTTGT  1044374
+
+
+>CP107222.1 Microbacterium terricola strain JCM 14903 chromosome, complete 
+genome
+Length=3251607
+
+ Score = 248 bits (134),  Expect = 6e-61
+ Identities = 148/155 (95%), Gaps = 0/155 (0%)
+ Strand=Plus/Minus
+
+Query  1        TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+                ||||||||||||||||  |||||||||||||||||||||||| |||||||  ||||||||
+Sbjct  2018841  TACTGGGTTGATAGGCGAGATGTGGAAGCGTGGTAACACGTGCAGCTGACTCGTACTAAT  2018782
+
+Query  61       AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+                ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2018781  AAGCCGATGACTTGATAACACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  2018722
+
+Query  121      GTACGGTCGAGAACCGCATAACGATCAATCGTTGT  155
+                ||||||||||||||||||||||||||| |||||||
+Sbjct  2018721  GTACGGTCGAGAACCGCATAACGATCATTCGTTGT  2018687
+
+
+>OZ242910.1 Microbacterium lacticum isolate isolate_24 genome assembly, chromosome: 
+1
+Length=3446286
+
+ Score = 246 bits (133),  Expect = 2e-60
+ Identities = 141/145 (97%), Gaps = 0/145 (0%)
+ Strand=Plus/Minus
+
+Query  1    TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  328  TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  269
+
+Query  61   AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+            ||||||||||||||||| ||||||||||| ||||||||||||||||||||||||||||||
+Sbjct  268  AAGCCGATGACTTGATAACACACCGTTTTAGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  209
+
+Query  121  GTACGGTCGAGAACCGCATAACGAT  145
+            ||||||||||||||||||| || ||
+Sbjct  208  GTACGGTCGAGAACCGCATGACAAT  184
+
+
+>CP064760.1 Microbacterium schleiferi strain A32-1 chromosome, complete genome
+Length=3296665
+
+ Score = 246 bits (133),  Expect = 2e-60
+ Identities = 138/140 (99%), Gaps = 1/140 (1%)
+ Strand=Plus/Plus
+
+Query  1        TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1101912  TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  1101971
+
+Query  61       AAGCCGATGACTTGATAGCACACCG-TTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGA  119
+                ||||||||||||||||| ||||||| ||||||||||||||||||||||||||||||||||
+Sbjct  1101972  AAGCCGATGACTTGATAACACACCGTTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGA  1102031
+
+Query  120      TGTACGGTCGAGAACCGCAT  139
+                ||||||||||||||||||||
+Sbjct  1102032  TGTACGGTCGAGAACCGCAT  1102051
+
+
+>CP049256.1 Microbacterium sp. 4R-513 chromosome, complete genome
+Length=3910080
+
+ Score = 244 bits (132),  Expect = 8e-60
+ Identities = 136/138 (99%), Gaps = 0/138 (0%)
+ Strand=Plus/Minus
+
+Query  1    TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  353  TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  294
+
+Query  61   AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+            ||||||||||||||||| |||||||||| |||||||||||||||||||||||||||||||
+Sbjct  293  AAGCCGATGACTTGATAACACACCGTTTCTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  234
+
+Query  121  GTACGGTCGAGAACCGCA  138
+            ||||||||||||||||||
+Sbjct  233  GTACGGTCGAGAACCGCA  216
+
+
+>CP187567.1 Microbacterium sp. PA5 chromosome, complete genome
+Length=3236044
+
+ Score = 243 bits (131),  Expect = 3e-59
+ Identities = 148/156 (95%), Gaps = 1/156 (1%)
+ Strand=Plus/Plus
+
+Query  1        TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+                |||||||||||||||||||||||||||||| |||||| ||||||||||||||||||||||
+Sbjct  1130197  TACTGGGTTGATAGGCCGGATGTGGAAGCGCGGTAACGCGTGAAGCTGACCGGTACTAAT  1130256
+
+Query  61       AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+                ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1130257  AAGCCGATGACTTGATAACACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  1130316
+
+Query  121      GTACGGTCGAGAACCGCATAACGATCA-ATCGTTGT  155
+                ||||||||||||||||||| || || | || |||||
+Sbjct  1130317  GTACGGTCGAGAACCGCATGACAATGACATTGTTGT  1130352
+
+
+>OZ242841.1 Microbacterium lacticum isolate isolate_53 genome assembly, chromosome: 
+1
+Length=3549119
+
+ Score = 241 bits (130),  Expect = 1e-58
+ Identities = 140/145 (97%), Gaps = 0/145 (0%)
+ Strand=Plus/Minus
+
+Query  1       TACTGGGTTGATAGGCCGGATGTGGAAGCGTGGTAACACGTGAAGCTGACCGGTACTAAT  60
+               |||||||||||||||||||||||||||||| |||||||||||||||||||||||||||||
+Sbjct  541190  TACTGGGTTGATAGGCCGGATGTGGAAGCGCGGTAACACGTGAAGCTGACCGGTACTAAT  541131
+
+Query  61      AAGCCGATGACTTGATAGCACACCGTTTTTGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  120
+               ||||||||||||||||| ||||||||||| ||||||||||||||||||||||||||||||
+Sbjct  541130  AAGCCGATGACTTGATAACACACCGTTTTAGGTGCTTGCGTCCACTGAGTGGTTCTCGAT  541071
+
+Query  121     GTACGGTCGAGAACCGCATAACGAT  145
+               ||||||||||||||||||| || ||
+Sbjct  541070  GTACGGTCGAGAACCGCATGACAAT  541046
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 404526173184686
+
+
+  Database: Nucleotide collection (nt)
+    Posted date:  Dec 22, 2025  2:05 PM
+  Number of letters in database: 3,403,705,599,802
+  Number of sequences in database:  120,166,478
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

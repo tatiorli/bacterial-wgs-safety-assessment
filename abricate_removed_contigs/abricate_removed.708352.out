@@ -1,0 +1,108 @@
+tatianas/.conda/envs/abricate/bin/abricate
+abricate 1.0.1
+Removed contigs: 261; total bp: 70363
+Hits per database on the removed contigs (identity >= 80, coverage >= 1%):
+abricate_argannot_removed_contigs.txt: total=0   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=0
+abricate_card_removed_contigs.txt: total=0   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=0
+abricate_ncbi_removed_contigs.txt: total=0   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=0
+abricate_resfinder_removed_contigs.txt: total=0   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=0
+abricate_vfdb_removed_contigs.txt: total=1   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=1
+
+All hits (database, gene, contig, position, coverage, identity, product, accession):
+abricate_vfdb_removed_contigs.txt	espX1	NODE_176_length_248_cov_0.789474	1-248	cov=17.44	id=93.95	(espX1) Type III secretion system effector EspX1 [LEE encoded T3SS (SS020)] [Escherichia coli O157:H7 str. EDL933]	NP_285716
+DONE
+
+------------------------------------------------------------
+Sender: LSF System <DoNotReply>
+Subject: Job 708352: <abricate_removed> in cluster <server> Done
+
+Job <abricate_removed> was submitted from host <login4> by user <tatianas> in cluster <server> at Thu Nov 12 12:54:37 2026
+Job was executed on host(s) <2*cn372>, in queue <short>, as user <tatianas> in cluster <server> at Thu Nov 12 12:54:37 2026
+                            <2*cn057>
+<tatianas> was used as the home directory.
+<tatianas/microbacterium_analysis> was used as the working directory.
+Started at Thu Nov 12 12:54:37 2026
+Terminated at Thu Nov 12 12:54:53 2026
+Results reported at Thu Nov 12 12:54:53 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# ABRicate (4 AMR databases + VFDB, --minid 80 --mincov 1) on the contigs REMOVED by the post-assembly filter (NODE_10 to NODE_270 of the SPAdes rerun).
+# Same settings as run_abricate_lowcov.sh (EFSA WGS statement 2024, section 2.5.3). Does not touch the earlier results.
+# Submit from the microbacterium_analysis folder:   mkdir -p abricate_removed_contigs && bsub < run_abricate_removed.sh
+# (the "abricate" conda environment must be active when you submit)
+#
+#BSUB -J abricate_removed
+#BSUB -q short
+#BSUB -n 4
+#BSUB -R "rusage[mem=1024]"
+#BSUB -M 1024
+#BSUB -o abricate_removed_contigs/abricate_removed.%J.out
+#BSUB -e abricate_removed_contigs/abricate_removed.%J.err
+
+set -uo pipefail
+module purge 2>/dev/null || true
+unset PERL5LIB PERL_LOCAL_LIB_ROOT PERL_MB_OPT PERL_MM_OPT PERLLIB
+cd "$LS_SUBCWD" 2>/dev/null || cd "$(dirname "$0")"
+
+OUT=abricate_removed_contigs
+ALL=spades_rerun/spades_output/contigs.fasta
+MINID=80
+MINCOV=1
+DBS="ncbi card argannot resfinder vfdb"
+mkdir -p "$OUT"
+which abricate && abricate --version || { echo "ERROR: abricate not working (activate the abricate conda env before bsub)"; exit 1; }
+
+# contigs NODE_1..9 = submitted assembly; NODE_10 onwards = removed by the filter
+awk '/^>/{split($1,a,"_"); keep=(a[2]+0>=10)} keep' "$ALL" > $OUT/removed_contigs.fasta
+echo "Removed contigs: $(grep -c '>' $OUT/removed_contigs.fasta); total bp: $(grep -v '>' $OUT/removed_contigs.fasta | tr -d '\n' | wc -c)"
+
+for db in $DBS; do
+  abricate --db $db --minid $MINID --mincov $MINCOV --threads 4 $OUT/removed_contigs.fasta > $OUT/abricate_${db}_removed_contigs.txt || { echo "ERROR: abricate failed for $db"; exit 1; }
+done
+
+{
+  echo "ABRicate on the contigs removed by the post-assembly filter"
+  echo "Run date : $(date +%Y-%m-%d)"
+  echo "Version  : $(abricate --version)"
+  echo "Command  : abricate --db <db> --minid $MINID --mincov $MINCOV removed_contigs.fasta"
+  echo "Input    : NODE_10 to NODE_270 of the SPAdes rerun (spades_rerun/spades_output/contigs.fasta)"
+  abricate --list | awk 'NR==1 || /ncbi|card|argannot|resfinder|vfdb/'
+} > $OUT/abricate_run_info.txt
+
+SUM=$OUT/abricate_removed_summary.txt
+{
+  echo "Hits per database on the removed contigs (identity >= $MINID, coverage >= $MINCOV%):"
+  for f in $OUT/abricate_*_removed_contigs.txt; do
+    n=$(tail -n +2 "$f" | wc -l)
+    full=$(tail -n +2 "$f" | awk -F'\t' '$10>=70 && $11>=80' | wc -l)
+
+(... more ...)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   8.75 sec.
+    Max Memory :                                 19 MB
+    Average Memory :                             16.80 MB
+    Total Requested Memory :                     4096.00 MB
+    Delta Memory :                               4077.00 MB
+    Max Swap :                                   -
+    Max Processes :                              8
+    Max Threads :                                9
+    Run time :                                   16 sec.
+    Turnaround time :                            16 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <abricate_removed_contigs/abricate_removed.708352.err> for stderr output of this job.
+

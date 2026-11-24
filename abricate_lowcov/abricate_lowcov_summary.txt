@@ -1,0 +1,11 @@
+Hits per database (rows in the raw files, excluding header), identity >= 80, coverage >= 1%
+abricate_argannot_assembly.txt: total=0   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=0
+abricate_card_assembly.txt: total=2   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=2
+abricate_ncbi_assembly.txt: total=1   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=1
+abricate_resfinder_assembly.txt: total=0   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=0
+abricate_vfdb_assembly.txt: total=0   meeting 80% identity / 70% coverage=0   fragments (<70% coverage)=0
+
+Fragments (identity >=80%, coverage <70%), grouped by gene; 2 or more fragments of one gene must be checked for the full gene:
+abricate_card_assembly.txt	arr-1	NODE_1_length_1475171_cov_354.830449	968402-968530	cov=29.86	id=80.62	arr-1 is a chromosome-encoded ribosyltransferase found in Mycolicibacterium smegmatis	AF001493:0-432
+abricate_ncbi_assembly.txt	arr-Ms	NODE_1_length_1475171_cov_354.830449	968402-968530	cov=29.86	id=80.62	NAD(+)--rifampin ADP-ribosyltransferase	NG_047477.1
+abricate_card_assembly.txt	novA	NODE_2_length_676389_cov_354.803251	96470-96583	cov=6.01	id=82.05	A type III ABC transporter identified on the novobiocin biosynthetic gene cluster involved in the transport and resistance of novobiocin.	AF170880:0-1848

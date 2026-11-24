@@ -1,0 +1,54 @@
+>CP128474.1 Microbacterium arborescens strain SSF12 chromosome, complete genome
+
+------------------------------------------------------------
+Sender: LSF System <DoNotReply>
+Subject: Job 628151: <bt2_index> in cluster <server> Exited
+
+Job <bt2_index> was submitted from host <login4> by user <tatianas> in cluster <server> at Wed Nov 11 08:51:46 2026
+Job was executed on host(s) <3*cn241>, in queue <short>, as user <tatianas> in cluster <server> at Wed Nov 11 08:51:47 2026
+                            <1*cn125>
+<tatianas> was used as the home directory.
+<tatianas/microbacterium_analysis> was used as the working directory.
+Started at Wed Nov 11 08:51:47 2026
+Terminated at Wed Nov 11 08:52:01 2026
+Results reported at Wed Nov 11 08:52:01 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+set -euo pipefail
+cd "tatianas/microbacterium_analysis"
+if [ ! -s M_arborescens_SSF12_CP128474.1_reference.fasta ]; then
+  wget -q -O M_arborescens_SSF12_CP128474.1_reference.fasta "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=CP128474.1&rettype=fasta&retmode=text"
+fi
+head -1 M_arborescens_SSF12_CP128474.1_reference.fasta
+module load Bowtie2/2.5.1-GCC-12.3.0
+bowtie2-build --threads 4 M_arborescens_SSF12_CP128474.1_reference.fasta bowtie2_tests/SSF12_index/SSF12 > bowtie2_tests/bowtie2_build.log 2>&1
+echo "N bases in reference: $(grep -v '>' M_arborescens_SSF12_CP128474.1_reference.fasta | tr -cd 'Nn' | wc -c)"
+
+------------------------------------------------------------
+
+Exited with exit code 132.
+
+Resource usage summary:
+
+    CPU time :                                   5.88 sec.
+    Max Memory :                                 20 MB
+    Average Memory :                             17.25 MB
+    Total Requested Memory :                     16384.00 MB
+    Delta Memory :                               16364.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   18 sec.
+    Turnaround time :                            15 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <bowtie2_tests/index.628151.err> for stderr output of this job.
+

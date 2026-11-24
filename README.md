@@ -52,9 +52,15 @@ The results are concluded and the analysis was carried through to the end of the
 <img src="images/antismash_overview.png" width="700" alt="antiSMASH overview of the detected regions">
 
 ## What I did in practice
-- Wrote the scripts for a Linux cluster (LSF `bsub`): job scripts, modules, conda environments.
-- Debugged the cluster problems along the way, for example illegal-instruction crashes (exit code 132), memory limits per core, Python and Perl module conflicts, and SPAdes needing Python 3.9 or older.
-- Chose and justified the thresholds, and wrote the report text for non-bioinformaticians.
+
+I owned the analysis from raw reads to the final scientific conclusions.
+
+- **Requirements:** I read the EFSA guidance on WGS of microorganisms used in the food chain and turned it into a checklist of what the analysis had to show. When EFSA published newer guidance in 2024 and 2025, I compared it against the work and ran the additional analyses that were actually required, without adding unnecessary ones.
+- **Pipeline design:** I designed the overall analysis pipeline: assembly, annotation, species identification, gene of interest, antimicrobial resistance and virulence, biosynthetic gene clusters, read contamination, and assembly completeness.
+- **Execution:** I ran every step myself as batch jobs on my institute HPC server (bash, Python, conda environments, LSF), and troubleshot the problems along the way: illegal-instruction crashes, memory limits, and tool and Python version conflicts.
+- **Manual verification:** I did not rely on tool output alone. I checked the 16S and protein alignments by eye, inspected the gene predictions, looked at the read mapping at the contig ends, and followed up unclear hits (for example, an *arr*-like gene and a very high-coverage short contig) with extra BLAST searches.
+- **Thresholds and interpretation:** I chose and justified the thresholds (for example ABRicate at the lowest coverage setting), separated true hits from fragments, and wrote down what each result means.
+- **Report:** I wrote the full report for non-bioinformaticians, with tables, figures and methods, and revised it as questions came up, until it was complete.
 
 ## Layout
 - `*.sh`, `*.py`: job scripts (`run_*.sh` for the main runs, `build_mibig31_db.py` for a custom antiSMASH database).

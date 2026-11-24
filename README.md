@@ -23,7 +23,7 @@ The strain is a *Microbacterium arborescens* isolate (strain not disclosed). The
 | Why is it not a closed genome? Why were contigs removed? | Re-ran SPAdes to recover the contigs that the filter had removed (261 of them). Mapped the reads back with Bowtie2 and measured depth at the contig ends. Identified a very high-coverage 155 bp contig as an rRNA operon fragment by BLAST (`Blast_short_contig`). | `bowtie2_tests`, `bowtie2_tests_DSM20754`, `contig_ends`, `Blast_short_contig` |
 | Which species and strain is it? | TYGS: digital DNA-DNA hybridisation (dDDH) against type strains, with a whole-genome tree. | `TYGS_results` |
 
-The results are concluded and the analysis was carried through to the end of the requirements. The final report is not part of this repository.
+The results are concluded and the analysis was carried through to the end of the requirements. The full write-up is in [`Bioinformatics_analysis_report_Microbacterium_arborescens.docx`](Bioinformatics_analysis_report_Microbacterium_arborescens.docx).
 
 ## What I did in practice
 - Wrote the scripts for a Linux cluster (LSF `bsub`): job scripts, modules, conda environments.
